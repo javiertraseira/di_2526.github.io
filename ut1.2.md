@@ -180,7 +180,7 @@ Describen una amplia variedad de estilos de interacción desde interfaces tridim
 
 ![](media/0ba1d606b87ec275eb5ded335088cb97.jpeg)
 
-#### Beneficios
+#### Ventajas
 
 -   Simulaciones imposibles en otro sitio
 
@@ -190,6 +190,23 @@ Describen una amplia variedad de estilos de interacción desde interfaces tridim
 -   Cansancio del usuario
 
 *Usos de realidad virtual*: Entrenamiento de operarios, reconstrucciones virtuales de patrimonio histórico o arquitectónico, medicina, entretenimiento, Defensa y seguridad
+
+### Realidad aumentada
+
+La realidad aumentada (AR) es una tecnología que combina elementos del mundo real con elementos virtuales generados por computadora para proporcionar una experiencia interactiva en tiempo real a través de un dispositivo tecnológico como unas gafas, una Tablet o un Smartphone.
+
+
+#### Ventajas
+
+-  Mejoran la experiencia de usuario
+-  Aplicaciones educativas o formativas
+
+#### Problemas
+
+-   Altos requerimientos tecnológicos
+-   Coste de desarrollo
+-   Interrupciones visuales
+
 
 ### Computación ubicua e IOT
 
