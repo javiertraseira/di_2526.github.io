@@ -6,7 +6,7 @@
 
 ----
 
-## Contenido del curso 22-23
+## Contenido del curso 23-24
 
 
 
