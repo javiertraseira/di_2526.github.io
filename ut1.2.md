@@ -227,7 +227,7 @@ Algunos de los **elementos de interacción** de las GUI que se pueden encontrar 
 -   Las ventanas o cuadros de diálogo
 -   Los asistentes
 -   Los menús
--   pestañas
+-   Las pestañas
 -   Las Barras de herramientas
 -   Los iconos
 -   Los controles
