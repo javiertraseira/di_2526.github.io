@@ -97,6 +97,7 @@ Este método únicamente permite realizar sentencias de actualización de la BD:
 Statement st = conexion.createStatement();
 
 // La consulta es un String con código SQL String sqlselect = "SELECT * FROM cuentas";
+String sqlselect = "SELECT * FROM cuentas";
 ```
 
 ### 3.2 Consultas PreparedStatement

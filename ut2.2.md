@@ -1,7 +1,5 @@
 # UT2.2 Java Swing
 
-📕 [Contenido en presentación PDF](/pdf/UT2.2 - Java Swing.pdf)
-
 ## Introducción
 
 **Java Swing** fue una respuesta a las deficiencias presentes en el subsistema GUI original de Java: el **Abstract Window Toolkit (AWT).**
