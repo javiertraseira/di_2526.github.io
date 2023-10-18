@@ -8,7 +8,7 @@
 
 ![](media/05f6a59d63d5d624055d27b98a4ea188.jpeg)
 
-# ![](media/466579ca2a8ab791394e1b635cd9d159.jpeg)JDBC
+![](media/466579ca2a8ab791394e1b635cd9d159.jpeg)
 
 ## JDBC
 
