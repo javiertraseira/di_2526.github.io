@@ -445,7 +445,9 @@ Este evento se produce al hacer click con el **puntero del ratón** sobre algún
 
 ## Modelo Vista Controlador
 
-El Modelo Vista Controlador (**MVC**), tal y como ya comentamos, es un estilo de arquitectura de software que separa los datos de una aplicación (modelo), la interfaz de usuario (vista), y la lógica de control (controlador)
+El Modelo Vista Controlador (**MVC**), tal y como ya comentamos, es un estilo de arquitectura de software que separa los datos de una aplicación (modelo), la interfaz de usuario (vista), y la lógica de control (controlador).
+
+![Modelo Vista Controlador](media/mvc1.png)
 
 ###  Modelo
 
