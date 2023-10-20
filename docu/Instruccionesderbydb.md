@@ -15,6 +15,6 @@ Para poder usar una BD de Derby en nuestro proyecto en Netbeans:
 5. Podemos probar a crear una BD de ejemplo.
 ![](media/sampleDatabase.png)
 
-6. Si aparece un error de conexión seguir el siguiente video para solucionarlo cambiando el driver del Java DB (Network)
+6. Si apareciera un error de conexión con la BD, seguir con el siguiente video para solucionarlo, configurando el driver del Java DB (Network) por una incompatibilidad:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OKiBsWbgrMw?si=KkTjrI_XuazW8jmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
