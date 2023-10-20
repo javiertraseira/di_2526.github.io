@@ -56,6 +56,9 @@ El primer paso es asignar el driver de la base de datos que vamos a utilizar en 
 
 ![](media/5169a4340cf541caf4ec264fc654971b.jpeg)
 
+Para  conectarse y correr con el driver de una BD Derby en nuestro proyecto en Netbeans seguir el siguiente tutorial: [Instrucciones crear un BD de Derby en Netbeans](docu/Instruccionesderbydb.md)
+
+
 ### 2. Establecer conexión con la BD
 
 El siguiente paso es establecer una conexión con la base de datos. Hay dos opciones para establecer una conexión:
