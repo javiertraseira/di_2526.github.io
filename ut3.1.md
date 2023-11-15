@@ -94,8 +94,7 @@ Las ventanas de diálogo modales suspenden temporalmente todas las acciones, y o
 
 El respeto de la consistencia tanto en la forma como en la función es un factor clave en la usabilidad de una interfaz; el comportamiento de los elementos de una aplicación debe ser constante y predecible.
 
-## Coherencia y consistencia
-
+### Coherencia y consistencia
 
 La **consistencia** supone la fijación de unas constantes representativas a lo largo de una aplicación, de manera que el mismo tipo de información llegue al usuario siempre de idéntica forma.
 
@@ -111,7 +110,7 @@ La consistencia debe respetarse también en:
 
 Para lograr esto es recomendable utilizar una guía de estilo unificada y estándar para nuestra aplicación.
 
-## Curva de aprendizaje
+### Curva de aprendizaje
 
 Los usuarios se encuentran más cómodos en aplicaciones o sitios web que resulten fáciles de utilizar y que sigan las guías de estilo proporcionadas por el sistema operativo desde donde se manejan.
 
