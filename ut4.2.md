@@ -438,9 +438,11 @@ Existen pseudoclases orientadas principalmente a los campos de formulario de pá
 
 Cuando estamos posicionados en un campo de un formulario se dice que ese campo tiene el foco, mientras que al pulsar *TAB* y saltar al siguiente, diremos que pierde el foco.
 
+```css
     input:focus {
     border: 2px dotted #444;
     }
+```    
 
 ### Pseudoclases de activación
 
@@ -466,9 +468,11 @@ Las pseudoclases de posición permiten hacer referencias a los elementos del doc
 
 Por ejemplo:
 
+```css
     strong:first-child { 
         background-color:cyan;
     }
+```
 
 ### Pseudoclases de posición
 
@@ -605,10 +609,10 @@ El tipo de letra del texto se puede indicar de dos formas diferentes:
 -   Mediante el nombre específico de la fuente: como por ejemplo "*Arial* " o "*Verdana*".
 -   Mediante el **nombre genérico** de una familia tipográfica: los nombres genéricos no se refieren a ninguna fuente en concreto, sino que hacen referencia al estilo del tipo de letra. Las familias genéricas definidas son serif (pj *Times New Roman*), sans-serif (pj *Arial*), cursive (pj Comic Sans), fantasy (pj *Impact*) y monospace (pj *Courier New*).
 
-```html
-        h3 {
-        font-family: sans-serif;
-        }
+```css
+    h3 {
+    font-family: sans-serif;
+    }
 ```
 
 Las fuentes específicas sólo se visualizarán **si el usuario las tiene instaladas en su sistema o dispositivo**. En caso contrario, se usará otra tipografía sustituta disponible en el sistema.
@@ -620,6 +624,21 @@ Algunas series de fuentes se utilizan tan a menudo que prácticamente se han con
     font-family: Arial, Helvetica, sans-serif; 
     font-family: "Times New Roman", Times, serif;
     font-family: "Courier New", Courier, monospace;
+
+Para utilizar **familias tipográficas desde Internet** y no depender de las fuentes del sistema, se pueden utilizar las siguientes líneas usando la palabra clave @import url:
+
+```html
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+```
+
+Para su utilización posterior bastaría con nombrarlas:
+
+```css
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto'
+```
+
 
 ### Tamaño tipografía
 
