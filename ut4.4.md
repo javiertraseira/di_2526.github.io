@@ -8,7 +8,7 @@ Sin embargo, suele resultar difícil si no se conocen bien todos los detalles pa
 
 ![](media/64b0e22b46f6f70718495e3f48bf1c08.jpeg)
 
-## Etiquetas semánticas en HTML
+### Etiquetas semánticas en HTML
 
 HTML hace uso de **etiquetas semánticas** (*nav, header, aside, footer..)* ya conocidas por nosotros, mediante las cuales describe el significado del contenido, permitiendo que los documentos HTML sean más claros para los desarrolladores y que son la clave para ayudar en el proceso de maquetación de contenidos de cualquier interfaz web.
 
@@ -237,7 +237,7 @@ Existe una propiedad de atajo (short-hand) llamada **flex-flow**, con la que pod
 
 ![](media/f4845a0ad5e3bafbc500d9fe0e48d3f3.png)
 
-## Alineación: align-content
+### Alineación: align-content
 
 ```tip
 **align-content** alinea las filas interiores respecto el eje vertical. Para poder usarse es necesario tener definido **flex-wrap** como *wrap* o *wrap-reverse* y tener varias líneas.
@@ -617,7 +617,7 @@ Para dejar un espacio intermedio vacío en ciertas áreas, usaremos el comodín 
 ## Responsive web Design
 
 ```note
-El Responsive web design o diseño web adaptativo, es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas.
+El **Responsive web design** o diseño web adaptativo, es una filosofía de diseño y desarrollo cuyo objetivo es adaptar la apariencia de las páginas web al dispositivo que se esté utilizando para visitarlas.
 ```
 
 Mediante el uso de estructuras flexibles que ya hemos visto (como Flexbox o Grid) y las *Media Queries* que veremos a continuación, podemos adaptar a la apariencia de diferentes dispositivos. Las Media Queries sirven para adaptar de forma más concreta un sitio web al dispositivo en el que se vaya abrir, siempre que persistan diferencias entre ellos. No obstante, haciendo un buen uso de CSS pueden conseguirse también resultados similares a las Media Queries que suelen agregar complejidad añadida.
