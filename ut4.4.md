@@ -19,19 +19,19 @@ HTML hace uso de **etiquetas semánticas** (*nav, header, aside, footer..)* ya c
 ![](media/esquema_posicionamiento.png)
 
 
-El posicionamiento de una 'caja' se establece mediante la propiedad *position*, excepto para el flotante, *flexbox* y *grid* que veremos más adelante:
+El posicionamiento de una 'caja' se establece mediante la propiedad **position**, excepto para el *flotante*, *flexbox* y *grid* que veremos más adelante:
 
 | **Valores** | **Significado**                                                                                                                                                                                                                                                                   |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | static      | Se corresponde con el posicionamiento normal o estático. Si se utiliza este valor, se ignoran los valores de las propiedades top, right, bottom y left.                                                                                                                           |
-| relative    | En el posicionamiento relativo, el desplazamiento de la caja se controla con las propiedades top, right, bottom y left respecto a su posición original.                                                                                                                           |
-|  absolute   | En el posicionamiento absoluto, el desplazamiento de la caja también se controla con las propiedades top, right, bottom y left, pero su interpretación es más compleja, ya que el origen de coordenadas del desplazamiento depende del posicionamiento de su elemento contenedor. |
-|  fixed      | El desplazamiento se establece de la misma forma que en el posicionamiento absoluto, pero en este caso el elemento permanece inamovible en la pantalla y en relación con la ventana del navegador.                                                                                |
+| relative    | En el posicionamiento relativo, el desplazamiento de la caja se controla con las propiedades top, right, bottom y left respecto a su **posición original**.                                                                                                                           |
+|  absolute   | En el posicionamiento absoluto, el desplazamiento de la caja también se controla con las propiedades top, right, bottom y left, pero su interpretación es más compleja, ya que el origen de coordenadas del desplazamiento depende del posicionamiento de su **elemento contenedor**. |
+|  fixed      | El desplazamiento se establece de la misma forma que en el posicionamiento absoluto, pero en este caso el elemento permanece inamovible en la pantalla y **en relación con la ventana del navegador**.                                                                                |
 
 ### Posicionamiento normal (static)
 
 ```tip
-El posicionamiento **normal** o **estático** es el modelo que utilizan por defecto los navegadores para mostrar los elementos de las páginas. En este modelo, sólo se tiene en cuenta si el elemento es de bloque o en línea, sus propiedades *width* y *height* y su contenido y **no se tienen en cuenta** top, right, bottom o left.
+El posicionamiento **normal** o **estático** es el modelo que utilizan por defecto los navegadores para mostrar los elementos de las páginas. En este modelo, sólo se tiene en cuenta si el elemento es de <u>bloque</u> (block) o en <u>línea</u> (inline), sus propiedades *width*, *height* y su contenido pero **no se tienen en cuenta** top, right, bottom o left.
 ```
 
 Los elementos de **bloque** forman lo que CSS denomina contextos de formato de bloque. En este tipo de contextos, las cajas se muestran una debajo de otra comenzando desde el principio del elemento contenedor. La distancia entre las cajas se controla mediante los márgenes verticales.
@@ -78,7 +78,7 @@ Cuando una caja se posiciona de forma absoluta, el resto de elementos de la pág
 Cuando una caja se posiciona de forma **fija**, la forma de obtener el origen de coordenadas para interpretar su desplazamiento es idéntica al posicionamiento absoluto.
 ```
 
-De hecho, si el usuario no mueve la página HTML en la ventana del navegador, no existe ninguna diferencia entre estos dos modelos de posicionamiento. Se coloca el elemento en relación con la ventana del navegador.
+De hecho, si el usuario no mueve la página HTML en la ventana del navegador, no existe ninguna diferencia entre estos dos modelos de posicionamiento. Se coloca el elemento en relación con la <u>ventana del navegador</u>.
 
 El posicionamiento fijo hace que las cajas no modifiquen su posición ni aunque el usuario suba o baje la página en la ventana de su navegador.
 
@@ -99,8 +99,6 @@ No se usa la propiedad *position*, si no que usaremos las siguientes propiedades
 | float         | **none** \| left \| right         | Cambia el flujo para que el elemento flote a la izquierda o derecha. |
 | clear         | **none** \| left \| right \| both | Impide que los elementos puedan flotar en la orientación indicada.   |
 
-
-### Posicionamiento flotante (float)
 
 Uno de los principales motivos para la creación del posicionamiento flotante fue colocar imágenes alrededor de las cuales fluye el texto. Los elementos que se encuentran alrededor de una caja flotante adaptan sus contenidos para que fluyan alrededor del elemento posicionado.
 
@@ -155,14 +153,14 @@ Los <u>elementos</u> básicos de **Flexbox** son los siguientes:
 
 ![](media/5df2c9532efa31979bb45ec6f2a860b3.jpeg)
 
--   **Contenedor**: Elemento padre que tendrá en su interior cada uno de los ítems flexibles.
+-   **Contenedor**: Elemento padre (creado con un *section class="nombre"*) que tendrá en su interior cada uno de los ítems flexibles.
 -   **Eje principal**: Los contenedores flexibles tendrán una orientación principal específica. Por defecto, es en horizontal (en fila).
 -   **Eje secundario**: De la misma forma, los contenedores flexibles tendrán una orientación secundaria, perpendicular a la principal. Si la principal es en horizontal, la secundaria será en vertical, y viceversa.
 -   **Ítem**: Cada uno de los hijos flexibles que tendrá el contenedor en su interior.
 
 💡 Si queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad **display** y su valor **flex** o **flex-inline** dentro del selector que nosotros definamos, que será nuestro elemento padre o contenedor-flex.
 
-💡 La propiedad flex no se hereda desde el contenedor donde es aplicada.
+💡 La propiedad **flex** <u>no se hereda</u> desde el contenedor donde es aplicada.
 
 ```css
 .contendor-padre {
@@ -178,6 +176,10 @@ Los <u>elementos</u> básicos de **Flexbox** son los siguientes:
 **flex-direction** es la propiedad encargada de definir el eje principal y secundario de los elementos hijos. Los ejes pueden ser verticales o ser horizontales formando filas.
 ```
 
+| **Propiedad** | **Valor**                          | **Significado**                                |
+|---------------|------------------------------------|------------------------------------------------|
+| flex-direction     | **row** \| row-reverse \| column \| column-reverse | Cambia la orientación del eje principal. |
+
 ![](media/3a7ca6e6d3b8fe7343b28489733f9ebf.png) 
 
 
@@ -188,7 +190,7 @@ Si **flex-direction:row** entonces el margen inicial del eje principal quedará 
 ### Dirección de los ejes: flex-wrap
 
 ```tip
-Flex trata de disponer de los elementos en una misma línea, si no es el caso, **flex-wrap** tratará de ordenar los elementos en más de una fila o columna.
+Flex trata de disponer de los elementos en una <u>misma línea</u>, si no es el caso, **flex-wrap** tratará de ordenar los elementos en más de una fila o columna.
 ```
 
 | **Propiedad** | **Valor**                          | **Significado**                                |
@@ -202,12 +204,12 @@ Flex trata de disponer de los elementos en una misma línea, si no es el caso, *
 ### Dirección de los ejes: flex-flow
 
 ```tip
-Existe una propiedad de atajo (short-hand) llamada **flex-flow**, con la que podemos resumir los valores de las propiedades **flex-direction** y **flex-wrap** anteriores.
+Existe una propiedad de atajo (short-hand) llamada **flex-flow**, con la que podemos resumir los valores de las otras dos propiedades anteriores (**flex-direction** y **flex-wrap**):
 ```
 
 ```css
     .contenedor {
-    /*flex-flow: <flex-direction> <flex-wrap>;*/
+    /*flex-flow: <flex-direction> <flex-wrap>*/
     flex-flow: row wrap;
     }
 ```
@@ -230,6 +232,7 @@ Existe una propiedad de atajo (short-hand) llamada **flex-flow**, con la que pod
 ```tip
 **align-items** permite distribuir los elementos respecto al eje vertical.
 ```
+Por defecto se usa **stretch**, por lo que si no hay altura definida, los elementos ocuparan el contenedor.
 
 | **Propiedad** | **Valor**                                                   | **Eje**  |
 |---------------|-------------------------------------------------------------|----------|
@@ -266,7 +269,7 @@ Las siguientes propiedades, en vez de sobre los **contenedores**, se aplican sob
 
 ### Propiedades de los hijos: grow, shrink
 
-La propiedad **flex-grow** se utiliza para indicar el factor de crecimiento de los ítems en el caso de que no tengan un ancho específico. Por ejemplo, si con *flex-grow* indicamos un valor 1 a todos sus ítems, todos tendrán el mismo tamaño. Si colocamos un valor de 1 a todos, salvo a uno con el valor 2, ese ítem será más grande que los anteriores. Los ítems a los que no se le especifique ningún valor, tendrán por defecto valor de 0.
+La propiedad **flex-grow** se utiliza para indicar el factor de <u>crecimiento</u> de los ítems en el caso de que no tengan un ancho específico. Por ejemplo, si con *flex-grow* indicamos un valor 1 a todos sus ítems, todos tendrán el mismo tamaño. Si colocamos un valor de 1 a todos, salvo a uno con el valor 2, ese ítem será más grande que los anteriores. Los ítems a los que no se le especifique ningún valor, tendrán por defecto valor de 0.
 
 ![](media/1a8ac9dc5d4c0655a8e39307e71242b2.jpeg)
 
@@ -274,7 +277,7 @@ La propiedad **flex-shrink** es la opuesta a **flex-grow.** Los ítems que tenga
 
 ### Propiedades de los hijos: basis
 
-La propiedad **flex-basis**, define el tamaño por defecto (de base) que tendrán los ítems antes de aplicarle la distribución de espacio. Generalmente, se aplica un tamaño (unidades, porcentajes, etc...), pero también se puede aplicar la palabra clave **content** que ajusta automáticamente el tamaño al contenido del ítem.
+La propiedad **flex-basis**, define el tamaño por defecto <u>de base</u> que tendrán los ítems antes de aplicarle la distribución de espacio. Generalmente, se aplica un tamaño (unidades, porcentajes, etc...), pero también se puede aplicar la palabra clave **content** que ajusta automáticamente el tamaño al contenido del ítem.
 
 Si el valor que se pone a flex-basis es 0, el espacio que haya interno a cada elemento no se respeta, sin embargo cuando es auto, sí y se distribuye.
 
@@ -355,7 +358,7 @@ Es posible crear cuadrículas con un tamaño concreto en Grid. Para ello, sólo 
 
 ![](media/46bb47842f9b2620131bed3130340297.png)
 
-Por ejemplo, dado el siguiente código CSS, se obtendrá la siguiente distribución de la figura:
+Por ejemplo, dado el siguiente código CSS, se obtendrá la siguiente distribución del contenedor como en la figura mostrada:
 
 ```css
 .grid {
