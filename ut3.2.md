@@ -1,260 +1,105 @@
-# UT3.2 Guías de estilo. Retícula, color y fuentes
+# UT3.2 Leyes básicas del User Experience (UX)
 
-## Guías de estilo
+## Introducción
 
-Para asegurar la consistencia de las interfaces gráficas de una web o aplicación es fundamental plasmar las pautas de estilo en una guía que pueda seguir el equipo de desarrollo (programadores, analistas, diseñadores gráficos, etc.) durante el proceso de desarrollo del sitio. Estas guías se llaman **guías de estilo** o *look and feel*.
+Tal y como hemos visto en la unidad de usabilidad, un buen diseño de interfaz tienda a seguir principios generales o directrices generales para trabajar.
 
 ```note
-Las *guías de estilo* recogen los criterios y normas que deben seguir los desarrolladores para que tenga una apariencia uniforme y atractiva para el usuario.
+La User Experience (UX) o experiencia de usuario es la suma de percepciones subjetivas que una persona tiene sobre un producto, servicio o sistema diseñado para crear o satisfacer una necesidad.
 ```
+Los 3 pilares de la experiencia de usuario:
 
-![](media/ccd50528b8b0fb369667e756c9fcf27f.png)
+![](media/usability_pilars.png)
 
-En las guías de estilo se recogen datos como el diseño de la retícula, la gama de colores utilizada, los iconos, la tipografía, el tamaño de las letras, etc.
+## Leyes del UX
 
-![](media/f0b49e385c94a922076c10655ed1309e.png)
+### Ley de Fitts
 
-![](media/5d60affdd17522cf7b4879467c0d7dac.png)
+Basada en el psicólogo Paul Fitts en 1954, que determina ‘El tiempo necesario para alcanzar el objetivo es función de la distancia y tamaño que hay que recorrer hasta él.’ 
 
-## La retícula
+Esta ley afecta directamente a la experiencia de usuario a la hora del diseño de botones, por citar un ejemplo, más grandes, especialmente en dispositivos móviles que son táctiles, llegando a la conclusión que con los botones más pequeños es más difícil interactuar.
 
-```tip
-La retícula, tal y como ya vimos, se utiliza para establecer una estructura de diseño continua y coherente en soportes que deban alojar todo tipo de contenidos.
-```
 
-Teniendo en cuenta los espacios determinados por la retícula, se generan las áreas principales, en muchas ocasiones diferenciadas por bloques de color o elementos separadores.
+![](media/fitts.png)
 
-![](media/0af15b7817af3f9e2ba9e54682813969.png)
+> Este sería un caso de aplicación de Ley de Fitts, se encuentra cerca de la que se presupone la zona de lectura del ratón (a la derecha, pues somos occidentales y leemos de izquierda a derecha), además abarca un amplio espacio (no es un botón pequeño) por lo que la probabilidad de “acertar” y hacer clic en el botón es alta.
 
-La retícula, tal y como ya vimos, se utiliza para establecer una estructura de diseño continua y coherente en soportes que deban alojar todo tipo de contenidos.
+### Ley de Hick
 
-Por ejemplo, en publicaciones que se actualizan frecuentemente, la retícula adquiere la forma de una **rejilla**, que determina las zonas existentes en el soporte, y su subdivisión (generalmente en varias columnas). Durante el proceso de edición de los contenidos se respeta la estructura definida, de manera que exista una continuidad visual a lo largo de toda la publicación.
+El tiempo que se tarda en adoptar una decisión, aumenta a medida que se incrementa el número de opciones.
 
-![](media/f85af079ed5bb379470811accd3762d2.jpeg)
-![](media/d3235d16a288ca53d09834b162a571a8.jpeg)
-![](media/816116da7dd7fc3b79c78933c80a560f.jpeg)
+Así pues, el tiempo que tarda un usuario en tomar una decisión aumenta cuantas más opciones tiene, es obvio el usuario, intenta contemplar todas las opciones posibles y lo que conllevan y tomará la que considere mejor opción.
 
-No obstante la retícula, puede basarse en cualquier tipo de escala como pudiera ser la orgánica, Fibonacci o irregulares.
+Así a la pregunta, qué sería mejor de las siguientes opciones:
+1. Un único formulario con 20 opciones hasta completarlo
+2. Un formulario por etapas con 4 etapas y 5 opciones por etapa.
 
-![](media/370d68eb131d49d6576ceb1754c0f734.jpeg)
+> La respuesta aplicando Hick, sería la <u>segunda opción</u>.
 
-![](media/c3c8c3b92bb96cbde040e592c13265c9.jpeg)
+![](media/hick.png)
 
-## Tipografías
+### Ley de Jackob
 
-Los textos son la base de la mayoría de sitios web e interfaces ya que lo más normal es transmitir la información mediante letras. Al diseñar cualquier interfaz resulta fundamental favorecer la legibilidad del texto, un factor crítico debido a la resolución de los soportes digitales.
+La mejor forma de crear algo nuevo, es buscar referencias, para que los primeros clientes entiendan de que va y puedan asociar.
 
-![](media/d6b415670cc408ec4ea49f89eb405e09.jpeg)
+Los usuarios pasan la mayor parte de su tiempo webs o aplicaciones similares, en caso de que el tuyo no lo conozca. 
 
-### Estructura y medidas
+Esto significa que prefieren sitios y aplicaciones similares a los que conocen y usan. Por eso es mejor no hacer aplicaciones demasiados originales o creativas.
 
-La **estructura** de una es precisa. Sus partes fundamentales son las siguientes:
 
-![](media/eb8a2d262bba11d6f4037a23c54bf6a6.png)
+![](media/jackob_sample.png)
 
-Las **medidas** de una letra se miden según la altura y su anchura:
 
-![](media/3d14c7ab984968adf4daecd120f08741.png)![](media/025d2f86244bbd18e4613b3e57af205b.png)
+### Ley de Prägnanz
 
-### Variaciones fuentes
+También llamada “Ley de simplicidad”, que establece que los usuarios perciben las formas complejas de la forma más simple porque es la interpretación que menos esfuerzo mental requiere.
+Aquellos diseños que complejizan y se llenan de elementos, serán más difíciles de identificar y eventualmente recordar. Mientras que aquellos diseños más simples, con menos estímulos o donde estos están organizados en una totalidad, estructura o patrón, serán más fáciles de reconocer y recordar. Es más fácil entender y asimilar un cuadrado que un octógono u otra forma compleja. Y requiere de menor intensidad mental para reconocer qué es eso y para qué sirve. 
 
-Generalmente, cualquier familia tipográfica dispone de tres variaciones sobre el tipo regular:
+![](media/pragnanz_sample.png)
 
--   Itálica (también llamada cursiva)
--   Negrita (bold en inglés)
--   Negrita itálica
+### Ley de proximidad
 
-También existen otras variaciones especiales, según la familia de la fuente
+Los objetos que están próximos tienden a unirse y en la experiencia de usuario se entienden como el mismo grupo.
 
-Normal **Negrita** *Cursiva*
+El principio sostiene que si estás manejando un grupo de datos, todos los datos que entendamos que corresponden al mismo grupo deben de estar juntos y si empezamos a hablar de datos diferentes deberá de haber un espacio entre ellos. La mente hará el resto y los diferenciará.
 
-![](media/d273a7510b4b0d78b6d20a54129f2089.png)
+![](media/proximidad_sample.png)
 
-### Familias tipográficas
+> Amazon un ejemplo práctico de esto, pese a la sensación de “caos” a nivel datos, está muy claro donde está cada grupo de estos datos A y B.
 
-Existen dos grandes de familias tipográficas, las Serif o Sans Serif. Además de estas dos familias existen también otras especiales:
 
-#### Serif
+### Ley de Miller
 
-![](media/1fb878eaebb81f3a9908c17fdd070a19.jpeg)
+Según esta ley las personas pueden recordar hasta 7 elementos distintos en su memoria de trabajo. 
 
-En esta familia tipográfica las fuentes rematan el final con adornos. Estas fuentes nos aportan sentimientos de autoridad y firmeza, ya que su estilo es bastante clásico.
+Es por ello que los menús de opciones y navegación en una página web más o menos están basados en este tamaño. Más de 7 elementos genera confusión y perdida de foco del usuario, no es capaz de recordar donde estaba una opción que ahora busca.
 
-#### Sans Serif
+![](media/miller_sample.jpg)
 
-![](media/cfea458e1e21cf6a7dbdf2ff03261f5b.jpeg)
+### Ley de Parkinson
 
-Como su enunciado nos indica, se trata de las sin serif. Este tipo de fuentes están compuestas por letras de palo seco, sin ningún tipo de adorno en el remate de su estructura. Con estas letras transmitiremos modernidad, seguridad, sobriedad o alegría.
+Por una cuestión cultural, pensamos que como más horas le dediquemos a algo mejor es. Pero la práctica demuestra que no es así.
 
-Recomendables en medios electrónicos.
+Cuando sabemos que tenemos más tiempo nuestro cerebro se relaja. En cambio, cuando sentimos la presión de la fecha límite nos centramos en realizar lo importante y que debemos finalizar a tiempo.
 
-#### Manuscritas o script
+¿Qué quiere decir esto a nivel Experiencia de usuario?
+Que el usuario tiene establecido ciertas ‘normas’ temporales, dependiendo del tipo de usuario obviamente, pero por poner un ejemplo, realizar una compra en Amazon (una vez has seleccionado la compra obviamente) tiene una duración de 5 minutos (entre rellenar los datos, tarjeta, etc…) Todo lo que sea acortar esos plazos será positivo.
 
-Este tipo de fuentes simulan una caligrafía escrita, siendo a menudo cursivas. Suelen utilizarse para resaltar la importancia de los titulares o para firmas de autor.
+![](media/7a7942423asedfsdasdasd.png)
 
-#### Fuentes de exhibición o decorativas
 
-Son las caligrafías más llamativas, ya que cada uno de ellas están personalizadas y cuentan con unas cualidades específicas. Como son fuentes muy especiales se suelen utilizar únicamente en títulos o en textos que queramos destacar.
+#### Efecto de posición en una serie
 
-#### Imágenes y símbolos
+Según esta ley, entre los elementos de una serie, los usuarios siempre recordarán mejor el primero y el último.
 
-Por último, encontramos las tipografías en las que las letras son sustituidas por símbolos e iconos, en las que las palabras quedan codificadas.
+Esta es la razón por la cual vemos que en la barra de navegación de las aplicaciones se colocan las acciones más importantes a la izquierda o a la derecha, las cuales implementan elementos como inicio o perfil teniendo en cuenta la posición en serie.
 
-![](media/b863bd6f69879bcdd3c90cc8aeb10570.png)
+![](media/nav_ux.jpg)
 
-![](media/f3eb1c6cde978f2c9f22f3c349b39e64.png)
+#### Ley de Tesler
 
-#### Monoespaciada
+Larry Tesler establece que para cualquier sistema existe cierta complejidad que no se puede reducir al máximo.
 
-En los **tipos de letra monoespaciales** cada letra ocupa la misma cantidad de espacio horizontal en la pantalla. Se suelen utilizar para la representación de código informático o de texto escrito mediante una máquina de escribir.
+Un ejemplo evidente lo encontraríamos en cualquier web o aplicación para comprar billetes, dentro de la cual ya están comprimidas al máximo sus opciones de búsqueda.
 
-![](media/8f20ecacf1e822f27e55a2029e4467ab.png)
-
-Inicialmente, se utilizaban las fuentes típicas que los usuarios tenían instaladas en sus dispositivos y distintos SO lo que daba lugar a problemas.
-
-Actualmente, gracias a que los navegadores soportan la directiva *@font-face*, es posible utilizar casi cualquier tipo de tipografía sin necesidad de que esté instalada en el dispositivo.
-
-### Composición tipográfica
-
-Los siguientes son los principales conceptos que forman parte de la composición tipográfica:
-
--   Espaciado
--   Espacio entre palabras
--   Longitud de línea
--   Interlineado (leading)
--   Alineación
-
-### Legibilidad
-
-Elegir la tipografía adecuada según el contenido que debamos diseñar y sus destinatarios: la fuente óptima no será la misma para un público infantil que para uno adulto; para reproducirse en pantalla o impresa.
-
-Para textos extensos como los que suelen caracterizar a los materiales de educación superior, se aconsejan fuentes de caracteres bien proporcionados, regulares y si utiliza serifas, que éstas tengan remates clásicos y armoniosos.
-
-Hasta hace poco se recomendaba el uso de caracteres con serifa para soportes impresos y se sigue recomendando sin serifa en digitales.
-
-La letra **redonda** o regular mantiene las formas más abiertas y proporcionadas y en la mayoría de los casos es más legible que todas sus variantes: más que las cursivas, negritas, versales, condensadas, expandidas, etc.
-
-Usar **colores contrastados** entre fondo y figura; la mejor legibilidad se produce con tipos negros sobre fondo blanco.
-
-![](media/2113340a57bf15d750cff9185c58fb19.png)
-![](media/9a774fee1eae2cbb400eeb23dc90eb2e.png)
-
-**Recomendaciones generales** respecto a la tipografía utilizada:
-
--  No usar más de tres tipografías distintas.
--  Utilizar fuentes legibles.
--  Elegir un buen contraste entre el fondo y la letra.
--  Establecer un interlineado de 1,5 puntos por el tamaño de la letra.
--  No abusar de los subrayados ya que suelen utilizarse para los hipervínculos.
--  Los espacios en blanco entre párrafos ayudan a descansar la mirada y a mejorar la concentración gracias a la mejor comprensión de la separación entre ellos. Así pues, es necesario añadir un poco más de espaciado entre párrafos y no dejar la misma separación que con el interlineado.
--  La longitud recomendada para un párrafo está comprendida entre 45 y 75 caracteres. (aunque esto puede depender del tamaño de la pantalla).
--  Es aconsejable no utilizar textos de menos de 12 px.
-
-## Uso del color
-
-El color es una cualidad de la materia y de la luz, pero además es un factor expresivo ya que tiene la virtualidad de **comunicar y suscitar sentimientos**. Por este motivo, el diseñador estudia las dimensiones y los valores del color para poder utilizarlo como **instrumento de comunicación**.
-
-Nuestra capacidad para recordar colores es muy limitada y, en todo caso, se nos hace más difícil retener **diferencias de grado** que de **clase**.
-
-Tenemos capacidad para reconocer y diferenciar fácilmente un máximo de seis colores (los tres primarios + los tres secundarios que les vinculan).
-
-![](media/132c9044905adbef1852f5b22e92898a.png)
-
-### Armonía del color
-
-A principios del siglo XX, Ostwald desarrolló un conjunto de teorías sobre armonía del color. Básicamente, sus conclusiones son las siguientes:
-
--  Dos o más colores armonizan si su **saturación** es la misma.
- ![](media/a8f5798eaa051f6c2693920ee0e88123.png)
-
--  Existen matices que combinan especialmente bien: son los **colores complementarios** (los enfrentados en el círculo cromático).
-
-![](media/f5859c3de90484fe7f5e4c58ab1cee11.png)
-
--  Todo círculo horizontal en torno al eje del modelo cromático representa un conjunto de colores armónicos, porque contiene todos los matices de igual **saturación y luminosidad**.
-
-![](media/a0f0b7de7613bfe9d66e4965531c9198.png)
-
-### Interacción del color
-
-El color varía según el contexto. La interacción entre colores produce dos fenómenos diferentes:
-
--   **Contraste cromático**. Acentúa la complementariedad, o modifica los colores en el sentido de la complementariedad.
--   **Asimilación**. Cuando los matices son similares, los colores se aproximan en lugar de acentuar su contraste.
-
-![](media/a314199e8cf054099e21f9ea8b3ffdc7.png)
-
-### Psicología del color
-
-Gracias a la psicología del color sabemos que los colores son capaces de transmitir emociones y provocar así reacciones en nuestro cerebro. De hecho, está demostrado que el color influye en el estado de ánimo y en el comportamiento de las personas. Por este motivo, el color es muy utilizado para vincular a los usuarios con los productos anunciados. A continuación, se pueden ver los colores más usados y sus significados desde una perspectiva cultural occidentalizada pero ya global en su mayor parte:
-
-![](media/564d917e1b89a2add0def0b8010049b7.png)
-
-A mayor luminosidad, mayor es nuestra capacidad para memorizar un color:
-
--  Amarillo: más memoria de color, menos memoria de forma
--  Rojo: memoria de color y de forma equilibrados
--  Verde: memoria de color y de forma equilibrados
--  Azul: menos memoria de color, más memoria de forma
-
-![](media/0654fda95f26554dddfa62de200e295b.png
-
-La **visibilidad** de un color decrece cuando se asocia con otros colores (efecto de contigüidad).
-
-El rango de **impacto visual** de la combinación de colores varía en una escala, de mayor a menor:
-
-### Paleta de colores
-
-Definir la gama de colores que se utilizará en un producto es fundamental porque puede condicionar la experiencia de los usuarios. Esta gama de colores se puede crear mediante una paleta de colores que nos provea de un grupo de matices y tonalidades que nos ayude a marcar la diferencia entre un diseño alegre, elegante, fiable, sobrio, etc.
-
-Una opción para definir la gama de colores es realizando una **composición monocromática**, que consiste en seleccionar un solo color del círculo cromático y crear sus tonalidades añadiendo blanco o negro.
-
-Otra opción consiste en seleccionar los **colores vecinos (análogos) del círculo cromático**, ya que son armónicos y ofrecen estabilidad al diseño. Los colores vecinos son los que se encuentran en un rango de 90 grados en el círculo cromático.
-
-![](media/bc1c4eff0e9961f51ab385e6e84b83be.png)
-![](media/753d6f48988ba200dd86da25eb5b77a2.png)
-
-![](media/8dc6ede1f66cfcc5a22a333f60ecd771.jpeg)
-
-En la red se pueden encontrar diferentes generadores de paletas de color que nos permiten seleccionar las tonalidades o colores idóneos que queremos utilizar: colores vivos, pastel, apagados, grisáceos, etc.
-
-Algunos de los generadores de paletas de color son los siguientes:
-
--  **Color Picker**: htmlcolorcodes.com
--  **Color Wheel de Adob**e: color.adobe.com
--  **Color Wheel de Canva:** canva.com/colors/color-wheel
--  **Paletton**: paletton.com
-
-### Proporciones esquema color
-
-Para poder organizar y determinar la cantidad de color en una aplicación o web, estas proporciones pueden ser de gran ayuda**: 60-30-10**. Esta es una norma que suelen usar los diseñadores de interiores y decoradores para escoger, estructurar y darle proporción a los colores escogidos.
-
-![](media/3d950509fe68b4b98c8a119ace9d848e.jpeg)
-
-## Iconografía
-
-Los **iconos** son otra parte esencial en cualquier sistema de diseño. Representan acciones y evitan el uso excesivo de textos. Elegir correctamente los iconos y que su diseño global sea coherente, es necesario para que los usuarios interpreten fácilmente su significado. Se suelen utilizar packs de iconos con un diseño y apariencia unificada (formas y color).
-
-Los iconos se pueden encontrar en formatos diferentes:
-
--  Mapa de bits: PNG, GIF y JPG.
--  Imagen vectorizada: SVG.
--  Fuentes tipográficas o emojis: las fuentes de texto pueden ofrecer iconos sencillos para la representación de elementos de la interfaz.
-
-![](media/9dc00ef71411f20beababcb419f1d4d8.jpeg)
-![](media/df19f6b4c0e625e590a75b977c64fdb0.png)
-![](media/588ba74bc1175527c779819b929c87eb.png)
-
-## Modelo guía de estilo
-
-| **Áreas guía de estilo**                | **Preguntas más importantes**                                                                                                                                             |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Principios de diseño básicos            | ¿Cuáles son los objetivos de la aplicación o página web? ¿Cuáles son los principios de diseño propios de la filosofía de la empresa?                                      |
-| Público objetivo                        | ¿A quién debe ir dirigida la aplicación? ¿Cómo puede delimitar el público objetivo? ¿Cuáles son sus preferencias, deseos e intereses?                                     |
-| Logo y marca denominativa               | ¿Qué apariencia tienen el logo y la marca denominativa? ¿Cuándo, cómo y dónde se deben/tienen que utilizar?                                                               |
-| Diseño de la retícula o ventana y menús | ¿Qué anchura tienen las columnas y qué altura tienen las filas? ¿Cómo se tienen que organizar los elementos en las ventanas? ¿Qué estructura de menú tiene que ofrecerse? |
-| Colores                                 | Colores utilizados en los distintos componentes de la aplicación ¿Qué colores realzan la intención de la aplicación? Indica sus valores RGB o hexadecimales.              |
-| Tipografía (fuente)                     | ¿Qué tipo de letra tiene que utilizarse para qué tipo de textos y elementos? ¿Cuál es el tamaño que tiene que tener la letra y de qué color tiene que ser?                |
-| Iconografía                             | ¿Qué iconografía o paquete iconográfico va a utilizarse? ¿Dónde se tienen que insertar y qué significan?                                                                  |
-| Contenido                               | ¿Qué contenido debe integrarse en la aplicación? ¿Cómo tiene que plasmarse de manera gráfica, textual o multimedia?                                                       |
-
+![](media/tesler_sample.png)
