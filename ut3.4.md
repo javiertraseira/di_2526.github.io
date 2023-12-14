@@ -1,4 +1,4 @@
-# UT 3.4 Distribución de aplicaciones
+# UT3.4 Distribución de aplicaciones
 
 ## Introducción
 
