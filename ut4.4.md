@@ -370,14 +370,25 @@ Por ejemplo, dado el siguiente código CSS, se obtendrá la siguiente distribuci
 
 ![](media/a0adcf7f047e6a4de931fd6bb2ce9dc1.png)
 
+Podemos combinar con las unidades auto y de % que ya conocemos:
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: 200px auto 25%;
+}
+```
+
 Las propiedades **grid-template-rows** y **grid-template-columns** pueden simplificarse en una sola, llamada **grid-template**, usando como separador el **/**
 
 ```css
 .grid {
-  grid-template: 90px 90px 80px / 80px 150px;}
+  grid-template: 90px 90px 80px / 80px 150px;
+}
 ```
 
 ![](media/831348f0b5d887567b37e6566631e45c.png)
+
 
 #### Unidad fr
 
@@ -402,11 +413,11 @@ Así por ejemplo, el siguiente código CSS, obtendrá la distribución de la fig
 Aunque ambas gestionan automáticamente el espacio, tienen algunas diferencias:
 
 -   **fr** significa que se toma una fracción del espacio disponible para las columnas o filas. Todas tienen el mismo tamaño.
--   **auto** lo que hace primero es calcular automáticamente el espacio necesario para cada uno de las columnas para que entre su contenido. Si sobra espacio se reparte por igual entre las filas o columnas, pero a partir del tamaño calculado en función de los contenidos que ya existentes. Por tanto no se adapta siempre equitativamente, ya que dependerá del contenido.
+-   **auto** lo que hace primero es calcular automáticamente el espacio necesario para cada uno de las columnas para que entre su contenido. Si sobra espacio se reparte por igual entre las filas o columnas, pero a partir del tamaño calculado en función de los contenidos que ya existentes. Por tanto no se adapta siempre equitativamente, ya que <u>dependerá del contenido</u>.
 
 #### La función repeat()
 
-Las propiedades que definen el número de filas y columnas en una cuadrícula pueden tomar una función como valor. La función **repeat**() es una de ellas. La función *repeat* () se creó específicamente para CSS Grid.
+Las propiedades que definen el número de filas y columnas en una cuadrícula pueden tomar una **función** como valor. La función **repeat**() es una de ellas. La función *repeat* () se creó específicamente para CSS Grid.
 
 Así por ejemplo podremos sustituir la siguiente línea:
 
@@ -426,7 +437,7 @@ Por esta:
 
 #### La función minmax()
 
-Existe otra función útil en Grid, es **minmax**(). Dicha función sirve para definir un valor dentro de un mínimo y un máximo, de la fila o columna afectada.
+Existe otra función útil en Grid, llamada **minmax**(). Dicha función sirve para definir un valor dentro de un mínimo y un máximo, de la fila o columna afectada.
 
 De esta forma dicha fila o columna tendrá siempre un valor mínimo o máximo del que no pueda bajar o subir, aunque se redimensione la ventana.
 
