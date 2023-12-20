@@ -595,7 +595,7 @@ También tenemos la posibilidad de ponerle nombre a las líneas de nuestro siste
 
 #### Expandir o delimitar zonas
 
-Una vez aplicados nombres, se pueden delimitar que zonas del *grid* queremos que ocupe cada uno de nuestros bloques. Para ello usaremos las propiedades:
+Una vez aplicados nombres, se pueden delimitar que zonas del *grid* queremos que ocupe cada uno de nuestros bloques usando las propiedades:
 
     grid-column-start, grid-column-end y grid-row-start, grid-row-end.
 
