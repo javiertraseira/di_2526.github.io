@@ -361,7 +361,7 @@ Es posible crear cuadrículas con un tamaño concreto en Grid. Para ello, sólo 
 Por ejemplo, dado el siguiente código CSS, se obtendrá la siguiente distribución del contenedor como en la figura mostrada:
 
 ```css
-.grid {
+.contenedor-grid {
   display: grid;
   grid-template-columns: 50px 300px;
   grid-template-rows: 200px 75px;
@@ -373,7 +373,7 @@ Por ejemplo, dado el siguiente código CSS, se obtendrá la siguiente distribuci
 Podemos combinar con las unidades auto y de % que ya conocemos:
 
 ```css
-.grid {
+.contenedor-grid {
   display: grid;
   grid-template-columns: 200px auto 25%;
 }
@@ -382,7 +382,7 @@ Podemos combinar con las unidades auto y de % que ya conocemos:
 Las propiedades **grid-template-rows** y **grid-template-columns** pueden simplificarse en una sola, llamada **grid-template**, usando como separador el **/**
 
 ```css
-.grid {
+.contenedor-grid {
   grid-template: 90px 90px 80px / 80px 150px;
 }
 ```
@@ -399,7 +399,7 @@ Grid utiliza una unidad de medida especial llamada **fr** (*fraction*), que simb
 Así por ejemplo, el siguiente código CSS, obtendrá la distribución de la figura:
 
 ```css
-.grid {
+.contenedor-grid {
   display: grid;
   grid-template-rows: 2fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -422,7 +422,7 @@ Las propiedades que definen el número de filas y columnas en una cuadrícula pu
 Así por ejemplo podremos sustituir la siguiente línea:
 
 ```css
-.grid {
+.contenedor-grid {
   grid-template-columns: 100px 100px 100px;
 }
 ```
@@ -430,7 +430,7 @@ Así por ejemplo podremos sustituir la siguiente línea:
 Por esta:
 
 ```css
-.grid {
+.contenedor-grid {
   grid-template-columns: repeat(3, 100px);
 }
 ```
@@ -442,7 +442,7 @@ Existe otra función útil en Grid, llamada **minmax**(). Dicha función sirve p
 De esta forma dicha fila o columna tendrá siempre un valor mínimo o máximo del que no pueda bajar o subir, aunque se redimensione la ventana.
 
 ```css
-.grid {
+.contenedor-grid {
   grid-template-columns: 200px minmax(100px, 500px);
 }
 ```
@@ -456,7 +456,7 @@ La función **auto-fill** le indica al navegador que inserte el número de colum
 Podríamos escribir la siguiente línea de código:
 
 ```css
-.grid {
+.contenedor-grid {
   grid-template-columns: repeat (auto-fill, minmax (150px, 1fr)
 }
 ```
@@ -483,7 +483,7 @@ Por defecto, la cuadrícula tiene todas sus celdas pegadas a sus celdas contigua
 Por ejemplo:
 
 ```css
-.grid {
+.contenedor-grid {
   column-gap: 10px;
   row-gap: 15px;
 }
@@ -492,7 +492,7 @@ Por ejemplo:
 ![](media/gap_model.png)
 
 ```css
-.grid {
+.contenedor-grid {
   gap: 100px 10px;
 }
 ```
