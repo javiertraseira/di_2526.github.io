@@ -511,6 +511,50 @@ Para los elementos (**ítems**) dentro del contenedor también podremos utilizar
 | justify-items | start \| end \| center \| **stretch** | Distribuye los elementos en el eje horizontal. |
 | align-items   | start \| end \| center \| **stretch** | Distribuye los elementos en el eje vertical.   |
 
+![](media/posicionamiento_grid_items.png)
+
+#### Grid con filas/columnas numeradas
+
+Cuando declaramos un Grid, a cada línea se le asigna un número índice por defecto:
+
+![](media/1dee96d40b573815124601bc890cf97c.png)
+
+#### Posicionamiento items en grid
+
+Para definir la posición y extensión de un item dentro de un contenedor grid podemos utilizar  las propiedades siguientes:
+
+| **Propiedad**         | **Valor**                             | **Descripción**                                   |
+|-----------------------|---------------------------------------|---------------------------------------------------|
+| grid-column-start | *[columna]*                   | Establece la columna de comienzo |
+| grid-column-end    | *[columna]*                 | Establece la columna de final  |
+| grid-row-start         | *[fila]* |  Establece la fila de comienzo        |
+| grid-row-end         | *[fila]* |  Establece la fila de final        |
+
+Podemos simplificar usando las siguientes propiedades:
+
+| **Propiedad**         | **Valor**                             | **Descripción**                                   |
+|-----------------------|---------------------------------------|---------------------------------------------------|
+| grid-column | inicio/fin                   | Establece la columna de comienzo / final |
+| grid-row    | inicio/fin             | Establece la fila de comienzo / final  |
+
+```css
+.item {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+```
+
+![](media/17582c6aa59524509012189405597967.png)
+
+```css
+.item {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+```
+
+![](media/17582c6aa59524509012189405597968.png)
+
 #### Espacios entre filas/columnas: span
 
 También podemos utilizar la palabra clave **span**, para extender el tamaño de celdas de nuestros ítems en horizontal o vertical.
@@ -526,7 +570,6 @@ Por ejemplo, **span 2** quiere decir que el ítem se extiende exactamente dos ce
 ![](media/a986716f1b3a66958c11c2b844e02430.jpeg)
 
 
-
 ```css
 .item4 {
   grid-column: span 3;
@@ -539,11 +582,7 @@ Por ejemplo, **span 2** quiere decir que el ítem se extiende exactamente dos ce
 
 #### Grid con filas/columnas nombradas
 
-Cuando declaramos un Grid, a cada línea se le asigna un número índice por defecto:
-
-![](media/1dee96d40b573815124601bc890cf97c.png)
-
-No obstante, tenemos la posibilidad de ponerle nombre a las líneas de nuestro sistema Grid. Así por ejemplo nombraremos las posiciones del eje *X0...Xn y* del eje *Y0...Yn*:
+También tenemos la posibilidad de ponerle nombre a las líneas de nuestro sistema Grid. Así por ejemplo nombraremos las posiciones del eje *X0...Xn y* del eje *Y0...Yn*:
 
 ```css
 .grid {
@@ -581,14 +620,6 @@ Una vez aplicados nombres, se pueden delimitar que zonas del *grid* queremos que
 
 ![](media/3e58c32eb0c0c29c492112408a87a3b3.png) 
 
-#### Expandir o delimitar zonas
-
-        grid-column-start, grid-column-end se abrevia utilizando grid-column inicio/fin
-        grid-column-start, grid-column-end se abrevia utilizando grid-row  inicio/fin
-
-
-![](media/17582c6aa59524509012189405597967.png)
-![](media/17582c6aa59524509012189405597968.png)
 
 #### Grid por áreas
 
