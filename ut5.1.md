@@ -388,6 +388,8 @@ La estructura básica de un formulario es la siguiente:
 </form>
 ```
 
+![](media/navbar_bootstrap4.png)
+
 ### Validaciones
 
 La validación de formularios HTML se aplica a través de dos pseudoclases de CSS, *:invalid* y *:valid*. Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
@@ -414,3 +416,5 @@ La validación de formularios HTML se aplica a través de dos pseudoclases de CS
 </div> 
 </form>
 ```
+
+![](media/navbar_bootstrap5.png)
