@@ -195,7 +195,7 @@ Para **anidar** el contenido con la cuadrícula predeterminada, se debe agregar 
 
 ![](media/91912598cdc31d4379f0ab62cab2862a.jpeg)
 
-### Glutter
+### Gutter
 
 Los **gutters** son el padding horizontal entre las columnas, que se utilizan para espaciar y alinear de manera responsive el contenido en el sistema de cuadrícula de Bootstrap.
 
