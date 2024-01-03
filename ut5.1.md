@@ -244,6 +244,20 @@ Con dicha clase moveremos las columnas a la derecha tantas posiciones como el n�
 
 Con la clase *.d-{tamaño}-{none|block}* podemos mostrar u ocultar elementos que indiquemos para ciertos tamaños.
 
+| **Efecto** | **Clase**    | 
+|-----------|---------------------|
+|  Ocultar para todos   |  d-none | 
+|  Ocultar solo para xs    |  d-none d-sm-block | 
+|  Ocultar solo para sm    |  d-sm-none d-md-block | 
+|  Ocultar solo para md    |  d-md-none d-lg-block | 
+|  Ocultar solo para lg    |  d-lg-none d-xl-block | 
+|  Ocultar solo para xl    |  d-xl-none d-xxl-block | 
+|  Visible para todos   |  d-block | 
+|  Visible solo para xs   |  d-block d-sm-none | 
+|  Visible solo para sm   |  d-none d-sm-block d-md-none | 
+|  Visible solo para md   |  d-none d-md-block d-lg-none | 
+|  Visible solo para lg   |  d-none d-lg-block d-xl-none | 
+
 
 ### Alineación: align-content
 
