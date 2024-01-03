@@ -240,6 +240,11 @@ Con dicha clase moveremos las columnas a la derecha tantas posiciones como el n�
 
 ![](media/3353c13dd5c87eeb3e676eef29adebcb.png)
 
+### Ocultar elementos
+
+Con la clase *.d-{tamaño}-{none|block}* podemos mostrar u ocultar elementos que indiquemos para ciertos tamaños.
+
+
 ### Alineación: align-content
 
 Bootstrap trae también la posibilidad de alinear las columnas en forma vertical con las regla de estilo que provee **Flexbox** CSS en el que está basado, el **align-content**.
