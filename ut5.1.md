@@ -160,7 +160,7 @@ Se pueden hacer combinaciones según diferentes tamaños (para sm y xl) y así o
 ![](media/c890926478f5a27ac6da167924844936.png)![](media/71ab04427c00d1ea4243046471339027.png) 
 
  
- ### Columnas de fila
+### Columnas de fila
 
 
 Para establecer un número columnas predeterminadas, se pueden utilizar las clases responsive **.row-cols-\#** y así establecer rápidamente la cantidad de columnas que mejor representen el contenido y diseño.
