@@ -41,7 +41,6 @@ Usaremos el CDN de jsDelivr, apuntando a la versión 5.3.0 de Boostrap. Agregare
 
 ```html
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
-
 ```
 💡 Se puede cambiar de versión de la URL según las necesidades.
 
@@ -51,6 +50,16 @@ Las ventajas de utilizar esta forma de cargar Bootstrap son:
 
 -   Reducir la carga de los servidores propios (importante si utilizamos un hosting compartido con recursos limitados)
 -   Facilita que Bootstap 5 quede en caché del navegador y se vuelva a cargar cada vez que se visita una web que lo utilice.
+
+Recordemos que Bootstrap también es un framework que utiliza multitud de complementos de JavaScript para mejorar el comportamiento de los elementos en nuestra página. Además es plenamente compatible con Javascript nativo. 
+Para la parte de Javascript también se puede agregar la URL de un CND, aunque desde Bootstrap 5 ya no es necesario para la mayoría de funciones básicas.
+
+El código para JS deberá de añadirse al final de la página HTML, justo antes del cierre de la etiqueta body de la página:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+```
+
 
 ## Cuadrícula (Grid)
 
