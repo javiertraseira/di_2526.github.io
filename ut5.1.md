@@ -322,7 +322,7 @@ Utilizar este estándar ayuda a que los visitantes se sientan cómodos navegando
 Las imágenes en Bootstrap se hacen responsive con **.img-fluid**. Esto aplica un **max-width: 100%** y **height: auto** a la imagen para que se escale con el ancho de su elemento padre.
 
 ```html
-    <img src="..." class="img-fluid" alt="..."\>
+    <img src="..." class="img-fluid" alt="...">
 ```
 
 ![](media/452f144515c107e2b8f7552176152d98.png)
@@ -339,7 +339,7 @@ Las siguientes clases se utilizan para personalizar la apariencia de **imágenes
 
 ### Alertas
 
-Las alertas están disponibles para cualquier longitud de texto. Para un estilo adecuado, se pueden usar una de las ocho clases contextuales obligatorias. Por ejemplo:
+Las alertas están disponibles para cualquier longitud de texto. Para un estilo adecuado, se pueden usar una de las ocho clases contextuales existentes. Por ejemplo:
 
 ```html
     <div class="alert alert-primary" role="alert"> Una simple alerta primary </div> 
@@ -352,14 +352,16 @@ Las alertas están disponibles para cualquier longitud de texto. Para un estilo 
 
 ### Navbar
 
-Un navbar es una barra de navegación superior responsive con menús, submenús, y otros componentes, como una barra de búsqueda entre otros, y que tiene las siguientes características:
+Un **navbar** es una barra de navegación superior responsive con menús, submenús, y otros componentes, como una barra de búsqueda entre otros, y que tiene las siguientes características:
 - La barra de navegación es <u>adaptable</u> y fluida de forma predeterminada, lo que significa que se amplía o reduce en función de la anchura del viewport.
 - Las navbars requieren un envoltorio *\.navbar* con las clases *\.navbar-expand{-sm|-md|-lg|-xl}*, que determinan cuándo se colapsa la barra en un sólo botón.
 - Existen diversas clases para darle color a un navbar como *.bg-light* o *.bg-dark*.
 
 ![](media/3242365346345120978978.png)
 
-Podemos crear una barra <u>estándar</u> con *\<nav class="navbar .navbar-expand{tamaño}">*
+Podemos crear una barra <u>estándar</u> con:
+
+    \<nav class="navbar .navbar-expand{tamaño}">
 
 Para agregar **enlaces** dentro de la barra de navegación, usar el elementos *\<ul>* con la clase *class="navbar-nav"*. Luego agrega elementos *\<li>* con una clase *.nav-item* seguido de un elemento *\<a>* con una clase *.nav-link*:
 
@@ -419,6 +421,7 @@ Para crear **submenús desplegables** dentro de un elemento de la barra de naveg
 ## Formularios
 
 Bootstrap aplica estilos a los elementos de tipo formulario para convertirlos en elementos responsive, mejorando su apariencia y permitiendo crear diferentes alineaciones como en el resto de elementos de Bootstrap ya vistos. 
+
 La estructura básica de un formulario es la siguiente:
 
 ```html
