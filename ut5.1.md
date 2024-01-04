@@ -96,7 +96,7 @@ Para indicar el tamaño de columna debemos utilizar la siguiente sintaxis:
 
     col-\#
 
-El valor del **\#** será uno entre **1 y 12**. El restante del valor indicado será el que debamos de distribuir entre el resto de columnas (sumando 12).
+El valor del **\#** será uno entre **1 y 12**. El restante del valor indicado será el que debamos de distribuir entre el resto de columnas (sumando 12). Si usáramos *col-auto* el tamaño se ajustaría respecto al contenido del elemento.
 
 ```html
     <div class="container"> 
