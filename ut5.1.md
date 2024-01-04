@@ -115,11 +115,9 @@ El valor del **\#** será uno entre **1 y 12**. El restante del valor indicado s
 
 ### Breakpoints
 
-El sistema de cuadrícula de Bootstrap puede a su vez adaptarse a seis **breakpoints**
+El sistema de cuadrícula de Bootstrap puede a su vez adaptarse a seis **breakpoints** predeterminados basados en *media queries*:
 
-predeterminados basados en *media queries*:
-
-![](media/1eccf6eb2820695c682e961fed6ed891.jpeg)
+![](media/breakpoints_bootstrap.png)
 
 De esta manera el prefijo de clases cambiará a *col-{breakpoint}* tal y como se muestra en la siguiente tabla:
 
