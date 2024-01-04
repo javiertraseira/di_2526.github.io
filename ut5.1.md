@@ -3,7 +3,7 @@
 ## Introducción a Bootstrap
 
 ```note
-Bootstrap es un framework CSS (y JS) utilizado para el desarrollo de interfaces web de forma estandarizada para que se adapten a cualquier dispositivo.
+**Bootstrap** es un framework CSS (y JS) utilizado para el desarrollo de interfaces web de forma estandarizada para que se adapten a cualquier dispositivo.
 ```
 
 Bootstrap se desarrolló inicialmente por Twitter en 2010, para estandarizar las herramientas de desarrollo de la compañía.
@@ -298,7 +298,8 @@ La propiedad **jusfify-content** funciona al igual que en Flexbox alineando en h
 Con solo utilizar la clase **table** en nuestro código dentro del elemento **table** (\<table class="**table**"\>) podemos obtener lo siguiente directamente:
 
 ![](media/8a8b79f735b2caaad356b1d693af0f20.png)
-![](media/e17b85a6c4c376389b65c805d344f05c.jpeg)
+
+![](media/e17b85a6c4c376389b65c805d344f05c.png)
 
 Las reglas que define Bootstrap 5 permiten mostrar las filas separadas por una línea horizontal, los textos de la cabecera en negrita y la tabla se expandirá por defecto a todo su contenedor.
 
