@@ -242,7 +242,7 @@ Con dicha clase moveremos las columnas a la derecha tantas posiciones como el n�
 
 ### Margin y padding
 
-Bootstrap también tiene clases para controlar el **margin** y el **padding** para no tener que recurrir a CSS, usando para ello el formato siguiente
+Bootstrap también tiene clases para controlar el **margin** y el **padding** para no tener que recurrir a CSS, usando para ello el formato siguiente:
 
     {propiedad}{lados}-{tamaño}
 
@@ -311,9 +311,7 @@ Pueden utilizarse numerosas clases auxiliares (table-primary, table-secondary, t
 
 ### Botones
 
-Para crear botones en Bootstrap se utilizará "*button*", y alguna de las siguientes **clases**
-
-listadas a continuación con la siguiente apariencia.
+Para crear botones en Bootstrap se utilizará "*button*", y alguna de las siguientes **clases** listadas a continuación con la siguiente apariencia:
 
 ![](media/e8c719bfcfb1828c19d9d693fa04bcf0.jpeg)
 
