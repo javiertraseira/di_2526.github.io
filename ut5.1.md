@@ -16,7 +16,7 @@ La documentación está disponible en <https://getbootstrap.com/docs/5.3>
 
 ![](media/7d6f06c1b29b7b47b3e7fa85e79fac00.png)![](media/1dff958f3fd08966a66844bcf7684baa.jpeg)
 
-Bootstrap sigue el concepto de **mobile first**. Esto significa que la preocupación del framework es primero desarrollar una página que funcione perfectamente en dispositivos móviles y luego en el escritorio.
+Bootstrap sigue el concepto de **mobile first**. Esto significa que la preocupación del Framework es primero desarrollar una página que funcione perfectamente en dispositivos móviles y luego en el escritorio.
 
 Bootstrap además está plentamente basado en **Flexbox** y *CSS3*.
 
@@ -65,11 +65,9 @@ El código para JS deberá de añadirse al final de la página HTML, justo antes
 
 Bootstrap incluye un potente sistema de rejillas (grid) para la construcción de diseños de todas las formas y tamaños.
 
-Bootstrap utiliza un modelo de cuadrícula basado en dos tipos de contenedores y una rejilla de hasta **12 columnas** (con Flexbox) con varios niveles que resulta muy flexible, y que como veremos podemos también alterar cuando nos resulte conveniente.
+Bootstrap utiliza un modelo de cuadrícula basado en dos tipos de contenedores y una rejilla de hasta **12 columnas**, basada en Flexbox, con varios niveles que resulta muy práctica, y que como veremos podemos alterar cuando nos resulte conveniente.
 
-El sistema de cuadrícula utiliza tres clases CSS principales para crear el diseño necesario:
-
-.**container**, .**row** y .**col**. El contenedor cubre el diseño completo, luego las filas y luego las columnas.
+El sistema de cuadrícula utiliza <u>tres clases</u> CSS principales para crear el diseño necesario: **.container**, **.row** y **.col**. El contenedor cubre el diseño completo, luego las filas y luego las columnas.
 
 ![](media/bc2e59fb452aa03ae5cedbfb7b61ade4.png)
 
