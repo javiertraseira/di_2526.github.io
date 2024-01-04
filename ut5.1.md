@@ -242,7 +242,9 @@ Con dicha clase moveremos las columnas a la derecha tantas posiciones como el n�
 
 ### Margin y padding
 
-Bootstrap también tiene clases para controlar el **margin** y el **padding** para no tener que recurrir a CSS, usando para ello el formato *{propiedad}{lados}-{tamaño}*
+Bootstrap también tiene clases para controlar el **margin** y el **padding** para no tener que recurrir a CSS, usando para ello el formato siguiente
+
+    {propiedad}{lados}-{tamaño}
 
 Donde *propiedad* puede ser:
 - m - para clases que establecen margin
@@ -260,7 +262,7 @@ Por último el *tamaño* puede variar entre 0 y 5.
 
 ### Ocultar elementos
 
-Con la clase *.d-{tamaño}-{none|block}* podemos mostrar u ocultar elementos que indiquemos para ciertos tamaños.
+Con la clase *\.d-{tamaño}-{none|block}* podemos mostrar u ocultar elementos que indiquemos para ciertos tamaños.
 
 | **Efecto** | **Clase**    | 
 |-----------|---------------------|
