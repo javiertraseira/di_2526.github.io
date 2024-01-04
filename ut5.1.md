@@ -166,6 +166,22 @@ Se pueden hacer combinaciones según diferentes tamaños (para sm y xl) y así o
 
 ![](media/c890926478f5a27ac6da167924844936.png)![](media/71ab04427c00d1ea4243046471339027.png) 
 
+### Contenedor
+
+Ya hemos dicho que el contenedor es el elemento de diseño más básico en Bootstrap y es imprescindible para aplicar nuestro sistema de cuadrícula predeterminado. 
+
+El contenedor puede personalizarse de la siguiente forma en su definición:
+
+- *.container* por defecto que establece un *max-width* en cada breakpoint responsive.
+- *.container-fluid*, que mantiene el ancho 100% de la ventana siempre.
+- *.container-{breakpoint}*, que mantiene el ancho 100% hasta el breakpoint indicado.
+
+```html
+<div class="container-fluid"> 
+<!-- Contenido fluído aquí --> 
+</div>
+```
+
  
 ### Columnas de fila
 
