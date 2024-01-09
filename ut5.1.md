@@ -20,9 +20,11 @@ Bootstrap sigue el concepto de **mobile first**. Esto significa que la preocupac
 
 Bootstrap además está plentamente basado en **Flexbox** y *CSS3*.
 
-Las funciones disponibles en Bootstrap ofrecen una experiencia rica al usuario. Además Bootstrap se basa en las tendencias de diseño utilizadas en este momento.
+Las funciones disponibles en Bootstrap ofrecen una experiencia rica al usuario. Además está plentamente basado en Flexbox y usa las tendencias de diseño del mercado.
 
-Características de Bootstrap:
+Actualmente es el Framework frontend de CSS más usado en 2023 (más de un 25%).
+
+Características de **Bootstrap 5**:
 
 -   Mobile First
 -   Basado en Flexbox
@@ -446,9 +448,22 @@ Para crear **submenús desplegables** dentro de un elemento de la barra de naveg
 
 ## Formularios
 
+Bootstrap aplica estilos a los elementos de tipo formulario para convertirlos en elementos responsive, mejorando su apariencia y permitiendo crear diferentes alineaciones como en el resto de elementos de Bootstrap ya conocidos:
+- Controles de Formulario: Bootstrap estiliza las entradas de texto y áreas de texto con soporte para múltiples estados.
+- Select: Se mejoran los elementos select predeterminados del navegador con una apariencia inicial personalizada.
+- Checks y radio buttons: Utiliza botones de radio y checks personalizados para seleccionar opciones de entrada.
+- Rangos: Reemplaza las entradas de rango predeterminadas del navegador.
+- Etiquetas flotantes: Diseñadas para flotar sobre los campos de entrada.
+- Layout: Permite utilizar cuadrículas complejas con los formularios.
+- Validaciones: Permite validar formularios con estilos y comportamientos de validación nativos o personalizados.
+
+
 Bootstrap aplica estilos a los elementos de tipo formulario para convertirlos en elementos responsive, mejorando su apariencia y permitiendo crear diferentes alineaciones como en el resto de elementos de Bootstrap ya vistos. 
 
-La estructura básica de un formulario es la siguiente:
+Básicamente, la estructura general de un formulario sería como la siguiente:
+- Usar *label* for para describir cada control de formulario (accesibilidad)
+- No olvidar utilizar el atributo *type* para cada una de los elementos *input* del formulario (por ejemplo, email para las direcciones de correo electrónico o number para información numérica)
+
 
 ```html
 <form> 
