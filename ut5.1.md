@@ -328,6 +328,21 @@ Para crear botones en Bootstrap se utilizará **btn**, y alguna de las siguiente
 
 Utilizar este estándar ayuda a que los visitantes se sientan cómodos navegando ya que seguramente sus colores/formas les sean familiares de otros sitios/interfaces.
 
+Disponemos de diferentes clases para definir el tamaño de los botones: *.btn-sm*, para botones pequeños y *.btn-lg*, para botones grandes. 
+
+Por ejemplo:
+
+```html
+<button type="button" class="btn btn-sm">btn-sm</button> 
+<button type="button" class="btn btn-lg">btn-lg</button>
+```
+
+Para que un botón aparezca **activado** o **desactivado** utilizamos las clases .active y .disabled. Se pueden usar para botones, inputs y enlaces.
+
+```html
+<button type="button" class="btn btn-lg btn-primary" disabled>Boton primario</button>
+```
+
 ### Imágenes
 
 Las imágenes en Bootstrap se hacen responsive con **.img-fluid**. Esto aplica un **max-width: 100%** y **height: auto** a la imagen para que se escale con el ancho de su elemento padre.
@@ -338,7 +353,7 @@ Las imágenes en Bootstrap se hacen responsive con **.img-fluid**. Esto aplica u
 
 ![](media/452f144515c107e2b8f7552176152d98.png)
 
-Las siguientes clases se utilizan para personalizar la apariencia de **imágenes** en BS:
+Las siguientes clases se utilizan para personalizar la apariencia de **imágenes**:
 
 ![](media/f1c2bf257b685e4dbd6929f35eadb52c.jpeg)
 
