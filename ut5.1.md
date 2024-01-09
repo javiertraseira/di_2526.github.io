@@ -323,7 +323,7 @@ Pueden utilizarse numerosas clases auxiliares (table-primary, table-secondary, t
 
 ### Botones
 
-Para crear botones en Bootstrap se utilizará "*button*", y alguna de las siguientes **clases** listadas a continuación con la siguiente apariencia:
+Para crear botones en Bootstrap se utilizará **btn**, y alguna de las siguientes **clases** listadas a continuación con la siguiente apariencia:
 
 ![](media/e8c719bfcfb1828c19d9d693fa04bcf0.jpeg)
 
