@@ -170,9 +170,9 @@ Ya hemos dicho que el contenedor es el elemento de diseño más básico en Boots
 
 El contenedor puede personalizarse de la siguiente forma en su definición:
 
-- *.container* por defecto que establece un *max-width* en cada breakpoint responsive.
-- *.container-fluid*, que mantiene el ancho 100% de la ventana siempre.
-- *.container-{breakpoint}*, que mantiene el ancho 100% hasta el breakpoint indicado.
+- *.container* por defecto establece un *max-width* en cada breakpoint responsive.
+- *.container-fluid*  mantiene el ancho 100% de la ventana siempre.
+- *.container-{breakpoint}* mantiene el ancho 100% hasta el breakpoint indicado.
 
 ```html
 <div class="container-fluid"> 
@@ -182,7 +182,6 @@ El contenedor puede personalizarse de la siguiente forma en su definición:
 
  
 ### Columnas de fila
-
 
 Para establecer un número columnas predeterminadas, se pueden utilizar las clases responsive **.row-cols-\#** y así establecer rápidamente la cantidad de columnas que mejor representen el contenido y diseño.
 
