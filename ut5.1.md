@@ -62,7 +62,6 @@ El código para JS deberá de añadirse al final de la página HTML, justo antes
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 ```
 
-
 ## Cuadrícula (Grid)
 
 Bootstrap incluye un potente sistema de rejillas (grid) para la construcción de diseños de todas las formas y tamaños.
@@ -271,7 +270,23 @@ Y *lados* puede ser:
 - y - para clases que establecen tanto *-top como *-bottom
 - (*blanco*) para clases que establecen un margin/padding en los 4 lados del elemento.
 
-Por último el *tamaño* puede variar entre 0 y 5.
+Por último, el *tamaño* puede variar entre 0 y 5.
+
+### Ancho respecto los padres
+
+Podemos utilizar también la clase *w-{25%|50%|75%|100%}* para dar soporte al ancho respecto al contenedor padre.
+
+Así de esta forma podemos tener:
+
+```html
+<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div> 
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div> 
+<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div> 
+<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div> 
+<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+```
+
+![](media/4cb7ssfdfwe4rwe4rsdf6756fghe11.png)
 
 
 ### Ocultar elementos
@@ -479,6 +494,20 @@ Básicamente, la estructura general de un formulario sería como la siguiente:
 
 ![](media/navbar_bootstrap4.png)
 
+### Menús select
+
+Los menús de selección se definen mediante la etiqueta <select> y solo necesitan la clase personalizada form-select para activar los estilos de Bootstrap. Los estilos están limitados a la apariencia de *\<select>* y no pueden modificar los *\<option>* debido a las limitaciones del navegador.
+
+```html
+<select class="form-select"> 
+<option selected>Abre este menú select</option> 
+<option value="1">Uno</option> 
+<option value="2">Dos</option> 
+<option value="3">Tres</option> 
+</select>
+```
+
+
 ### Validaciones
 
 La validación de formularios HTML se aplica a través de dos pseudoclases de CSS, *:invalid* y *:valid*. Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. De esta forma, el color de los elementos del formulario cambiará. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
@@ -509,6 +538,6 @@ La validación de formularios HTML se aplica a través de dos pseudoclases de CS
 ![](media/navbar_bootstrap5.png)
 
 
-### Validaciones
+### ValidProcesar los datos del formulario
 
 Para procesar los datos enviados por el formulario, necesitarás emplear un lenguaje de programación del lado del **servidor**(backend), como JavaScript, PHP, o cualquier otro de tu elección. El código de procesamiento del formulario se colocará en el atributo action del elemento *\<form>*.
