@@ -507,6 +507,7 @@ Los menús de selección se definen mediante la etiqueta <select> y solo necesit
 </select>
 ```
 
+![](media/select_bootstrap.png)
 
 ### Validaciones
 
