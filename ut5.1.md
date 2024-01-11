@@ -280,11 +280,11 @@ Con la clase *\.d-{tamaño}-{none|block}* podemos mostrar u ocultar elementos qu
 | **Efecto** | **Clase**    | 
 |-----------|---------------------|
 |  Ocultar para todos   |  d-none | 
-|  Ocultar solo para xs    |  d-none d-sm-block | 
-|  Ocultar solo para sm    |  d-sm-none d-md-block | 
-|  Ocultar solo para md    |  d-md-none d-lg-block | 
-|  Ocultar solo para lg    |  d-lg-none d-xl-block | 
-|  Ocultar solo para xl    |  d-xl-none d-xxl-block | 
+|  Ocultar solo para xs    |  d-none d-sm-block|flex | 
+|  Ocultar solo para sm    |  d-sm-none d-md-block|flex | 
+|  Ocultar solo para md    |  d-md-none d-lg-block|flex | 
+|  Ocultar solo para lg    |  d-lg-none d-xl-block|flex | 
+|  Ocultar solo para xl    |  d-xl-none d-xxl-block|flex | 
 |  Visible para todos   |  d-block | 
 |  Visible solo para xs   |  d-block d-sm-none | 
 |  Visible solo para sm   |  d-none d-sm-block d-md-none | 
@@ -449,20 +449,19 @@ Para crear **submenús desplegables** dentro de un elemento de la barra de naveg
 ## Formularios
 
 Bootstrap aplica estilos a los elementos de tipo formulario para convertirlos en elementos responsive, mejorando su apariencia y permitiendo crear diferentes alineaciones como en el resto de elementos de Bootstrap ya conocidos:
-- Controles de Formulario: Bootstrap estiliza las entradas de texto y áreas de texto con soporte para múltiples estados.
-- Select: Se mejoran los elementos select predeterminados del navegador con una apariencia inicial personalizada.
-- Checks y radio buttons: Utiliza botones de radio y checks personalizados para seleccionar opciones de entrada.
-- Rangos: Reemplaza las entradas de rango predeterminadas del navegador.
-- Etiquetas flotantes: Diseñadas para flotar sobre los campos de entrada.
-- Layout: Permite utilizar cuadrículas complejas con los formularios.
-- Validaciones: Permite validar formularios con estilos y comportamientos de validación nativos o personalizados.
-
+- **Controles de Formulario**: Bootstrap estiliza las entradas de texto y áreas de texto con soporte para múltiples estados.
+- **Select**: Se mejoran los elementos select predeterminados del navegador con una apariencia inicial personalizada.
+- **Checks y radio buttons**: Utiliza botones de radio y checks personalizados para seleccionar opciones de entrada.
+- **Rangos**: Reemplaza las entradas de rango predeterminadas del navegador.
+- **Etiquetas flotantes**: Diseñadas para flotar sobre los campos de entrada.
+- **Layout**: Permite utilizar cuadrículas complejas con los formularios.
+- **Validaciones**: Permite validar formularios con estilos y comportamientos de validación nativos o personalizados.
 
 Bootstrap aplica estilos a los elementos de tipo formulario para convertirlos en elementos responsive, mejorando su apariencia y permitiendo crear diferentes alineaciones como en el resto de elementos de Bootstrap ya vistos. 
 
 Básicamente, la estructura general de un formulario sería como la siguiente:
-- Usar *label* for para describir cada control de formulario (accesibilidad)
-- No olvidar utilizar el atributo *type* para cada una de los elementos *input* del formulario (por ejemplo, email para las direcciones de correo electrónico o number para información numérica)
+- Usar *label* for para describir cada control de formulario (para la accesibilidad)
+- No olvidar utilizar el atributo *type* para cada uno de los elementos *input* del formulario (por ejemplo, *email* para las direcciones de correo electrónico o *number* para información numérica)
 
 
 ```html
@@ -481,7 +480,7 @@ Básicamente, la estructura general de un formulario sería como la siguiente:
 
 ### Validaciones
 
-La validación de formularios HTML se aplica a través de dos pseudoclases de CSS, *:invalid* y *:valid*. Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
+La validación de formularios HTML se aplica a través de dos pseudoclases de CSS, *:invalid* y *:valid*. Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. De esta forma, el color de los elementos del formulario cambiará. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
 
 ```html
 <form class="row g-3 needs-validation" novalidate> 
@@ -507,3 +506,8 @@ La validación de formularios HTML se aplica a través de dos pseudoclases de CS
 ```
 
 ![](media/navbar_bootstrap5.png)
+
+
+### Validaciones
+
+Para procesar los datos enviados por el formulario, necesitarás emplear un lenguaje de programación del lado del **servidor**(backend), como JavaScript, PHP, o cualquier otro de tu elección. El código de procesamiento del formulario se colocará en el atributo action del elemento *\<form>*.
