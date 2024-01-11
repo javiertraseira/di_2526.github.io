@@ -164,7 +164,8 @@ Se pueden hacer combinaciones según diferentes tamaños (para sm y xl) y así o
 
 ![](media/ced415d22cfcc46804995ee57e9d73b9.png)
 
-![](media/c890926478f5a27ac6da167924844936.png)![](media/71ab04427c00d1ea4243046471339027.png) 
+![](media/c890926478f5a27ac6da167924844936.png)
+![](media/71ab04427c00d1ea4243046471339027.png) 
 
 ### Contenedor
 
