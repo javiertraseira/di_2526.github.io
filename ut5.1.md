@@ -496,7 +496,7 @@ Básicamente, la estructura general de un formulario sería como la siguiente:
 
 ### Menús select
 
-Los menús de selección se definen mediante la etiqueta <select> y solo necesitan la clase personalizada form-select para activar los estilos de Bootstrap. Los estilos están limitados a la apariencia de *\<select>* y no pueden modificar los *\<option>* debido a las limitaciones del navegador.
+Los menús de selección se definen mediante la etiqueta *\<select>* y solo necesitan la clase personalizada *form-select* para activar los estilos de Bootstrap. Los estilos están limitados a la apariencia de *\<select>* y no pueden modificar los *\<option>* debido a las limitaciones del navegador.
 
 ```html
 <select class="form-select"> 
@@ -508,6 +508,31 @@ Los menús de selección se definen mediante la etiqueta <select> y solo necesit
 ```
 
 ![](media/select_bootstrap.png)
+
+### Checks y radios
+
+Los checks y radio buttons predeterminados del navegador se reemplazan con la ayuda de la clase *\.form-check*, una serie de clases para ambos tipos de entrada que mejoran el diseño y el comportamiento de sus respectivos elementos HTML.
+
+```html
+<div class="form-check"> 
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault"> Casilla de verificación por defecto </label> 
+    </div> 
+    <div class="form-check"> 
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked> 
+    <label class="form-check-label" for="flexCheckChecked"> Casilla de verificación marcada </label> 
+    </div> 
+    <div class="form-check"> 
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"> 
+    <label class="form-check-label" for="flexRadioDefault1"> Radio por defecto </label>
+    </div>
+    <div class="form-check"> 
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked> 
+    <label class="form-check-label" for="flexRadioDefault2"> Radio marcado por defecto </label> 
+</div> 
+```
+
+![](media/checkradios_bootstrap.png)
 
 ### Validaciones
 
