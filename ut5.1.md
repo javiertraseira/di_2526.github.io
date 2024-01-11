@@ -564,6 +564,6 @@ La validación de formularios HTML se aplica a través de dos pseudoclases de CS
 ![](media/navbar_bootstrap5.png)
 
 
-### ValidProcesar los datos del formulario
+### Procesar los datos del formulario
 
 Para procesar los datos enviados por el formulario, necesitarás emplear un lenguaje de programación del lado del **servidor**(backend), como JavaScript, PHP, o cualquier otro de tu elección. El código de procesamiento del formulario se colocará en el atributo action del elemento *\<form>*.
