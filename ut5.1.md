@@ -536,7 +536,14 @@ Los checks y radio buttons predeterminados del navegador se reemplazan con la ay
 
 ### Validaciones
 
-La validación de formularios HTML se aplica a través de dos pseudoclases de CSS, *:invalid* y *:valid*. Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. De esta forma, el color de los elementos del formulario cambiará. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
+La validación de formularios puede hacerse de forma estándar mediante el propio **HTML5**. Esto se realiza mediante el uso de atributos de validación en los elementos del formulario. Para ello podremos utilizar en los campos las siguientes propiedades:
+- **required**: Especifica si un campo de formulario debe completarse antes de que se pueda enviar el formulario.
+- **minlength** y **maxlength**: Especifican la longitud mínima y máxima de los datos de texto 
+- **min** y **max** : Valores mínimo y máximo de los tipos de entrada numéricos.
+- **type**: Especifica si los datos deben ser un número, una dirección de correo electrónico o algún otro tipo de preajuste específico.
+- **pattern**: Especifica una expresión regular que define un patrón que los datos que se introduzcan deben seguir.
+
+La validación de formularios HTML puede aplicarse también a través de las pseudoclases de CSS *:invalid* y *:valid*, aunque para ello necesitaremos código Javascript (lo veremos más adelante). Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
 
 ```html
 <form class="row g-3 needs-validation" novalidate> 
