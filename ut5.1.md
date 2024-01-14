@@ -274,7 +274,7 @@ Por último, el *tamaño* puede variar entre 0 y 5.
 
 ### Ancho respecto los padres
 
-Podemos utilizar también la clase *w-{25%|50%|75%|100%}* para dar soporte al ancho respecto al contenedor padre.
+Podemos utilizar también la clase \w-{25%|50%|75%|100%} para dar soporte al ancho respecto al contenedor padre.
 
 Así de esta forma podemos tener:
 
@@ -291,7 +291,7 @@ Así de esta forma podemos tener:
 
 ### Ocultar elementos
 
-Con la clase *\.d-{tamaño}-{none|block}* podemos mostrar u ocultar elementos que indiquemos para ciertos tamaños.
+Con la clase \d-{tamaño}-{none|block} podemos mostrar u ocultar elementos que indiquemos para ciertos tamaños.
 
 | **Efecto** | **Clase**    | 
 |-----------|---------------------|
