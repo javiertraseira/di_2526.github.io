@@ -34,6 +34,19 @@ Lo más interesante de Javascript es la posibilidad de utilizar diversas **API**
 
 ![](media/3b852d968ac9cb12dc4350589b88a3f5.png)
 
+**APIs del navegador de Javascript**
+Los navegadores ofrecen una API con funcionalidades para crear dinámicamente contenido HTML y establecer estilos CSS, hasta capturar y manipular un vídeo desde la cámara web del usuario, o generar gráficos 3D y muestras de sonido.
+
+**APIs de terceros**
+Permiten a los desarrolladores incorporar funcionalidades en sus sitios de otros proveedores de contenidos o servicios como Twitter, Google, etc.
+
+**Librerías de terceros**
+Permiten construir y añadir funcionalidades para construir rápidamente sitios y aplicaciones. Las más conocidas son React o jQuery
+
+**Frameworks completos**
+Los Frameworks, o marcos de trabajo, podrían definirse como una especie de plantilla, a partir de la cual el desarrollador genera su aplicación web. Los más conocidos son Angular o Node JS.
+
+
 ## Características de Javascript
 
 ### Ubicación del código Javascript
@@ -77,6 +90,19 @@ var text = "Hola, me llamo Javier";
 let number = 42;
 ```
 
+### Operadores
+
+Los principales **operadores** en Javascript se parecen a los que ya conocemos de otros lenguajes de programación:
+
+| **Operación**                   | **Descripción**                                                         | **Símbolo**| **Ejemplo**                            |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Suma/concatenación              | Se usa para sumar dos números, o juntar dos cadenas en una.                   |    +       |     6 + 9;  "Hola " + "adios";   |
+| Resta, multiplicación, división | Operaciones matemáticas básicas de resta, multiplicación y división           | -  *   /   |    9 - 3;  8 * 2;   9/3;         |
+| Operador de asignación          | Vistos anteriormente: asignan un valor a una variable.                        |    =       |   let miVariable = 'Bob';        |
+| Igualdad                        | Comprueba si dos valores son iguales entre sí                                 |    ==      |   2 == "2" (true)                |
+| Igualdad estricta               | Comprueba si dos valores son iguales entre sí y si son el mismmo tipo de dato |    ===     |   2 === "2" (false)              |
+
+
 ### Condicionales
 
 La forma de condicional más común en Javascript, como en la mayoría de lenguajes, es el if... else.
@@ -91,6 +117,16 @@ if (helado === "chocolate") {
 alert("No es helado de chocolate pero esta bien");
 } 
 ```
+También podemos utilizar el switch:
+
+```javascript
+switch (expresion) {
+  case label1:
+    (..sentencias..);
+    [break;]
+..  }
+```
+
 
 ### Bucles
 
@@ -159,6 +195,25 @@ const saludo = function saludar() {
 }; 
 …
 saludo(); // 'Hola'
+```
+
+### Funciones anónimas
+
+En JavaScript podemos declarar funciones **anónimas**. Son todas aquellas que no han sido declaradas con un nombre. En este lenguaje podemos declarar este tipo de elemento usando cualquiera de los modos de escribir funciones.
+
+- Si utilizamos el arrow function, () => {} siempre definiremos una función anónima:
+
+```javascript
+    console.log(materials.map((material) => material.length));
+```
+
+
+- O con la palabra clave *function() { }*
+
+```javascript
+    console.log(materials.map(function(material) {
+    return material.length;
+    }));
 ```
 
 ### El árbol DOM
