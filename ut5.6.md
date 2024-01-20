@@ -103,6 +103,137 @@ Al solicitar un servicio de una API REST, esta responderá con **códigos de res
 | 503        | Servicio no disponible                  |
 
 
+## APIs en Javascript
+
+### Recuperar datos por fetch
+
+Las APIs interactúan con el código usando uno o más objetos JavaScript, que sirven como contenedores para los datos que usa la API (contenidos en las propiedades del objeto), y la funcionalidad que la API provee (contenida en los métodos del objeto).
+
+La primera forma de obtener dichos datos, y la más sencilla, es utilizando *fetch*, que es una nueva implementación de Javascript para ello. 
+El único parámetro requerido de *fetch()* es una url. El método por defecto en este caso es **GET**.
+
+```javascript
+fetch('http://example.com/movies.json') 
+```
+
+### Enviar datos por fetch
+
+El segundo parámetro de *fetch* es opcional, y recibe parámetros extras acerca del tipo de petición que vamos hacer, si queremos enviar datos, bajo qué tipo va a ir o si se va a enviar algún tipo de headers.
+
+El método **POST** se utiliza para enviar datos al servidor y crear un nuevo recurso.
+
+```javascript
+fetch(url, { 
+method: 'POST’,
+body: JSON.stringify({ 
+	id:1, 
+	name: "Taylor", 
+	surname: "Swift" 
+	}), 
+headers:{ 
+	'Content-Type': 'application/json’ 
+	} 
+})
+```
+
+###  Solicitudes XMLHttpRequest 
+
+Para recuperar datos de una API en JavaScript de forma clásica se ha utilizado siempre *XMLHttpRequest*, que es un estándar de la W3C y basado en AJAX. AJAX es una tecnología que hace las páginas dinámicas sin necesidad de recargarlas.
+
+```javascript
+var xhttp = new XMLHttpRequest(); // Crear un nuevo XMLHttpRequest 
+
+xhttp.onreadystatechange = function() 
+{ // Si nada da error
+ if (this.readyState == 4 && this.status == 200) { 	
+  // La respuesta viene en formato texto, hay que hacer un run parse
+  console.log(JSON.parse(this.responseText)); } 
+}; 
+// Endpoint de la API y método que se va a usar para llamar 
+xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon", true);
+xhttp.setRequestHeader("Content-type", "application/json"); 
+// Para mandar parámetros a la API, podríamos hacerlo desde el método send()
+xhttp.send(null); 
+```
+
+###  Solicitudes mediante Axios 
+
+Tanto *XMLHttpRequest* como *fetch* son nativas de JavaScript, pero *Axios* es una librería externa que tendremos que importar en nuestro proyecto antes de usarla.
+
+Axios tiene algunas ventajas adicionales como el parsear automáticamente las respuestas JSON y el poder usar tokens.
+
+###  Conversión de los datos
+
+Para la conversión de los datos en *JSON* (salvo en Axios) se puede usar cualquiera de estas dos formas:
+
+```javascript
+var data = JSON.parse(xhr.responseText);   
+var data = response.json(); //Recomendado cuando se usa fetch con async/await
+```
+
+Una vez que se obtienen los datos, pueden utilizarse según las necesidades de la aplicación.
+
+###  Asincronismo
+
+Para asegurarnos que una operación ha terminado antes de que empiece otra, utilizaremos las **operaciones asíncronas**. Cuando trabajamos con *fetch* podemos crear crear función asíncrona cambiando su definición de la siguiente forma:
+
+```javascript
+async function fetchData() { 
+try { 
+	let response = await fetch("https://api.ejemplo.com/data"); 
+	let data = await response.json(); // Trabajar con los datos obtenidos 
+} catch (error) { 
+console.error("Error:", error); } 
+}
+```
+
+- *async* se utiliza para definir una función asíncrona.
+- *await* se utiliza para esperar a que la respuesta se resuelva antes de continuar con el código.
+
+### Inserción de datos en una web
+
+El método *fetch()* devuelve lo que se denomina *promesa*. Después del método fetch() se debe incluir un then() a una **función** anónima para manejar la respuesta:
+
+```javascript
+fetch(url) 
+   .then(function() {
+   // Manejar la respuesta
+})
+```
+
+Si la promesa devuelve *resolve*, la función anónima dentro del then será ejecutada. En caso contrario devolverá un *reject* y por tanto habrá que añadir un catch para capturar dicho error:
+
+```javascript
+fetch(url) 
+   .then(function() { 
+    // Manejar la respuesta
+     }) 
+    .catch(function() {
+    // Manejar el error
+    })
+```
+
+Habrá que utilizar el método *json()* visto para convertir los datos de la respuesta a JSON:
+
+```javascript
+fetch(url) 
+ .then((response) => {}) 
+    return response.json(); 
+   })
+```
+Como los datos JSON aún deben procesarse, debe agregarse otro *then()* a la declaración con otra función que tenga un argumento llamado, por ejemplo, *data*:
+
+```javascript
+fetch(url) 
+ .then((response) => {
+   return response.json(); 
+  }) 
+ .then((data) => { 
+  // Tratamiento de los datos JSON
+   })
+ ``` 
+
+
 ## Postman
 
 **Postman** es una aplicación que permite realizar peticiones de una manera simple para **testear APIs** de tipo **REST** propias o de terceros, entre otras múltiples funciones. Cuenta con una versión libre y con planes de pago para su uso (para equipos de desarrollo completos).
