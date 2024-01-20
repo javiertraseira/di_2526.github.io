@@ -217,7 +217,7 @@ Habrá que utilizar el método *json()* visto para convertir los datos de la res
 
 ```javascript
 fetch(url) 
- .then((response) => {}) 
+ .then((response) => {  
     return response.json(); 
    })
 ```
@@ -232,6 +232,66 @@ fetch(url)
   // Tratamiento de los datos JSON
    })
  ``` 
+Dentro de la función definida anteriormente podemos crear una variable para almacenar los datos completos devueltos en formato JSON.
+
+Después cada elemento podrá iterarse usando el método *map* y otra **función** para construir una estructura en *HTLM* que añadieremos posteriormente con *innerHTML*.
+
+```javascript
+fetch(url).then((response) => { 
+ return response.json(); 
+}).then((data) => { 
+ let tableData = ""; 
+ data.map((valores) => { 
+ tableData += `<tr> 
+  <td>${valores.nombre}</td> 
+  <td>${valores.apellidos}</td> 
+  </tr>`; 
+  }); 
+ }) 
+document.getElementById("fila").innerHTML = tableData;
+```
+
+## APIs en Java
+
+### Solicitar peticiones mediante URL 
+
+Primeramente se crea un objeto de tipo *URL* con la dirección de servicio de petición a dicha API y a continuación nos conectaremos con un objeto de conexión *HttpURLConnection* y se le establecerá que el método de conexión sea **GET** para a continuación proceder con la conexión.
+
+```java
+try {
+URL url = new URL(“https://weather.com/api/location“);
+HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+conn.setRequestMethod(“GET”);
+conn.connect();
+
+} catch(Exception e)
+```
+
+### Verificar código devuelto
+
+Para verificar si la petición es válida, se habrá de obtener el código **200** tal y como hemos visto ya.
+
+Para ello recuperaremos del objeto de conexión dicho código mediante el método getResponseCode() 
+Si no se devuelve un código 200 se generará una excepción y sino se continuará con el siguiente paso 3 para leer el flujo de datos devuelto (JSON o XML).
+
+```java
+...
+HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+conn.setRequestMethod(“GET”);
+conn.connect();
+
+int responsecod = con.getResponseCode();
+
+if (responsecod != 200 ) {
+         throw new RuntimeException(“”);
+} else {
+
+
+}
+```
+
+### Leer el flujo de datos devuelto 
+
 
 
 ## Postman
