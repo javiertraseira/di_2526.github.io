@@ -292,6 +292,25 @@ if (responsecod != 200 ) {
 
 ### Leer el flujo de datos devuelto 
 
+En este paso se leerá el flujo de datos devuelto (que podría ser JSON o XML).
+Usaremos un objeto *StringBuilder* y un *Scanner* que leerá del url mediante el método *openStream()*.
+
+```java
+...
+} else {
+  StringBuilder cadenaDevuelta = new StringBuilder();
+  Scanner sc = new Scanner(url.openStream());
+  while (sc.hasNext()) {
+   cadenaDevuelta.append(sc.nextLine());
+  }  sc.close();
+
+  System.out.println(CadenaDevuelta);
+}
+```
+
+### Conversión de los datos
+
+El trabajo con objetos *JSON* en Java no es nativo como en Javascript. No obstante, existen librerías como *JSON in Java* con la que se puede añadir como dependencia (en Maven) y que permiten el manejo de objetos JSON. 
 
 
 ## Postman
