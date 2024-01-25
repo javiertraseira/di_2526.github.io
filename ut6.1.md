@@ -340,8 +340,7 @@ El contenido deber ser suficientemente robusto para que pueda ser bien interpret
 
 Para comprobar el nivel de accesibilidad de un sitio web, se establecen los **niveles de conformidad**, que corresponden a la medida en que se satisfacen los puntos de verificación WCAG (WCAG 1.0 y 2.0), teniendo en cuenta los niveles de prioridad.
 
-![](media/a89d6d62e640ff67fa2b30796bbc2607.png)Los **niveles de conformidad** son tres:
-
+Los **niveles de conformidad** son tres:
 -   Nivel de conformidad **A**. Corresponde al nivel en que se
     satisfacen todos los puntos de verificación de **prioridad 1**.
 -   Nivel de conformidad **AA**. Corresponde al nivel en que se satisfacen todos los puntos de verificación de **prioridad 1 y 2**.
@@ -349,9 +348,6 @@ Para comprobar el nivel de accesibilidad de un sitio web, se establecen los **ni
 
 ![](media/1c28b22817ee4755e8f5aa256df6affb.jpeg)
 
-![](media/285eff372cb61fdef2cfab5148e183e7.png) ![](media/394b8455c97bc841697705cfccd12253.png) ![](media/5824457f3b06e03da6df69a5c878fa84.png)
-
-![](media/57b829413dadb76d47d63aaca8c0e16e.png)![](media/a97b403d7364e7c39fe4858d11519083.png)![](media/b7ae10b1be1c1cc544e10c54fa0cd4a2.jpeg)![](media/85978d990422464c89feca1b8bb8f0ed.png)![](media/85978d990422464c89feca1b8bb8f0ed.png)![](media/c1da8460ad3ba2102832922c853637dc.png)
 
 ![](media/55b20b99c8a09e3073978ae4e593144c.jpeg)
 
@@ -385,12 +381,11 @@ Dadas las diferencias entre las WCAG 2.0 y las WCAG 1.0 surgió la necesidad de 
 
 Así, en 2012 se actualizó esta norma UNE para adoptar directamente las WCAG 2.0. Esta norma UNE señala directamente qué partes de WCAG 2.0 se consideran requisitos y con qué nivel de prioridad.
 
-UNE 153101:2018
+### UNE 153101:2018
 
 Esta normativa experimental especifica las pautas y recomendaciones para la adaptación, creación y validación de documentos en **Lectura Fácil**.
 
-Esta norma experimental se aplica a textos y documentos escritos,
-independientemente del soporte en el que se presenten.
+Esta norma experimental se aplica a textos y documentos escritos, independientemente del soporte en el que se presenten.
 
 La Lectura Fácil trata de favorecer la adaptación y accesibilidad de contenidos (textos e
 imágenes) para que llegue la misma información a las personas.
