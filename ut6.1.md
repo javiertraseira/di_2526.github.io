@@ -17,7 +17,7 @@ De esta forma, cualquier aplicación accesible debe tener en cuenta la gran dive
 La accesibilidad realmente beneficia a todas las personas ante cualquier circunstancia o situación, incluso sin necesidad especial.
 
 ```note
-El diseño universal es un término de diseño definido por Ronald L. Mace y hace referencia al diseño de productos y entornos para las necesidades de las personas, independientemente de su edad, capacidad o estado.
+El **diseño universal** es un término de diseño definido por Ronald L. Mace y hace referencia al diseño de productos y entornos para las necesidades de las personas, independientemente de su edad, capacidad o estado.
 ```
 
 Un ejemplo de aplicación muy común de diseño universal es el ámbito automovilístico, que se esfuerza en ofrecer vehículos que se adaptan a todo tipo de personas a través de características como el ajuste del volante, pedales, asiento, retrovisores, etc.
@@ -215,7 +215,7 @@ Todas las Administraciones Públicas tienen obligación de dar cumplimiento a lo
 
 Esto se traduce en que todos los sitios web y aplicaciones de las administraciones públicas deben cumplir la norma **UNE-EN 301549:2022** de "Requisitos de accesibilidad para productos y servicios TIC" alineada a los Criterios de Conformidad de nivel A y AA de la [**WCAG 2.1** ](https://www.w3.org/WAI/WCAG21/quickref/)mas un conjunto de requisitos propio de la **UNE-EN 301549** que veremos más adelante.
 
-    Se puede encontrar esta información detallada en la web del Portal para la Administración Electrónica [https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Comunidad_Accesibili](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Comunidad_Accesibilidad.html) [dad.html](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Comunidad_Accesibilidad.html)
+📌Se puede encontrar esta información detallada en la web del Portal para la Administración Electrónica [https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Comunidad_Accesibili](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Comunidad_Accesibilidad.html) [dad.html](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Accesibilidad/pae_Comunidad_Accesibilidad.html)
 
 A finales del año 2007 también se publicó la **Ley 49/2007**, de 26 de diciembre, por la que se establece el *régimen de infracciones y sanciones en materia de igualdad de oportunidades, no discriminación y accesibilidad universal de las personas con discapacidad*.
 
@@ -298,7 +298,7 @@ En esta revisión, las catorce pautas se redujeron a cuatro principios fundament
 3.  **Comprensibilidad** (*Understandable*)
 4.  **Robustez** (*Robust*)
 
-    Se puede encontrar la información en la web del *W3C* <http://accesibilidadweb.dlsi.ua.es/?menu=principios-2.0> y descripciones detalladas en [http://www.sidar.org/traducciones/wcag20/es/comprender-](http://www.sidar.org/traducciones/wcag20/es/comprender-wcag20/Overview.html#contents) [wcag20/Overview.html\#contents](http://www.sidar.org/traducciones/wcag20/es/comprender-wcag20/Overview.html#contents)
+📌 Se puede encontrar la información en la web del *W3C* <http://accesibilidadweb.dlsi.ua.es/?menu=principios-2.0> y descripciones detalladas en [http://www.sidar.org/traducciones/wcag20/es/comprender-](http://www.sidar.org/traducciones/wcag20/es/comprender-wcag20/Overview.html#contents) [wcag20/Overview.html\#contents](http://www.sidar.org/traducciones/wcag20/es/comprender-wcag20/Overview.html#contents)
 
 ![](media/5c19469896a5c51bb9a5e1ab71e13711.jpeg)
 
@@ -360,8 +360,7 @@ La **WAI** (*Web Accessibility Initiative*) es una iniciativa (menos específica
 1.  Facilitar el acceso de las personas con discapacidad.
 2.  Desarrollar pautas de accesibilidad.
 3.  Mejorar herramientas para la evaluación y reparación de accesibilidad Web.
-4.  Llevar a cabo una labor educativa y de concienciación en relación a la importancia
-    del diseño accesible de páginas Web.
+4.  Llevar a cabo una labor educativa y de concienciación en relación a la importancia del diseño accesible de páginas Web.
 5.  Abrir nuevos campos en accesibilidad a través de la investigación en esta área.
 
 ![](media/ba6a147e4850ef43f7db0bb73aa1de31.png)
@@ -372,8 +371,7 @@ La **WAI** (*Web Accessibility Initiative*) es una iniciativa (menos específica
 
 Bajo el título de “*Aplicaciones informáticas para personas con discapacidad. Requisitos de accesibilidad para contenidos en la web*”, es una norma española (**UNE**), publicada en diciembre de 2004, que contempla las especificaciones que han de cumplir los contenidos web para que puedan ser accesibles.
 
-Se trata de una transposición de las Pautas de accesibilidad al contenido en la web
-(WCAG 1.0) desarrolladas por la iniciativa WAI, pero estructuradas de forma diferente.
+Se trata de una transposición de las Pautas de accesibilidad al contenido en la web (WCAG 1.0) desarrolladas por la iniciativa WAI, pero estructuradas de forma diferente.
 
 ### UNE 139803:2012
 
@@ -430,11 +428,6 @@ Valida gratis por URL de acuerdo a las WCAG 2.x. Se puede seleccionar nivel A, A
 
 Valida gratis por URL, también disponible como extensión para Chrome.
 El detalle del informe se muestra junto a la página, en el lateral izquierdo, y los resultados se pueden filtrar por WCAG 2.0 (A, AA, no admite AAA).
-
-![](media/bd00eca4e8c06814862e5b953ec342a6.png)
-
-![](media/c17c2956c3a5e1531d21bfb9d98120d9.png)
-
 
 En base al análisis automático de accesibilidad de las herramientas anteriores, se hace
 necesaria una **revisión manual de accesibilidad**.
