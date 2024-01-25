@@ -210,7 +210,7 @@ En edades avanzadas, puede existir pérdida de algunas de las capacidades asocia
 ## Legislación en España y en Europa
 
 ```note
-Todas las Administraciones Públicas tienen obligación de dar cumplimiento a los requisitos de accesibilidad impuestos por el Real Decreto 1112/2018 de 7 de septiembre (y la Directiva 2016/2102), sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público o que trabajen para este.
+Todas las Administraciones Públicas tienen obligación de dar cumplimiento a los requisitos de accesibilidad impuestos por el **Real Decreto 1112/2018** de 7 de septiembre (y la **Directiva 2016/2102**), sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público o que trabajen para este.
 ```
 
 Esto se traduce en que todos los sitios web y aplicaciones de las administraciones públicas deben cumplir la norma **UNE-EN 301549:2022** de "Requisitos de accesibilidad para productos y servicios TIC" alineada a los Criterios de Conformidad de nivel A y AA de la [**WCAG 2.1** ](https://www.w3.org/WAI/WCAG21/quickref/)mas un conjunto de requisitos propio de la **UNE-EN 301549** que veremos más adelante.
@@ -426,8 +426,7 @@ Valida gratis por URL de acuerdo a las WCAG 2.x. Se puede seleccionar nivel A, A
 
 **WAV**
 
-Valida gratis por URL, también disponible como extensión para Chrome.
-El detalle del informe se muestra junto a la página, en el lateral izquierdo, y los resultados se pueden filtrar por WCAG 2.0 (A, AA, no admite AAA).
+Valida gratis por URL, también disponible como extensión para Chrome. El detalle del informe se muestra junto a la página, en el lateral izquierdo, y los resultados se pueden filtrar por WCAG 2.0 (A, AA, no admite AAA).
 
 En base al análisis automático de accesibilidad de las herramientas anteriores, se hace
 necesaria una **revisión manual de accesibilidad**.
