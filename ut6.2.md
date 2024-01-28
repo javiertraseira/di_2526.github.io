@@ -358,9 +358,8 @@ Si la tabla contiene datos, el elemento **caption** permitirá a los lectores de
 
 La propiedad **summary** proporciona una breve descripción de cómo se organizan los datos de la tabla. Es útil para tablas con muchos datos y una estructura compleja.
 
-<table summary="El curso de CSS dura 20 horas de 9:30 a 10:30 y el curso de HTML de 11 a 13:30 tiene una duración de 15 horas">
-
 ```html
+<table summary="El curso de CSS dura 20 horas de 9:30 a 10:30 y el curso de HTML de 11 a 13:30 tiene una duración de 15 horas">
 <caption> Horario curso de formación </caption>
 <tr>
   <td> </td>
