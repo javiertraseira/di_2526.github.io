@@ -116,7 +116,7 @@ Hay dos tipos de nodos:
 
 ## Clase Application
 
-La clase **Application** perteneciente al paquete javafx.application, es el punto de partida de cualquier aplicación **JavaFX**.
+La clase **Application** perteneciente al paquete javafx.application, es el punto de partida de **JavaFX** ya que extenderá su clase principal.
 
 Por lo tanto, para crear una aplicación con *JavaFX* la clase principal deberá **heredar** de la clase *Application* y sobrescribir su método abstracto **start ()**, que es el método que permitirá inicializar la interfaz gráfica.
 
