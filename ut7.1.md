@@ -286,6 +286,29 @@ public static void main(String[] args) {
 }
 ```
 
+```java
+public class ControladorVentana1 implements Initializable {
+
+    @FXML
+    private Label label_prueba1;  //Se crean automáticamente al hacer Make Controller
+    @FXML
+    private Button btn_salir;
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        
+    }    
+
+    @FXML
+    private void click(ActionEvent event) {    //Manejo de uno los eventos
+        Button btn_salir = (javafx.scene.control.Button) event.getSource();
+        Stage stage = (javafx.stage.Stage) btn_salir.getScene().getWindow();
+        stage.close();
+    }
+}
+```
+
+
 Los elementos por tanto que utilizaremos para crear aplicaciones en JavaFX y sus funciones se resumen en la siguiente tabla:
 
 | **Elemento** | **Función**                                                                                                                            |
