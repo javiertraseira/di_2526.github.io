@@ -38,7 +38,11 @@ Asegurarse en el apartado *Java Plaform Manager* y asignárselo a nuestros proye
 
 ### Proyectos en Maven
 
-Si queremos trabajar directamente con Maven en el fichero *pom.xml* deberemos de agregar las siguientes líneas para usar el plugin de JavaFX:
+En Netbeans puede crearse un proyecto en Maven directamente instalando su implementación.
+
+![](media/3099bd5fa92d9d06fb3c02111b539893.jpeg)
+
+Si queremos trabajar directamente con Maven en el fichero *pom.xml* deberemos de verificar que se agregan las siguientes líneas para usar el plugin de JavaFX:
 
 ```xml
 <plugins>
@@ -53,7 +57,7 @@ Si queremos trabajar directamente con Maven en el fichero *pom.xml* deberemos de
 </plugins>
 ```
 
-Y añadir las dependencias de Maven:
+Y las dependencias de Maven:
 
 ```xml
 <dependencies>
@@ -257,9 +261,11 @@ Hay que asegurarse de dar siempre **id** a los campos usados en el editor (**fx:
 ![](media/f713dc89f9e6f81b2ece5ab55b456e0d.png)
 ![](media/9ed0221940bd7f5c559dede3f40669ab.jpeg)
 
+### Modelo completo
+
 **Ejemplo**
 
-Ejemplo de aplicación en JavaFX de una clase **modelo** habiendo creado un controlador y un fxml en Scene Builder:
+Ejemplo de aplicación en JavaFX de una clase **modelo** habiendo creado un controlador y un FXML en Scene Builder:
 
 ```java
 public class MainApp extends Application {
@@ -279,12 +285,6 @@ public static void main(String[] args) {
  }
 }
 ```
-
-### Modelo completo
-
-En Netbeans puede crearse un proyecto Ant o Maven de JavaFX directamente:
-
-![](media/3099bd5fa92d9d06fb3c02111b539893.jpeg)
 
 Los elementos por tanto que utilizaremos para crear aplicaciones en JavaFX y sus funciones se resumen en la siguiente tabla:
 
