@@ -194,8 +194,6 @@ Desde la perspectiva del Modelo Vista Controlador (**MVC**) con la que ya trabaj
 
 ![](media/72153a917e58fffb2cde66e863903bf2.jpeg)
 
-## Persistencia de datos en JavaFX
-
 En Java, para enviar datos entre ventanas en una GUI y mantener su **persistencia**, se pueden considerar varias opciones:
 
 -   Enviar los datos a través del **constructor de clases** de ventana: es con el método que hemos trabajado hasta ahora.
@@ -205,7 +203,7 @@ En Java, para enviar datos entre ventanas en una GUI y mantener su **persistenci
 
 ![](media/e0c541a423dfb5cab737a3baa525cc9c.jpeg)
 
-## Scene Builder
+## Scene Builder (vista)
 
 La aplicación **Scene Builder** permite diseñar, mediante un interfaz gráfico, las estructuras de las ventanas de las aplicaciones que queramos desarrollar usando JavaFX.
 
@@ -265,7 +263,7 @@ Hay que asegurarse de dar siempre **id** a los campos usados en el editor (**fx:
 
 **Ejemplo**
 
-Ejemplo de aplicación en JavaFX de una clase **modelo** habiendo creado un controlador y un FXML en Scene Builder:
+Ejemplo de aplicación en JavaFX de una clase **modelo** habiendo creado un controlador y un FXML (vista) en Scene Builder:
 
 ```java
 public class MainApp extends Application {
@@ -308,12 +306,11 @@ public class ControladorVentana1 implements Initializable {
 }
 ```
 
-
-Los elementos por tanto que utilizaremos para crear aplicaciones en JavaFX y sus funciones se resumen en la siguiente tabla:
+Los <u>>elementos</u> por tanto que utilizaremos para crear aplicaciones en JavaFX y sus funciones se resumen en la siguiente tabla:
 
 | **Elemento** | **Función**                                                                                                                            |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|  Java        | Crear el *Scene* y asociarle sus nodos Mostrar la ventana o Stage Definir eventos en el controlador (implementa clase *initializable*) |
+|  Java        | - Clase principal que extiende Application - Crear el *Scene* y asociarle sus nodos - Mostrar la ventana o Stage - Definir eventos en el controlador (implementa clase *initializable*) |
 | FXML         | Define el diseño de la vista (nodos de la vista)                                                                                       |
 | CSS          | Define el estilo adicional de la vista                                                                                                 |
 
@@ -357,7 +354,7 @@ private void mostrarAlertInfo(ActionEvent event) {
 
 ### FileChooser
 
-El selector de ficheros *FileChooser* funciona igual que en nuestras aplicaciones en Swing, con lo que podremos utilizarlo de igual forma:
+El selector de ficheros *FileChooser* funciona igual que cualquier componente en Swing, con lo que podremos utilizarlo de igual forma:
 
 ```java
 public void initialize(URL url, ResourceBundle rb) {
