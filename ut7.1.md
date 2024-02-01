@@ -267,6 +267,7 @@ Ejemplo de aplicación en JavaFX de una clase **modelo** habiendo creado un cont
 
 ```java
 public class MainApp extends Application {
+
 @Override
 public void start(Stage stage) throws IOException{     // ventana principal
    FXMLLoader loader = new FXMLLoader();
