@@ -263,7 +263,7 @@ Hay que asegurarse de dar siempre **id** a los campos usados en el editor (**fx:
 
 **Ejemplo**
 
-Ejemplo de aplicación en JavaFX de una clase **modelo** habiendo creado un controlador y un FXML (vista) en Scene Builder:
+Ejemplo de aplicación en JavaFX de una **clase principal modelo** habiendo creado el *controlador* y un *FXML* (vista) en Scene Builder:
 
 ```java
 public class MainApp extends Application {
@@ -285,8 +285,11 @@ public static void main(String[] args) {
 }
 ```
 
+Ejemplo en JavaFX de una **clase modelo controlador** que implementa la clase *Initializable* y que se carga desde la clase modelo anterior:
+
+
 ```java
-public class ControladorVentana1 implements Initializable {
+public class ControladorVentana implements Initializable {
 
     @FXML
     private Label label_prueba1;  //Se crean automáticamente al hacer Make Controller
