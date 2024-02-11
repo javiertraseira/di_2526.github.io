@@ -126,8 +126,8 @@ Queremos construir un modelo en el cual una ventana padre llama a una ventana hi
 
 Para ello necesitaremos:
 
--   Un **modelo** con métodos *set* y *get*
--   El **controlador** de la ventana padre que le enviará los datos a la ventana hija a la hora de crearse (\* Opcionalmente recibirá datos de vuelta de la ventana hija desde el modelo)
+-   Un **modelo** con métodos *set* y *get*.
+-   El **controlador** de la ventana padre que le enviará los datos a la ventana hija a la hora de crearse (\* Opcionalmente recibirá datos de vuelta de la ventana hija desde el modelo).
 -   El **controlador** de la ventana hija que recibirá los datos a través de un método *set* que actualizará los datos del modelo a la vista.
 
 ### Modelo 
