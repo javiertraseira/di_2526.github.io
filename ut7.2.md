@@ -169,6 +169,7 @@ Al abrir una nueva ventana se genera un evento llamado *nueva_ventana* que le pa
 ```java
 public class Ventana_Padre implements Initializable {
 private void nueva_ventana(ActionEvent event) throws IOException {
+     //carga una nueva vista llamada ventana_secundaria y la carga la asigna al panel raiz
      FXMLLoader loader = new FXMLLoader(getClass().getResource("/Vista/ventana_secundaria.fxml"));
      Pane root = (Pane) loader.load();
      //los datos se pasan a la ventana a través de la clase Modelo obteniendo el controlador  
