@@ -246,6 +246,20 @@ ObservableList<Long> numberList = FXCollections.observableArrayList(1L, 2L, 3L)
 | ListChangeListener.Change | Representa los cambios realizados a un ObservableList      |
 | MapChangeListener.Change  | Representa los cambios realizados a un ObservableMap       |
 
+Un ejemplo sencillo usando el elemento *ListView* y su correspondiente *ObservableList* asociado:
+
+```java
+public class main extends Application {
+    ObservableList<String> items = FXCollections.observableArrayList(
+            "Elemento 1",
+            "Elemento 2",
+            "Elemento 3",
+            "Elemento 4" );
+    ListView<String> listView = new ListView<>(items);
+}
+```
+
+
 Para registrar un método que reciba la notificación de cambios en una colección JavaFX usaremos el método *addListener*() para recibir las notificaciones de invalidación, esta se envían cada vez que cambian los elementos de la colección, por ejemplo, al: agregar, remover, cambiar el valor de un elemento, etc., cuando ya no necesitemos recibir las notificaciones podemos usar el método *removeListener*().
 
 ```java
