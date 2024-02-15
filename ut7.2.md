@@ -181,10 +181,10 @@ private void nueva_ventana(ActionEvent event) throws IOException {
      stageWindow.setTitle("Ventana Secundaria");
      stageWindow.initModality(Modality.APPLICATION_MODAL);
      stageWindow.setScene(scene);
-     stageWindow.showandwait();
+     stageWindow.showandwait(); //espera hasta que se cierre el hilo de la ventana secundaria
      //si hubiera que recuperar datos de la ventana hija a la ventana padre, irían aquí
 ```
-El método *showandwait()* esperará para actualizar datos si hubiera cambios en el modelo desde la ventana hija.
+El método *showandwait()* espera hasta que se cierre la ventana secundaria y se continúe con el hilo de la llamada, por si hubiera que actualizar datos devueltos.
 
 ### Método en controlador ventana hija
 
