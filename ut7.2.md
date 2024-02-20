@@ -215,7 +215,7 @@ ListView también ofrece funcionalidades como la selección múltiple, el filtra
 
 El elemento *TableView* de JavaFX muestra datos en una tabla con filas y columnas. Se utiliza para presentar información en un formato tabular y permite a los usuarios interactuar con los datos, como agregar, eliminar y editar filas.
 
-El TableView se compone de una serie de columnas, cada una de las cuales puede mostrar un tipo de dato diferente. Las celdas de la tabla pueden ser editables o no, y los usuarios pueden ordenar la tabla por cualquier columna haciendo clic en el encabezado de la columna correspondiente.
+El *TableView* se compone de una serie de columnas de tipo *TableColumn*, cada una de las cuales puede mostrar un tipo de dato diferente. Las celdas de la tabla pueden ser editables o no, y los usuarios pueden ordenar la tabla por cualquier columna haciendo clic en el encabezado de la columna correspondiente. 
 
 ![JavaFX TableView](media/8327bcbfdd361cc74c8a4c8491db0695.png)
 
@@ -246,6 +246,10 @@ ObservableList<Long> numberList = FXCollections.observableArrayList(1L, 2L, 3L)
 | ListChangeListener.Change | Representa los cambios realizados a un ObservableList      |
 | MapChangeListener.Change  | Representa los cambios realizados a un ObservableMap       |
 
+![](media/dc56aca43a0052a7b7e09ff96d24bfef.jpeg)
+
+### ListView
+
 Un ejemplo sencillo usando el elemento *ListView* y su correspondiente *ObservableList* asociado:
 
 ```java
@@ -259,24 +263,21 @@ public class main extends Application {
 }
 ```
 
+### TableView
 
-Para registrar un método que reciba la notificación de cambios en una colección JavaFX usaremos el método *addListener*() para recibir las notificaciones de invalidación, esta se envían cada vez que cambian los elementos de la colección, por ejemplo, al: agregar, remover, cambiar el valor de un elemento, etc., cuando ya no necesitemos recibir las notificaciones podemos usar el método *removeListener*().
+El caso de un TableView es más complejo ya que se debe de tratar de forma individual con cada una de sus columnas, de tipo TableColumn.
+El método setCellValueFactory se utilizará para establecer cómo se deben obtener los valores que se mostrarán en las celdas de una columna en un TableView. Este método es crucial para vincular los datos de tu modelo con las celdas de la tabla.
+Uaremos una expresión Lambda para asignar a cada columna:
 
 ```java
-public static void main(String[] args) {
-    
-    ObservableList<Integer> numList = FXCollections.observableArrayList();
-    numList.addListener(JavaFXObservableCollections::invalidated);
-    
-    numList.add(10);
-    numList.addAll(100, 200, 300);
-    numList.set(2, 500);
-    numList.remove(2);                
-}
-
-public static void invalidated(Observable list) {
-    System.out.println("List is invalid.");
+@FXML
+private void initialize() {
+// Initialize la tabla personas con dos columnas.
+firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
+lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());
 }
 ```
 
-![](media/dc56aca43a0052a7b7e09ff96d24bfef.jpeg)
+Posteriormente agregaremos los **datos** al TableView usando sus métodos concretos.
+
+
