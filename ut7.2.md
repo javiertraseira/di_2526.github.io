@@ -245,6 +245,8 @@ ObservableList<Long> numberList = FXCollections.observableArrayList(1L, 2L, 3L)
 | FXCollections             | Una clase de utilidades asignada a *java.util.Collections* |
 | ListChangeListener.Change | Representa los cambios realizados a un ObservableList      |
 | MapChangeListener.Change  | Representa los cambios realizados a un ObservableMap       |
+| StringProperty            | Cambios realizados en variables de tipo String             |
+| IntegerProperty           | Cambios realizados en variables de tipo Integer            |
 
 ![](media/dc56aca43a0052a7b7e09ff96d24bfef.jpeg)
 
@@ -266,8 +268,9 @@ public class main extends Application {
 ### TableView
 
 El caso de un TableView es más complejo ya que se debe de tratar de forma individual con cada una de sus columnas, de tipo TableColumn.
-El método setCellValueFactory se utilizará para establecer cómo se deben obtener los valores que se mostrarán en las celdas de una columna en un TableView. Este método es crucial para vincular los datos de tu modelo con las celdas de la tabla.
-Uaremos una expresión Lambda para asignar a cada columna:
+El método setCellValueFactory se utilizará para establecer cómo se deben obtener los valores que se mostrarán en las celdas de una columna en un TableView. Este método es crucial para <u>vincular</u> los datos del modelo con las celdas de la tabla.
+Usaremos una expresión Lambda para asignar las variables a cada columna usando la propiedad *StringProperty* que veremos posteriormente:
+
 
 ```java
 @FXML
@@ -280,4 +283,16 @@ lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNamePrope
 
 Posteriormente agregaremos los **datos** al TableView usando sus métodos concretos.
 
+En la clase <u>Modelo</u> que utilicemos es necesario utilizar la clase **StringProperty** para hacer un seguimiento en los cambios de las variables de cadena de texto que hayamos definido para utilizar en nuestra tabla:
 
+```java
+public Persona(String nombre, String apellidos) {
+       this.nombre = new SimpleStringProperty(nombre);
+}
+
+…
+
+public StringProperty nombreProperty() {
+        return nombre;
+}
+```
