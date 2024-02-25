@@ -28,10 +28,11 @@ Para cambiar el contenido del Scene no debemos olvidar <u>nombrar el elemento ra
 
 ![](media/0068cac4ff3df753e7351849851db788.png)
 
-A continuación, dentro del evento desde donde queremos cambiar el *Scene*, cargaremos el nuevo fichero FXML y lo asignaremos a dicho panel:
+A continuación, dentro del evento desde donde queremos cambiar el *Scene*, cargaremos el nuevo fichero FXML, lo asignaremos aun objeto *AnchorPane* y a continuación lo asignaremos al contenedor *rootPaneanterior*:
 
 ```java
-AnchorPane panel = FXMLLoader.load(getClass().getResource("/vista/VentanaNueva.fxml"));
+FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/VentanaNueva.fxml"));
+AnchorPane panel = loader.load();
 rootPane.getChildren().setAll(panel);
 ```
 
