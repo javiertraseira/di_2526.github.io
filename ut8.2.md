@@ -41,6 +41,17 @@ GitHub Pages es ideal para proyectos de código abierto que desean tener una pá
 
 GitHub Pages también es compatible con **Jekyll**, un generador de sitios estáticos que permite construir sitios web utilizando plantillas predefinidas y archivos de formato Markdown.
 
+Para activar tu proyecto en Github pages sigue los pasos indicados aquí (https://www.aluracursos.com/blog/github-pages) o en las siguientes capturas:
+
+1. No te olvides dejar la visibilidad de tu repositorioen público (nombre.gitpages.io)
+2. Entra en la pestaña Settingsy en apartado pagesde tu proyecto seleccionando un Branch y haz clic en el botón *save* para que genere la URL de tu página (normalmente terminará en .io)
+
+Para agregar un tema basado en Jekylla tu página de Github sigue los pasos indicados en su documentación (https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) o los pasos a continuación:
+
+1. Ve al repositorio de tu sitio y crea o edita el fichero config.yml
+2. En dicho fichero pueden aparecer el nombre de la página, idioma u otras propiedades.
+3. En dicho fichero deberás añadir un línea indicando el nombre del tema directamente (https://pages.github.com/themes/) mediante la línea *Theme: nombredeltema* o usar otros **temas remotos** usando la palabra clave *remote_theme: nombredeltema*
+
 ### Bookstack
 
 BookStack es una plataforma de software libre para instalar en un servidor de tipo wiki, basada en software libre, que permite una organización sencilla, práctica e intuitiva de toda la información relacionada con la realización de tareas: Protocolos, procedimientos y usos de otras páginas o aplicaciones.
