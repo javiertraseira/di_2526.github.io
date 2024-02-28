@@ -41,7 +41,9 @@ GitHub Pages es ideal para proyectos de código abierto que desean tener una pá
 
 GitHub Pages también es compatible con **Jekyll**, un generador de sitios estáticos que permite construir sitios web utilizando plantillas predefinidas y archivos de formato Markdown.
 
-Para activar tu proyecto en Github pages sigue los pasos indicados aquí (https://www.aluracursos.com/blog/github-pages) o en las siguientes capturas:
+Se puede hacer fácilmente desde https://pages.github.com/ siguiendo los pasos.
+
+Otra forma de activar tu proyecto en Github pages sigue los pasos indicados aquí (https://www.aluracursos.com/blog/github-pages):
 
 1. No te olvides dejar la visibilidad de tu repositorioen público (nombre.gitpages.io)
 2. Entra en la pestaña Settingsy en apartado pagesde tu proyecto seleccionando un Branch y haz clic en el botón *save* para que genere la URL de tu página (normalmente terminará en .io)
