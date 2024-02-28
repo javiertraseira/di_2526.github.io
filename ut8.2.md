@@ -45,8 +45,8 @@ Se puede hacer fácilmente desde https://pages.github.com/ siguiendo los pasos.
 
 Otra forma de activar tu proyecto en Github pages sigue los pasos indicados aquí (https://www.aluracursos.com/blog/github-pages):
 
-1. No te olvides dejar la visibilidad de tu repositorioen público (nombre.gitpages.io)
-2. Entra en la pestaña Settingsy en apartado pagesde tu proyecto seleccionando un Branch y haz clic en el botón *save* para que genere la URL de tu página (normalmente terminará en .io)
+1. No te olvides dejar la visibilidad de tu repositori en público (nombre.gitpages.io)
+2. Entra en la pestaña Settingsy en apartado pagesde tu proyecto seleccionando un Branch y haz clic en el botón *save* para que genere la URL de tu página y asegurarte de que hay un fichero *README.md*
 
 Para agregar un tema basado en Jekylla tu página de Github sigue los pasos indicados en su documentación (https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll) o los pasos a continuación:
 
