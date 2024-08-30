@@ -1,4 +1,4 @@
-# Módulo de Desarrollo de Interfaces 23-24 (2º DAM)
+# Módulo de Desarrollo de Interfaces 24-25 (2º DAM)
 
 ## Guía didáctica
 
@@ -6,7 +6,7 @@
 
 ----
 
-## Contenido del curso 23-24
+## Contenido del curso 24-25
 
 
 
