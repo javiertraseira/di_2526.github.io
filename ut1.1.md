@@ -271,6 +271,13 @@ El núcleo de Android se desarrolla de forma abierta y se puede por tanto accede
 
 ![](media/cf86b04bc352dd92587d849e2fc55999.jpeg) 
 
+### Interfaces naturales
+
+Las interfaces naturales comunicarse con el usuario usando para ello medios como la voz, los gestos o la mirada.  El lanzamiento del iPhone en 2007, con su interfaz multitáctil, y la introducción de Kinect o Nintendo Wii que permitía la interacción mediante gestos, marcaron hitos importantes en el desarrollo de estas interfaces.
+
+En la actualidad existen desarrollos en realidad aumentada (AR) y la realidad virtual (VR), donde los usuarios interactúan con entornos digitales mediante movimientos corporales y comandos de voz. Los asistentes virtuales como Siri, Alexa y Google Assistant han llevado el reconocimiento de voz a millones de personas y la comunicación con las nuevas IA generativas también es posible.
+
+![](media/natural_assistants.png) 
 
 ## Evolución histórica de la web
 
