@@ -307,8 +307,27 @@ La palabra natural es utilizada, porque al contrario que la gran mayoría de int
 
 ### Reconocimiento táctil
 
-
 - La interacción a través de pantallas táctiles es uno de los ejemplos más comunes de NUI. Los smartphones fueron los primeros dispositivos en implementar este tipo de  interfaces naturales de usuario en sus sistemas operativos.
 - Los usuarios pueden navegar, ampliar o reducir imágenes, y escribir directamente sobre la pantalla con movimientos simples y naturales. Además, se han ido universalizando muchos gestos en pantallas como ampliar, reducir o mover elementos.
 
     ![](media/tactil.png)
+
+
+### Reconocimiento del habla
+
+El reconocimiento del habla es otro interfaz natural de usuario de las más desarrollada, permitiendo la comunicación hablada entre persona y sistema.
+
+Se maneja diferentes tipos de información, como:
+- Acústica
+- Fonética
+- Léxica
+- Sintáctica
+- Semántica
+
+Los asistentes virtuales como Siri, Google Assistant y Alexa de Amazon permiten a los usuarios realizar tareas mediante comandos de voz.
+
+### Reconocimiento gestual
+
+El reconocimiento gestual es una tecnología clave dentro del ámbito de las interfaces naturales de usuario (NUI) que permite a los dispositivos interpretar y responder a los movimientos del cuerpo humano, principalmente de las manos y los brazos. Este sistema se basa en el uso de sensores, cámaras y algoritmos avanzados de procesamiento de imagen para detectar, seguir y comprender gestos específicos realizados por el usuario.
+
+![](media/gestual_nui.jpg)
