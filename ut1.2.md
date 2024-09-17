@@ -300,3 +300,15 @@ Las **interfaces naturales de usuario**, denominadas NUI (Natural User Interface
 Las interfaces naturales de usuario buscan que los usuarios interactúen con el mundo digital de la misma forma que lo hacen con el mundo real. La característica principal de las NUI son la habilidad de interactuar con las máquinas utilizando únicamente el cuerpo humano, esto es, mediante el tacto, los gestos, la voz y otros métodos naturales de comunicación.
 
 La palabra natural es utilizada, porque al contrario que la gran mayoría de interfaces, no usan dispositivos de control artificiales, como pueden ser un teclado o un ratón, sino controles que permiten desarrollar una experiencia natural e intuitiva utilizando sensores de audio, acelerómetros, infrarrojos, dispositivos multitouch, cámaras, etc. 
+
+
+![](media/nui_schema.png)
+
+
+### Reconocimiento táctil
+
+
+- La interacción a través de pantallas táctiles es uno de los ejemplos más comunes de NUI. Los smartphones fueron los primeros dispositivos en implementar este tipo de  interfaces naturales de usuario en sus sistemas operativos.
+- Los usuarios pueden navegar, ampliar o reducir imágenes, y escribir directamente sobre la pantalla con movimientos simples y naturales. Además, se han ido universalizando muchos gestos en pantallas como ampliar, reducir o mover elementos.
+
+    ![](media/tactil.png)
