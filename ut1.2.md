@@ -56,7 +56,7 @@ Atendiendo a cómo el usuario puede interactuar con una interfaz, ya hemos visto
 ## El factor humano
 
 ```note
-💡 La **cognición** es el proceso por el que los humanos adquirimos conocimientos e interactuamos con el entorno.
+La **cognición** es el proceso por el que los humanos adquirimos conocimientos e interactuamos con el entorno.
 ```
 
 Sobre los usuarios es importante entender cuáles son sus capacidades y los procesos de **cognición** involucrados durante el desempeño de tareas a través del computador: la memoria, la visión, el oído o el tacto, son factores que determinan cómo manipulan y hace uso efectivo de la tecnología computacional, radicando allí la importancia del factor humano para optimizar su interacción.
@@ -290,3 +290,13 @@ Se conocen como **tipografía digital** las fuentes desarrollados exclusivamente
 
 ![](media/typography210922.jpg)
 
+
+## Interfaces naturales de usuario (NUI)
+
+```note
+Las **interfaces naturales de usuario**, denominadas NUI (Natural User Interface), son interfaces de usuario que se caracterizan por ser intuitivas y no necesitar aprendizaje previo. 
+```
+
+Las interfaces naturales de usuario buscan que los usuarios interactúen con el mundo digital de la misma forma que lo hacen con el mundo real. La característica principal de las NUI son la habilidad de interactuar con las máquinas utilizando únicamente el cuerpo humano, esto es, mediante el tacto, los gestos, la voz y otros métodos naturales de comunicación.
+
+La palabra natural es utilizada, porque al contrario que la gran mayoría de interfaces, no usan dispositivos de control artificiales, como pueden ser un teclado o un ratón, sino controles que permiten desarrollar una experiencia natural e intuitiva utilizando sensores de audio, acelerómetros, infrarrojos, dispositivos multitouch, cámaras, etc. 
