@@ -264,9 +264,11 @@ La **tabla de casos de prueba** que se presenta a continuación es una herramien
 
 ## Markdown
 
+```note
 Markdown es un lenguaje de marcado ligero y sencillo que se utiliza para dar formato a texto en la web. Fue creado por John Gruber en 2004, con el objetivo de ser fácil de leer y escribir, y de convertir a HTML de manera sencilla.
+```
 
-Markdown es ampliamente utilizado en plataformas como GitHub, foros, blogs, y sistemas de documentación.
+Markdown es ampliamente utilizado en plataformas como GitHub, foros, blogs, y la mayoría de sistemas de documentación.
 
 ![](media/95e3e869a452be131b8c0301baa5268d.png)
 
@@ -275,7 +277,6 @@ Las principales características de Markdown son las siguientes:
 -   Simplicidad: El texto en Markdown es fácil de leer, incluso en su formato sin procesar.
     -   Portabilidad: Los archivos de texto en Markdown pueden ser convertidos a otros formatos como HTML, PDF, DOCX, entre otros.
     -   Enfocado en el contenido: Markdown permite a los autores centrarse en el contenido, ya que la sintaxis es mínima y no intrusiva.
-
 
 
 ### Sintaxis de Markdown
