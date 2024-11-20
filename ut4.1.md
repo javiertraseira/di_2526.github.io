@@ -32,12 +32,12 @@ El consorcio **W3C** define unas especificaciones y normas de recomendación, pa
 
 | **Navegador**      | **Motor** | **CSS 1**                                    | **CSS 2.1** | **CSS 3**                                                                                           |
 |--------------------|-----------|----------------------------------------------|-------------|-----------------------------------------------------------------------------------------------------|
-|  Google Chrome     |  WebKit   | Completo desde la versión 85 del motor       |  Completo   | Todos los selectores, pseudo- clases y muchas propiedades                                           |
-|  Internet Explorer |  Trident  |  Completo desde la versión 7.0 del navegador |  Completo   | Todos los selectores, pseudo- clases y muchas propiedades a partir de la versión 10.0 del navegador |
-|  Firefox           |  Gecko    | Completo desde la versión 1.0 del navegador  |  Completo   | Todos los selectores, pseudo- clases y muchas propiedades                                           |
-|  Safari            |  WebKit   | Completo desde la versión 85 del motor       |  Completo   | Todos los selectores, pseudo- clases y muchas propiedades                                           |
-|  Opera             |  Presto   | Completo desde la versión 1.0 del navegador  |  Completo   | Todos los selectores, pseudo- clases y muchas propiedades                                           |
-|  Edge              |  WebKit   | Completo desde la versión 1.0 del navegador  |  Completo   | Todos los selectores, pseudo- clases y muchas propiedades                                           |
+|  Google Chrome     |  Blink(Chromium)   | Completo desde la versión 85 del motor       |  Completo   | Todos los selectores, pseudo-clasesy muchas propiedades. Sin embargo, implementación completa varía según la versión  |
+|  Internet Explorer |  Trident  |  Completo desde la versión 7.0 del navegador |  Completo   | Todos los selectores, pseudo-clases y muchas propiedades a partir de la versión 10.0 del navegador |
+|  Firefox           |  Gecko    | Completo desde la versión 1.0 del navegador  |  Completo   | Todos los selectores, pseudo-clases y muchas propiedades                                           |
+|  Safari            |  WebKit   | Completo desde la versión 85 del motor       |  Completo   | Todos los selectores, pseudo-clasesy muchas propiedades. La implementación completa varía según la versión   |
+|  Opera             |  Blink(Chromium)   | Completo desde la versión 1.0 del navegador  |  Completo   | Todos los selectores, pseudo-clasesy muchas propiedades, y adopción de WebKit a partir de Opera 15  |
+|  Edge              |  Blink/EdgeHTML    | Completo desde la versión 1.0 del navegador  |  Completo   | Todos los selectores, pseudo-clasesy muchas propiedades. Basado en Chromiumdesde la versión 79      |
 
 <https://www.w3schools.com/cssref/css3_browsersupport.asp>
 
