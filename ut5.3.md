@@ -324,6 +324,12 @@ La propiedad **jusfify-content** funciona al igual que en Flexbox alineando en h
 
 ## Contenido
 
+### Texto
+
+En Bootstrap, la clase utilitaria de font size permite ajustar el tamaño del texto fácilmente mediante clases predefinidas. Estas clases siguen la escala de sistema escalonado vista anteriormente  y son útiles para personalizar rápidamente el tamaño del texto sin necesidad de escribir CSS adicional.
+
+![](media/fonts-bs.png.png)
+
 ### La clase table
 
 Con solo utilizar la clase **table** en nuestro código dentro del elemento **table** (\<table class="**table**"\>) podemos obtener lo siguiente directamente:
@@ -363,7 +369,7 @@ Para que un botón aparezca **activado** o **desactivado** utilizamos las clases
 
 ### Imágenes
 
-Las imágenes en Bootstrap se hacen responsive con **.img-fluid**. Esto aplica un **max-width: 100%** y **height: auto** a la imagen para que se escale con el ancho de su elemento padre.
+Las imágenes en Bootstrap se hacen responsive con la clase **.img-fluid**. Esto aplica un **max-width: 100%** y **height: auto** a la imagen para que se escale con el ancho de su elemento padre.
 
 ```html
     <img src="..." class="img-fluid" alt="...">
@@ -461,6 +467,25 @@ Para crear **submenús desplegables** dentro de un elemento de la barra de naveg
 
 ![](media/navbar_bootstrap3.png)
 
+
+### Carousel
+
+La clase *carousel* en Bootstrap se utiliza para implementar un carrusel o slider de imágenes o contenido. Es un componente popular para mostrar imágenes, contenido destacado o en Lading Pages.
+
+```html
+<div id="basicCarousel" class="carousel slide" data-bs-ride="carousel"> 
+  <div class="carousel-inner"> 
+    <!-- Diapositiva 1 --> 
+    <div class="carousel-item active"> 
+        <img src="imagen1.jpg" class="d-block w-100">
+     </div> 
+    <!-- Diapositiva 2 --> 
+    <div class="carousel-item"> 
+        <img src="imagen2.jpg" class="d-block w-100" alt="Segunda imagen">
+     </div> 
+  </div> 
+</div>
+```
 
 ## Formularios
 
