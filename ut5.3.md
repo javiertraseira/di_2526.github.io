@@ -122,7 +122,7 @@ El sistema de cuadrícula de Bootstrap puede a su vez adaptarse a seis **breakpo
 
 De esta manera el prefijo de clases cambiará a *col-{breakpoint}* tal y como se muestra en la siguiente tabla:
 
-|                      |  **\<576px** | **sm** **≥576px** | **md** **≥768px** | **lg** **≥992px** | **xl** **≥1200px** | **xxl** **≥1400px** |
+|                      |  **xs** **\<576px** | **sm** **≥576px** | **md** **≥768px** | **lg** **≥992px** | **xl** **≥1200px** | **xxl** **≥1400px** |
 |----------------------|--------------|-------------------|-------------------|-------------------|--------------------|---------------------|
 | Contenedor max-width | Por defecto  | 576px             | 768px             | 992px             | 1200px             | 1400px              |
 | Prefijo de clase     | **.col-\#**  | **.col-sm-\#**    | **.col-md-\#**    | **.col-lg-\#**    | **.col-xl-\#**     | **.col-xxl-\#**     |
