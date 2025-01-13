@@ -509,9 +509,9 @@ Básicamente, la estructura general de un formulario sería como la siguiente:
 <form> 
 <div class="mb-3"> 
     <label for="exampleInputEmail1" class="form-label">Correo</label> 
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduzca correo"> 
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduzca correo"> 
     <label for="inputPassword5" class="form-label">Contraseña</label> 
-    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock"> 
+    <input type="password" id="inputPassword5" class="form-control"> 
     <div id="passwordHelpBlock" class="form-text"> Tu contraseña debe tener entre 8 y 20 caracteres, conteniendo letras y números.
 </div> 
 </form>
