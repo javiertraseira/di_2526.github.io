@@ -106,13 +106,13 @@ Los **tipos de datos primitivos** son los principales:
 
 -   Las constantes se definen mediante *const*:
     ```javascript
-    **const** constate **=** 42**;**
+    const constate = 42;
     ``` 
     >Las constantes no pueden ser redeclaradas una vez asignadas.
 
 -   Se pueden declarar varias variables a la vez:
     ```javascript
-    **let** person **=** "Jose", carName = "Volvo", precio = 100;
+    let person = "Jose", carName = "Volvo", precio = 100;
     ``` 
 -   Los **comentarios** en javascript se indican usando // y para multilíneas usando */\* y \*/*
 
@@ -186,7 +186,8 @@ La **comparación de cadenas** en JavaScript puede ser problemática porque el l
 let cadena = "123"; 
 let numero = 123; 
 
-console.log(cadena === numero); // false (diferentes tipos) console.log(cadena == numero); // true (convierte "123" en número antes de comparar)
+console.log(cadena === numero); // false (diferentes tipos) 
+console.log(cadena == numero); // true (convierte "123" en número antes de comparar)
 ```
 
 Además, las **cadenas vacías** o los valores *null* pueden provocar resultados inesperados.
@@ -326,7 +327,7 @@ const multiplicar = (a, b) => a * b;
 // Llamada a la función
 console.log(multiplicar(4, 5)); // 20
 ```
-> Si hubiera un solo parámetro, los paréntesis serían opcionales:
+> Si hubiera un solo parámetro, los paréntesis serían opcionales.
 
 ### Funciones anónimas
 
