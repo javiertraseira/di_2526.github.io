@@ -483,6 +483,7 @@ Veremos para ellos los métodos más usados según su uso:
 | **Método**                                   | **Descripción**                                  |
 |----------------------------------------------|--------------------------------------------------|
 | element.**innerHTML** = nuevo contenido html | Modifica el HTML interno del elemento            |
+| element.textContent = nuevo valor            | Modifica el texto contenido dentro de un elemento|
 | element.attribute = nuevo valor              | Modifica el valor del atributo del elemento HTML |
 | element.style.property = new style           | Modifica el valor del estilo del elemento HTML   |
 | element.setAttribute()                       | Modificar atributos                              |
