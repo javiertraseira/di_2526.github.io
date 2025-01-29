@@ -188,8 +188,10 @@ En Postman, *pm.expect()* es parte de *Chai.js*, una biblioteca de aserciones qu
 
 Su sintaxis básica es la siguiente:
 
-  pm.expect(evaluar).to.eql(expected);
-  
+```javascript
+    pm.expect(evaluar).to.eql(expected);
+```
+
 Y donde:
 - *evaluar*: Es el valor que queremos evaluar.
 - *.to.eql(expected)*: Compara actual con expected.
