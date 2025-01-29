@@ -206,7 +206,9 @@ pm.expect("hola").to.be.a("string");  // Pasa porque es un string
 pm.expect(true).to.be.true;  //  Pasa porque es `true`
 ```
 
-Para una guía completa de referencia [https://learning.postman.com/docs/writing-scripts/script-references/test-examples/](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/) 
+> Para una guía completa de referencia: [https://learning.postman.com/docs/writing-scripts/script-references/test-examples/](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/) 
+![](media/references_postman.png)
+
 
 ### Creación de variables
 
