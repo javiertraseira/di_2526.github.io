@@ -2,7 +2,7 @@
 
 ## Guía didáctica
 
-📕 [Guía didáctica en PDF](/pdf/DAM 2 Desarrollo de interfaces2324.pdf)
+📕 [Guía didáctica en PDF](/pdf/Guía presentación DI 24-25.pdf)
 
 ----
 
