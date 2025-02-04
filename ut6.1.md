@@ -345,12 +345,20 @@ Los **niveles de conformidad** son tres:
 -   Nivel de conformidad **AA**. Corresponde al nivel en que se satisfacen todos los puntos de verificación de **prioridad 1 y 2**.
 -   Nivel de conformidad **AAA**. Corresponde al nivel en que se satisfacen todos los puntos de verificación de **prioridad 1 y 2**, y al menos el **50%** del nivel de **prioridad 3**.
 
+
+| Nivel de Prioridad         | Descripción                                                                 | Ejemplos de Requisitos                                               | Recomendado para                                                           |
+|----------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------|
+| **A (Básico - Obligatorio)**  | Requisitos mínimos para garantizar que algunas personas con discapacidad puedan acceder al contenido. | - Texto alternativo en imágenes.  <br> - No depender solo del color para transmitir información.  <br> - Navegación accesible con teclado. | Todos los sitios web para evitar barreras básicas de accesibilidad.       |
+| **AA (Intermedio - Recomendado)** | Mejora la accesibilidad para un mayor grupo de personas con discapacidad. Es el nivel más recomendado por las normativas legales. | - Contraste adecuado (4.5:1).  <br> - Formularios con etiquetas claras.  <br> - Compatibilidad con orientación vertical y horizontal. | Sitios web gubernamentales, corporativos, de comercio electrónico y cualquier web con estándares de accesibilidad. |
+| **AAA (Avanzado - Opcional)** | El más alto nivel de accesibilidad, pensado para personas con discapacidades severas. No suele ser obligatorio. | - Contraste mejorado (7:1).  <br> - Descripciones de audio en videos.  <br> - Evitar bloques largos de texto. | Webs de servicios esenciales como sanidad, educación y accesibilidad gubernamental. |
+
+
 ![](media/1c28b22817ee4755e8f5aa256df6affb.jpeg)
 
 
 ![](media/55b20b99c8a09e3073978ae4e593144c.jpeg)
 
-### Objetivos de la WAI
+### Iniciativa WAI
 
 El máximo organismo dentro de la jerarquía de Internet que se encarga de promover la accesibilidad es el **W3C**, en especial su grupo de trabajo **WAI**.
 
