@@ -120,6 +120,32 @@ Se suelen utilizar para la realización de pruebas de regresión, ya que consigu
 
 El número y tipo de herramientas existentes en el mercado para llevar a cabo este tipo de pruebas es muy amplio, por lo que el uso de una u otra dependerá del objetivo final, del tipo de prueba, de las preferencias del desarrollador y, por último, de la aplicación que se está desarrollando.
 
+## Entornos de documentación
+
+Para un sistema software es especialmente importante contar con una documentacióncompleta y que sea sencilla de consultar. Los motivos para ello son varios:
+- Facilitar su comprensión y posibilitar su uso por parte del usuario, sea cual sea su perfil.
+- Facilitar el mantenimiento de la aplicación.
+- Facilitar el desarrollo de mejoras por otros equipos de trabajo.
+- Facilitar que el sistema pueda ser comprendido por otros diseñadores.
+
+Existen principalmente dos tipos de documentación:
+- Documentación de pruebas
+- Documentación técnica
+
+Para facilitar dicha documentación (aparte de en el código) se utilizan entornos de documentación como los que veremos a continuación.
+
+### Github pages
+
+GitHub Pages es un servicio ofrecido por GitHub que permite a los usuarios alojar sitios web estáticos, tales como un sistema de documentación, directamente desde sus repositorios online de GitHub.
+
+Se puede hacer fácilmente desde https://pages.github.com/ siguiendo los pasos.
+
+continuación, para agregar un temabasado en Jekylla tu página de Githubsigue los pasos indicados en su documentación https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyllo los pasos aquí indicados:
+
+1. Ve al repositorio de tu sitio y crea o edita un fichero llamado _config.yml
+2. En dicho fichero pueden aparecer el nombre de la página, idioma u otras propiedades (por ejemplo, title: nameo description: descripción)
+3. En dicho fichero deberás añadir una línea indicando el nombre del tema directamente (https://pages.github.com/themes/) mediante la línea theme: nombretema, o usar otros temas remotos usando la palabra remote_theme: nombretema
+
 ## Entornos de pruebas
 
 ### Selenium
