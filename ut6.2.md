@@ -438,7 +438,7 @@ El valor **row** indica el valor para los encabezados de fila:
 
 La fila *9:30-10:30* provee información de encabezado horizontal para las celdas HTML y 15, y la columna *11:00-13:30* para las celdas CSS y 20.
 
-## H43 Usar atributos id y headers para asociar las celdas de datos con las celdas de encabezado en las tablas de datos.
+#### H43 Usar atributos id y headers para asociar las celdas de datos con las celdas de encabezado en las tablas de datos.
 
 Se trata de otra forma de asociar celdas de encabezado a celdas:
 -   **id** se usa en las celdas de encabezado \<th\> para proporcionar un identificador único
