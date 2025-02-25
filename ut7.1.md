@@ -334,7 +334,7 @@ private void mostrarAlertInfo(ActionEvent event) {
 
 ### FileChooser
 
-El selector de ficheros *FileChooser* funciona igual que cualquier componente en Swing, con lo que podremos utilizarlo de igual forma:
+El selector de ficheros *FileChooser* funciona como su homólogo en Java Swing, con lo que podremos utilizarlo de forma similar a cómo lo hacíamos:
 
 ```java
 public void initialize(URL url, ResourceBundle rb) {
