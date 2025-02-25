@@ -355,6 +355,14 @@ File imgFile = fileChooser.showOpenDialog(stage)
 List<File> list = fileChooser.showOpenMultipleDialog(stage);
 ```
 
+ **Función**                     | **Método**                        | **Descripción**                                      | **Ejemplo de uso** |
+|----------------------------------|----------------------------------|------------------------------------------------------|--------------------|
+| **Abrir un archivo**            | `showOpenDialog(Stage owner)`   | Muestra un cuadro de diálogo para seleccionar un archivo. | `File file = fileChooser.showOpenDialog(new Stage());` |
+| **Abrir múltiples archivos**     | `showOpenMultipleDialog(Stage owner)` | Permite seleccionar varios archivos. | `List<File> files = fileChooser.showOpenMultipleDialog(new Stage());` |
+| **Guardar un archivo**          | `showSaveDialog(Stage owner)`   | Muestra un cuadro de diálogo para guardar un archivo. | `File file = fileChooser.showSaveDialog(new Stage());` |
+| **Configurar filtros**          | `setExtensionFilters(List<FileChooser.ExtensionFilter>)` | Restringe los tipos de archivos visibles en el cuadro de diálogo. | `fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Archivos de texto", "*.txt"));` |
+| **Seleccionar un directorio**   | `DirectoryChooser().showDialog(Stage owner)` | Permite elegir una carpeta en lugar de un archivo. | `File dir = new DirectoryChooser().showDialog(new Stage());` |
+
 Usar cuadros de diálogo, o una ventana Stage más compleja, dependerá de la información que queramos mostrar al usuario y el desarrollo de nuestra aplicación:
 
 ![](media/d567b1455e58b7c309685185f3357f5f.jpeg)
