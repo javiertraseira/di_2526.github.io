@@ -294,7 +294,7 @@ Los <u>>elementos</u> por tanto que utilizaremos para crear aplicaciones en Java
 | FXML         | Define el diseño de la vista (nodos de la vista)                                                                                       |
 | CSS          | Define el estilo adicional de la vista                                                                                                 |
 
-## Cuadros de diálogo en JavaFX
+## Cuadros de diálogo adicionales en JavaFX
 
 ### Clase Alert
 
