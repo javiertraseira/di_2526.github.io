@@ -122,7 +122,7 @@ El número y tipo de herramientas existentes en el mercado para llevar a cabo es
 
 ## Entornos de documentación
 
-Para un sistema software es especialmente importante contar con una documentacióncompleta y que sea sencilla de consultar. Los motivos para ello son varios:
+Para un sistema software es especialmente importante contar con una documentación completa y que sea sencilla de consultar. Los motivos para ello son varios:
 - Facilitar su comprensión y posibilitar su uso por parte del usuario, sea cual sea su perfil.
 - Facilitar el mantenimiento de la aplicación.
 - Facilitar el desarrollo de mejoras por otros equipos de trabajo.
@@ -140,11 +140,34 @@ GitHub Pages es un servicio ofrecido por GitHub que permite a los usuarios aloja
 
 Se puede hacer fácilmente desde https://pages.github.com/ siguiendo los pasos.
 
-continuación, para agregar un temabasado en Jekylla tu página de Githubsigue los pasos indicados en su documentación https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyllo los pasos aquí indicados:
+Otra forma de activar tu proyecto en Githubpageses siguiendo los pasos indicados aquí (https://www.aluracursos.com/blog/github-pages) o en las siguientes capturas:
 
-1. Ve al repositorio de tu sitio y crea o edita un fichero llamado _config.yml
+1. No te olvides dejar la visibilidad de tu repositorio en público (nombre.gitpages.io)
+2. Entra en la pestaña Settings y en apartado pagesde tu proyecto seleccionando un Branch y haz clic en el botón save para que genere la URL de tu página y asegúrate de que hay un fichero *README.md*
+
+![](media/github_docs.png)
+
+A continuación, para agregar un temabasado en Jekylla tu página de Githubsigue los pasos indicados en su documentación https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyllo los pasos aquí indicados:
+
+1. Ve al repositorio de tu sitio y crea o edita un fichero llamado *_config.yml*
 2. En dicho fichero pueden aparecer el nombre de la página, idioma u otras propiedades (por ejemplo, title: nameo description: descripción)
 3. En dicho fichero deberás añadir una línea indicando el nombre del tema directamente (https://pages.github.com/themes/) mediante la línea theme: nombretema, o usar otros temas remotos usando la palabra remote_theme: nombretema
+
+### Bookstack
+
+BookStackes una plataforma de software libre para instalar en un servidor de tipo wiki, basada en software libre, que permite una organización sencilla, práctica e intuitiva de toda la información relacionada con la realización de tareas: Protocolos, procedimientos y usos de otras páginas o aplicaciones.
+
+Permite almacenar asimismo información sobre manuales de usuario de otras páginas o aplicativos, clasificando según distintos accesos toda la información relevante para tu equipo.
+
+### Confluence
+
+Confluencees un espacio de trabajo en equipo y una plataforma en línea donde las personas pueden trabajar desde una serie de documentos compartidos en el Cloud.
+
+Se trata de una plataforma de pago utilizada en entornos colaborativos con alta carga documental y de flujos de trabajo creada por Atlassian.
+
+![](media/confluence.png)
+
+Las páginas se almacenan en espacios de trabajo donde los equipos pueden colaborar en proyectos y mantener todo el contenido organizado. Los usuarios pueden crear tantos espacios como necesite su equipo y los espacios se pueden personalizar con nombres, imágenes, enlaces, calendarios y más.
 
 ## Entornos de pruebas
 
