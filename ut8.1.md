@@ -75,12 +75,18 @@ Así mismo, la normativa *ISO 25010* especifica una serie de características qu
 
 ### Pruebas de aceptación
 
-Se utilizan con el cliente y están destinadas a ganar confianza en el producto:
+Las pruebas de aceptación de un producto de software son la fase final del proceso de testing y tienen como objetivo principal validar que el software cumple con los requisitos y expectativas del cliente o usuario final.
 
 - Sirven para conseguir el OK para su paso a **producción**.
 - Conseguir la aceptación del cliente de que lo que se ha diseñado y aprobado en las fases anteriores es realmente lo que el cliente pedía.
 - Asegurar que el producto sigue los estándares de mercado (se prueba en diferentes perfiles)
 - Comparar el producto con otros similares del mercado.
+
+Dentro de las pruebas de aceptación  podemos encontrar las pruebas llevadas a cabo en grupo (*group testing*):
+- Testing de Usuario en Grupo (Group User Testing): Se refiere a pruebas realizadas por múltiples usuarios simultáneamente para evaluar la experiencia de usuario.
+- Pruebas de Aceptación del Usuario (UAT - User Acceptance Testing): A veces se realizan en grupo para validar si el software cumple con los requisitos antes de su despliegue.
+- Pruebas de Exploración en Grupo (Group Exploratory Testing): Un grupo de testers explora la aplicación sin casos de prueba predefinidos, buscando errores inesperados.
+
 
 ### Pruebas de regresión
 
