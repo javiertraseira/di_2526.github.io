@@ -7,11 +7,17 @@ El **contenido** hace referencia a la información contenida en una página o en
 En las directrices de Accesibilidad para el Contenido (WCAG 2.x) hay varias de ellas que nombran directamente al **contenido**:
 
 1.1 Proporciona alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple.
+
 1.3 Crea contenido que pueda presentarse de diferentes formas (por ejemplo, con una disposición más simple) sin perder información o estructura.
+
 1.4 Facilita a los usuarios ver y oír el contenido.
+
 2.2 Proporciona a los usuarios el tiempo suficiente para leer y usar el contenido.
+
 2.3. No diseñar contenido que se sepa podría provocar ataques o convulsiones.
+
 2.4. Proporcionar medios para ayudar a los usuarios a navegar, encontrar contenido y determinar dónde se encuentran.
+
 3.1 Hacer que los contenidos textuales resulten legibles y comprensibles.
 
 En el siguiente gráfico se puede comprobar que el tiempo necesario para la **comprobación** de algunas de las directrices o criterios de conformidad del primer principio son muy superiores al resto de criterios, consumiendo 4 de ellos el 25% del tiempo de análisis:
