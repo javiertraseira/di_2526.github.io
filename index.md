@@ -2,11 +2,9 @@
 
 ## Guía didáctica
 
-📕 [Guía didáctica en PDF](/pdf/Guía presentación DI 24-25.pdf)
-
 ----
 
-## Contenido del curso 24-25
+## Contenido del curso 25-26
 
 
 
