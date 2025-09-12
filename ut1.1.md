@@ -279,6 +279,15 @@ En la actualidad existen desarrollos en realidad aumentada (AR) y la realidad vi
 
 ![](media/natural_assistants.png) 
 
+```note
+La realidad aumentada y virtual permiten a los usuarios interactuar con entornos digitales mediante movimientos corporales y comandos de voz, transformando la experiencia de usuario.
+```
+
+```note
+En el futuro estas tecnologías convergen hacia interfaces híbridas sin pantallas, donde la interacción se basa en la voz, gestos y contexto espacial, creando nuevas reglas de diseño.
+```
+
+
 ## Evolución histórica de la web
 
 ### Hipertexto y WWW
