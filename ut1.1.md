@@ -332,19 +332,35 @@ Desde aquel momento, se presenta la información al usuario de una manera operat
 
 ![](media/backvsfront.png)
 
+
 ## UI y UX
 
 ```note
 💡 **UI** (*User Interface*) se corresponde con el diseño visual de una interfaz de usuario.
 ```
 
-La principal característica del diseño de Interfaces no es enfocarse solamente en crear una aplicación o página, sino crear un diseño que sea usable y satisfactorio.
+UI se refiere al conjunto de elementos visuales e interactivos que permiten al usuario comunicarse con el sistema: botones, menús, tipografías, colores, iconos, formularios… En otras palabras, es 'lo que el usuario ve y toca'.
+
 
 ```note
 💡 **UX** (*User Experience*) hace referencia a las sensaciones de utilizar una interfaz de usuario que experimenta una persona al utilizarla.
 ```
 
-Los colores, la tipografía, las imágenes son algunos de los elementos con los que trabaja el diseñador UI para hacer que un producto sea atractivo. No obstante, no sirve de nada tener un producto bonito si no satisface las necesidades de los usuarios para los que está pensado. Es por ello que el diseño UX busca resolver las necesidades de los usuarios finales buscando la experiencia de uso.
+No sirve de nada tener un producto bonito si no satisface las necesidades de los usuarios para los que está pensado. Es por ello que el diseño UX busca resolver las necesidades de los usuarios finales buscando la experiencia de uso.
+
+### Caso práctico
+
+- **Elementos de UI**
+
+    En una app bancaria, la UI incluye colores de la marca, tipografías legibles, tamaño de botones y ubicación del menú. Estos elementos guían la atención visual y comunican la identidad de la marca.
+
+- **Elementos de la UX**
+
+    Sin embargo, una interfaz atractiva no garantiza que el usuario comprenda el proceso ni se sienta seguro al realizar operaciones críticas. La UX es la facilidad con la que el usuario puede consultar su saldo, transferir dinero sin errores y sentirse seguro al hacerlo.
+
+
+
+
 
 Dentro de las actividades que se realizan en **UI**, están:
 
