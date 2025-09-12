@@ -319,6 +319,19 @@ Desde aquel momento, se presenta la información al usuario de una manera operat
 
 ![](media/evol_web.png)
 
+### Frontend vs backend
+
+- **Frontend**:
+
+    Es la parte visible de una web, con la que el usuario interactúa directamente. Incluye todo lo que aparece en el navegador: botones, menús, formularios, animaciones… Se construye principalmente con HTML, CSS y JavaScript, y hoy en día con frameworks modernos como React, Angular o Vue.
+
+- **Backend**: 
+
+    Es la parte 'oculta', que gestiona la lógica de negocio, el acceso a bases de datos y la comunicación con servidores. Está desarrollado con lenguajes y tecnologías como Java, Python, PHP, Node.js o bases de datos como MySQL y MongoDB. El backend procesa la información y la envía al frontend para mostrarla al usuario.
+
+
+![](media/backvsfront.png)
+
 ## UI y UX
 
 ```note
