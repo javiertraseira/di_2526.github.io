@@ -1,4 +1,4 @@
-# Módulo de Desarrollo de Interfaces 24-25 (2º DAM)
+# Módulo de Desarrollo de Interfaces 25-26 (2º DAM)
 
 ## Guía didáctica
 
