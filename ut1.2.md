@@ -1,5 +1,5 @@
 
-# UT1.2 Interacción Persona-Ordenador
+# UT1.2 HCI. Interfaces naturales
 
 ## Introducción
 
@@ -12,7 +12,7 @@ Su objetivo principal es incrementar la productividad de los equipos y minimizar
 > “La Interacción persona-ordenador es la disciplina relacionada con el diseño, evaluación y implementación de sistemas informáticos interactivos para el uso de seres humanos, y con el estudio de los fenómenos más importantes con los que está relacionado. ”
 
 
-Generalmente, los sistemas informáticos son interactivos e involucran al usuario en la resolución de tareas. Para conseguir esta interacción o diálogo entre persona- ordenador se utiliza la interfaz. Esta interfaz de usuario determina, en gran medida, la percepción que el usuario tendrá de una aplicación y es un factor de gran importancia para conseguir una aplicación exitosa.
+Generalmente, los sistemas informáticos son interactivos e involucran al usuario en la resolución de tareas. Para conseguir esta interacción o diálogo entre persona- ordenador se utiliza la **interfaz**. Esta interfaz de usuario determina, en gran medida, la percepción que el usuario tendrá de una aplicación y es un factor de gran importancia para conseguir una aplicación exitosa.
 
 ![](media/ef1bfde931496a14bfcf7a28d046c27c.jpeg)
 
@@ -31,21 +31,51 @@ Licklider y Clark, en 1962, elaboran una lista con los diez problemas más comun
 
 Hansen en su libro *User Engineering Principles for Interactive Systems* hace la primera enumeración de **principios para el diseño de sistemas interactivos**:
 
-1.  Conocer al usuario.
+1. Conocer al usuario.
 2. Minimizar la memorización, sustituyendo la entrada de datos por la selección de ítems, usando nombres en lugar de números, asegurándose un comportamiento predecible y proveyendo acceso rápido a información práctica del sistema.
 3. Optimizar las operaciones mediante la rápida ejecución de operaciones comunes, la consistencia de la interfaz y organizando y reorganizando la estructura de la información basándose en la observación del uso del sistema.
 4. Facilitar buenos mensajes de error, crear diseños que eviten los errores más comunes, haciendo posible deshacer acciones realizadas y garantizar la integridad del sistema en caso de un fallo de software o hardware.
 
-Los estudios realizados por Myers y Rosson en una encuesta hecha a diferentes desarrolladores, demuestran que alrededor del **48%** del código de una aplicación está dedicado a la interfaz de usuario.
+### Código interfaz
+
+Los estudios realizados por Myers y Rosson en una encuesta hecha a diferentes desarrolladores, demuestran que alrededor del **52%** del código de una aplicación está dedicado a la interfaz de usuario.
 
 ![](media/147489680deca390b77a0aec99844efc.png)
 
 
 Otros estudios demuestran que el 80% de los costes de mantenimiento de una aplicación son debidos a problemas del usuario con el sistema y no con errores de código o bugs. Entre ellos, alrededor del 64% son problemas de usabilidad.
 
-A pesar de su importancia la interacción persona-ordenador es una disciplina a la que no se le da el suficiente valor en los estudios de informática y, muchas veces, no se utiliza en el momento de hacer la documentación de un proyecto. Igualmente la experiencia de usuario es un campo al que cada vez se le da más importancia empresarial y académica.
+A pesar de su importancia la interacción persona-ordenador es una disciplina a la que no se le da el suficiente valor en ciertos campos y, muchas veces, no se utiliza en el momento de hacer la documentación de un proyecto. Igualmente la experiencia de usuario es un campo al que cada vez se le da más importancia empresarial y académica.
 
-Atendiendo a cómo el usuario puede interactuar con una interfaz, ya hemos visto que existen varios tipos de interfaces de usuario:
+Algunas referencias aproximadas que se suelen observar:
+
+- Aplicaciones web con backend y frontend diferenciados
+    - Frontend (HTML, CSS, JS/React/Angular/Vue): 40–50% del código.
+    - Backend (API REST, lógica, DB): 50–60%.
+- Aplicaciones móviles (Android/iOS, Flutter, etc.):
+    - Interfaz + lógica de interacción: 40–60%.
+    - Backend (si lo hay embebido o conectado a la nube): 40–60%.
+- Aplicaciones empresariales (ERP, CRM, gestión interna)
+    - Backend suele ser mucho mayor porque hay mucha lógica de negocio y reglas: 70–80% backend, 20–30% interfaz.
+- Apps visuales o videojuegos
+    - Gran parte del código se dedica a gráficos, UI y experiencia: puede ser 60–70% interfaz.
+
+
+Algunas referencias aproximadas que se suelen observar:
+Aplicaciones web con backend y frontend diferenciados
+Frontend (HTML, CSS, JS/React/Angular/Vue): 40–50% del código.
+Backend (API REST, lógica, DB): 50–60%.
+Aplicaciones móviles (Android/iOS, Flutter, etc.):
+Interfaz + lógica de interacción: 40–60%.
+Backend (si lo hay embebido o conectado a la nube): 40–60%.
+Aplicaciones empresariales (ERP, CRM, gestión interna)
+Backend suele ser mucho mayor porque hay mucha lógica de negocio y reglas: 70–80% backend, 20–30% interfaz.
+Apps visuales o videojuegos
+Gran parte del código se dedica a gráficos, UI y experiencia: puede ser 60–70% interfaz.
+
+### Tipos de interfaces
+
+Ya hemos visto que existen varios tipos de interfaces de usuario:
 
 - **Interfaz de línea de comandos** (Command-Line Interface, **CLI**): Interfaces alfanuméricas (intérpretes de comandos) que solo presentan texto.
 - **Interfaz gráfica de usuario** (Graphic User Interface, **GUI**): Permiten comunicarse con la computadora de forma rápida e intuitiva representando gráficamente los elementos de control y medida.
@@ -74,10 +104,10 @@ En una interacción con el ordenador el usuario recibe información que es gener
 
 - La **entrada** en el ser humano se produce a través de los sentidos:
     - Vista
-    -   Oído
-    -   Tacto
-    -   Olfato
-    -   Gusto
+    - Oído
+    - Tacto
+    - Olfato
+    - Gusto
 
     ![](media/60f12ada0cc62562e34c40df1aa14ce6.png)
 
@@ -301,11 +331,35 @@ Las interfaces naturales de usuario buscan que los usuarios interactúen con el 
 
 La palabra natural es utilizada, porque al contrario que la gran mayoría de interfaces, no usan dispositivos de control artificiales, como pueden ser un teclado o un ratón, sino controles que permiten desarrollar una experiencia natural e intuitiva utilizando sensores de audio, acelerómetros, infrarrojos, dispositivos multitouch, cámaras, etc. 
 
+Objetivo principal: Reducir la curva de aprendizaje, hacer la interacción más intuitiva y cercana a cómo usamos el cuerpo o sentidos en la vida real. Que la interfaz “se adapte al usuario”, no al revés. 
+
 
 ![](media/nui_schema.png)
 
 
-### Reconocimiento táctil
+### Principios del diseño en NUI
+
+1. **Interacción sin Esfuerzo**: El usuario no debería necesitar manuales. La interacción debe ser intuitiva y fluida, aprovechando gestos y movimientos.
+
+2. **Contexto y Consciencia Situacional**: El sistema debe entender el entorno y el contexto del usuario (lugar, hora, actividad, etc.) para ofrecer una respuesta adecuada.
+
+3. **Realismo y Física**: Las interacciones deberían imitar el mundo físico. Los objetos virtuales deberían comportarse con inercia, peso y gravedad.
+
+4. **Retroalimentación Inmediata (feedback)**: El sistema debe responder de forma instantánea a las acciones del usuario, ya sea con efectos visuales, sonoros o hápticos. 
+
+5. **Personalización y Aprendizaje** La interfaz debe adaptarse al usuario con el tiempo, aprendiendo sus preferencias y patrones de comportamiento.
+
+
+### Tipos de reconocimiento
+
+- **Táctil, gestos y Movimiento**: Uso del cuerpo, manos y dedos para interactuar (ej. control por movimiento, realidad aumentada).
+
+- **Voz y Lenguaje Natural**: Interacción a través de comandos de voz y conversación (ej. asistentes virtuales, domótica).
+
+- **Visión y Seguimiento Ocular**: El sistema reconoce la mirada para saber dónde el usuario está prestando atención, permitiendo interacciones sin manos.
+
+
+#### Reconocimiento táctil
 
 - La interacción a través de pantallas táctiles es uno de los ejemplos más comunes de NUI. Los smartphones fueron los primeros dispositivos en implementar este tipo de  interfaces naturales de usuario en sus sistemas operativos.
 - Los usuarios pueden navegar, ampliar o reducir imágenes, y escribir directamente sobre la pantalla con movimientos simples y naturales. Además, se han ido universalizando muchos gestos en pantallas como ampliar, reducir o mover elementos.
@@ -313,9 +367,16 @@ La palabra natural es utilizada, porque al contrario que la gran mayoría de int
     ![](media/tactil.png)
 
 
-### Reconocimiento del habla
+#### Reconocimiento de gestos
 
-El reconocimiento del habla es otro interfaz natural de usuario de las más desarrollada, permitiendo la comunicación hablada entre persona y sistema.
+El reconocimiento gestual es una tecnología clave dentro del ámbito de las interfaces naturales de usuario (NUI) que permite a los dispositivos interpretar y responder a los movimientos del cuerpo humano, principalmente de las manos y los brazos. Este sistema se basa en el uso de sensores, cámaras y algoritmos avanzados de procesamiento de imagen para detectar, seguir y comprender gestos específicos realizados por el usuario.
+
+![](media/gestual_nui.jpg)
+
+
+#### Reconocimiento de la voz
+
+El reconocimiento de la voz y el habla es otro interfaz natural de usuario de las más desarrollada, permitiendo la comunicación hablada entre persona y sistema.
 
 Se maneja diferentes tipos de información, como:
 - Acústica
@@ -326,8 +387,35 @@ Se maneja diferentes tipos de información, como:
 
 Los asistentes virtuales como Siri, Google Assistant y Alexa de Amazon permiten a los usuarios realizar tareas mediante comandos de voz.
 
-### Reconocimiento gestual
+#### Reconocimiento ocular
 
-El reconocimiento gestual es una tecnología clave dentro del ámbito de las interfaces naturales de usuario (NUI) que permite a los dispositivos interpretar y responder a los movimientos del cuerpo humano, principalmente de las manos y los brazos. Este sistema se basa en el uso de sensores, cámaras y algoritmos avanzados de procesamiento de imagen para detectar, seguir y comprender gestos específicos realizados por el usuario.
+El reconocimiento y seguimiento ocular (eye tracking) es la capacidad de un sistema para determinar dónde está mirando el usuario en tiempo real. En el contexto de NUI, la visión se convierte en un medio de control natural, eliminando la necesidad de otros dispositivos.
 
-![](media/gestual_nui.jpg)
+![](media/ocular_nui.jpg)
+
+
+### Ventajas de las NUI
+
+- **Intuitividad** mayor: menores barreras para empezar a usarlas. 
+
+- **Experiencia de usuario** más inmersiva, atractiva, natural.
+
+- Mejor **accesibilidad**: pueden permitir el uso por personas con discapacidad, o en situaciones en que no es práctico usar manos / teclado.
+
+- Posibilidad de **interacción más rica**, con otros sentidos (vista, oído, tacto).
+
+- **Potencial** para aplicaciones innovadoras (salud, entretenimiento, educación, domótica).
+
+
+### Desventajas y retos de las NUI
+
+- Precisión y **confiabilidad**: errores en reconocimiento de voz, gestos mal interpretados, falsas positivas o negativas.
+
+- **Ambigüedad**: ¿qué gesto significa qué?, ¿cómo evitar que movimientos no intencionados se interpreten como inputs?
+
+- **Latencia**: el retardo perceptible puede romper la sensación de naturalidad.
+
+- **Hardware** especializado, coste, disponibilidad, consumo batería.
+
+- **Fatiga física**: gestos constantes pueden cansar; mirar fijamente puede cansar; postura corporal incómoda.
+
