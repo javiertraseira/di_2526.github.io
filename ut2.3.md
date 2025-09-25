@@ -458,6 +458,19 @@ Este evento se detecta al pulsar cualquier tecla. Bajo este escuchador se contem
 | keyTyped      | Se invoca cada vez que se ha pulsado una tecla y se ha traducido en un carácter.              |
 | KeyReleased | Se invoca al soltar una tecla.                     												|
 
+
+```java
+JTextField campo = new JTextField();
+
+campo.addKeyListener(new java.awt.event.KeyAdapter() {
+    public void keyPressed(java.awt.event.KeyEvent evt) {
+        System.out.println("Tecla: " + evt.getKeyChar());
+    }
+});
+```
+
+
+
 ### Listeners: ActionListener
 
 Este evento detecta la pulsación sobre un componente, está presente en varios tipos de elementos siendo uno de los escuchadores más comunes.
@@ -471,6 +484,13 @@ La detección tiene lugar ante dos tipos de acciones, la pulsación sobre el com
 | *JMenuItem* | Al seleccionar alguna opción del componente menú.                                                 |
 | *JList*     | Al hacer doble click sobre uno de los elementos del componente lista.                             |
 
+```java
+btnSaludar.addActionListener(e -> {
+    System.out.println("Se pulsó el botón");
+});
+
+```
+
 ### Listeners: MouseListener
 
 Este evento se produce al hacer click con el **puntero del ratón** sobre algún componente. Es posible diferenciar entre distintos tipos de pulsaciones y asociar a cada una de ellas una acción diferente.
@@ -478,28 +498,79 @@ Este evento se produce al hacer click con el **puntero del ratón** sobre algún
 |      |   |
 |-----------------|----------------------------------------------------------------------------------------------------|
 | mouseClicked    | Al hacer *click* sobre el botón o pulsar la tecla *Enter* con el foco situado sobre el componente. |
-| mouseExited     | Se produce al salir de un componente utilizando el puntero del ratón.                              |
+| mouseEntered    | Se produce al pasar por encima de un componente con el puntero del ratón.                          |
 | *mousePressed*  | Se produce al presionar sobre el componente con el puntero.                                        |
 | *mouseReleased* | Se produce al soltar el puntero del ratón.                                                         |
 
+```java
+JLabel etiqueta = new JLabel("Pasa el ratón");
 
-## Modelo Vista Controlador
+etiqueta.addMouseListener(new java.awt.event.MouseAdapter() {
+    public void mouseEntered(java.awt.event.MouseEvent evt) {
+        etiqueta.setText("Ratón por encima");
+}
+```
+
+
+## Modelo Vista Controlador (MVC)
 
 El Modelo Vista Controlador (**MVC**), tal y como ya comentamos, es un estilo de arquitectura de software que separa los datos de una aplicación (modelo), la interfaz de usuario (vista), y la lógica de control (controlador).
 
 ![Modelo Vista Controlador](media/mvc1.png)
 
-###  Modelo
+**Modelo**
 
 El modelo (datos) lo define el desarrollador y puede incluir acceso a un BD.
 
-###  Vista
+**Vista**
 
 Conjunto de objetos de clases que heredan de *java.awt.Component*
 
-###  Controlador
+**Controlador**
 
 -   El controlador es el thread de tratamiento de eventos, que captura y propaga los eventos a la vista y al modelo
 -   Clases de tratamiento de los eventos (a veces como clases anónimas) que implementan interfaces de tipo *EventListener* (*ActionListener, MouseListener, WindowListener, etc.*)
 
+### Java Swing y el MVC
 
+Java Swing está diseñado siguiendo un patrón MVC, aunque no de forma pura como en frameworks web modernos.
+
+En Swing:
+- Modelo → representa los datos y la lógica. Ejemplo: DefaultTableModel en un JTable, ListModel en un JList, o el modelo de un JComboBox.
+- Vista → el componente gráfico que se muestra (JTable, JList, JButton, etc.).
+- Controlador → se gestiona con los listeners que reciben eventos y ejecutan acciones.
+
+Pero Swing no mantiene una separación estricta entre vista y controlador: Cada componente suele tener su propio modelo interno y expone métodos para añadir listeners. 
+
+Es lo que se llama un **modelo delegado**: el componente Swing actúa tanto de vista como de punto de enlace con el controlador.
+
+## GUI designer Apache Netbeans
+
+### Creación proyectos GUI
+
+El diseñador de GUI Swing de Netbeans llamado **Matise** es bastante potente y ofrece muchas herramientas que veremos en las siguientes partes y prácticas de la unidad.
+
+![](media/gui_designer_swing.png)
+
+### Manejo de eventos en NetBeans
+
+En NetBeans, al arrastrar un componente al formulario:
+Un doble clic sobre el componente **genera automáticamente** el método del evento.
+
+```java
+private void btnSaludarActionPerformed(java.awt.event.ActionEvent evt) {
+    JOptionPane.showMessageDialog(this, "¡Hola desde NetBeans!");
+}
+```
+
+> NetBeans añade automáticamente el ActionListener y organiza los manejadores de eventos.
+
+### Manejo de eventos en NetBeans
+
+Cuando se usa el GUI Builder Matisse de NetBeans:
+
+- NetBeans generará automáticamente el código de la vista (el JFrame o JPanel con sus botones, etiquetas, etc.).
+- Los eventos se gestionan mediante métodos en la misma clase del formulario (btnAceptarActionPerformed, etc.).
+- Esto significa que la lógica del controlador suele quedar mezclada dentro de la clase de la vista.
+
+> En otras palabras: NetBeans no fuerza un verdadero MVC. Tan solo facilita la creación rápida de la Vista y los manejadores de eventos.
