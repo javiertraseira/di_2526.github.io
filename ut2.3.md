@@ -552,6 +552,26 @@ El diseñador de GUI Swing de Netbeans llamado **Matise** es bastante potente y 
 
 ![](media/gui_designer_swing.png)
 
+Cuando se arrastra un **componente** desde el editor:
+
+- NetBeans no guarda el diseño directamente en el .java que ves, sino en un archivo auxiliar `.form` que se genera automáticamente desde el editor visual.
+- El `.form` contiene *metadatos* en *XML* sobre la disposición, propiedades y eventos de los componentes.
+- El IDE sincroniza el `.form` con el `.java`: cuando compilas o guardas, genera automáticamente el código Swing correspondiente.
+
+El código generado en el editor tiene 4 partes diferenciadas:
+
+1. **Declaración** de variables de componentes (arriba de la clase).
+
+2. **Constructor** del formulario, que llama a *initComponents()*.
+
+3. Método *initComponents()* (zona marcada como “Generated Code”).
+
+4. Manejadores de **eventos**:
+    - Cuando se hace doble clic sobre un componente en el editor visual se genera un método manejador fuera de InitComponents
+
+
+
+
 ### Manejo de eventos en NetBeans
 
 En NetBeans, al arrastrar un componente al formulario:
