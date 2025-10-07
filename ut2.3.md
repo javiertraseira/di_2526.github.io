@@ -552,7 +552,7 @@ El diseñador de GUI Swing de Netbeans llamado **Matise** es bastante potente y 
 
 ![](media/gui_designer_swing.png)
 
-Cuando se arrastra un **componente** desde el editor:
+Cuando se arrastra un **componente** al formulario desde el editor:
 
 - NetBeans no guarda el diseño directamente en el .java que ves, sino en un archivo auxiliar `.form` que se genera automáticamente desde el editor visual.
 - El `.form` contiene *metadatos* en *XML* sobre la disposición, propiedades y eventos de los componentes.
@@ -568,7 +568,6 @@ El código generado en el editor tiene 4 partes diferenciadas:
 
 4. Manejadores de **eventos**:
     - Cuando se hace doble clic sobre un componente en el editor visual se genera un método manejador fuera de InitComponents
-
 
 
 
@@ -594,3 +593,110 @@ Cuando se usa el GUI Builder Matisse de NetBeans:
 - Esto significa que la lógica del controlador suele quedar mezclada dentro de la clase de la vista.
 
 > En otras palabras: NetBeans no fuerza un verdadero MVC. Tan solo facilita la creación rápida de la Vista y los manejadores de eventos.
+
+
+## Testing con AssertJ Swing
+
+**AssertJ** es una librería de assertions fluida (de ahí su nombre “fluent assertions”) que permite escribir pruebas legibles y expresivas.
+
+Para interfaces Swing, AssertJ tiene un módulo específico: AssertJ Swing (org.assertj:assertj-swing)
+
+Este módulo permite simular interacciones del usuario (como clics, escritura en campos, selección de menús) y verificar el estado de los componentes de una GUI Swing.
+
+Primero de todo habrá que añadir las librerías JUNIT 4 y AssertJ Swing 3.17.1 en nuestro proyecto.
+
+Después será necesario crear una clase de pruebas dentro del apartado test para automatizar el procedimiento dentro del proyecto de Netbeans correspondiente.
+
+El código Java de una clase de prueba para test con AssertJ Swing tendrá 3 partes:
+
+1. **Preparación (@Before)**. Asegura que todas las acciones Swing se ejecutan en el hilo correcto.
+2. **Posterior (@After)** Limpia los recursos usados después de cada prueba. 
+3. **Acciones y verificaciones (@Test)**: simular lo que haría un usuario (clic, escribir) y comprobar que el resultado es el esperado.
+
+
+Clase de prueba mínima creada desde *Test Packages>new Java Class*:
+
+```java
+import org.assertj.swing.edt.FailOnThreadViolationRepaintManager;
+import org.assertj.swing.fixture.FrameFixture;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class MiVentanaTest {
+                 private FrameFixture window;
+    @Before
+    public void setUp(){
+        // Asegura que todas las acciones Swing se ejecutan en el hilo correcto (EDT)
+        FailOnThreadViolationRepaintManager.install();
+        // Crear e inicializar la ventana a probar
+        MiVentana frame =newMiVentana();
+        window =newFrameFixture(frame);
+        window.show();// Muestra la ventana en pantalla para la prueba
+        }	
+    @After
+    public void tearDown(){
+        // Cierra y limpia la ventana después de cada test
+        window.cleanUp();
+    }
+    
+    @Test
+    public void testComponenteBasico(){
+        // Simular interacción con un componente
+        window.textBox("campo_texto").enterText("Hola");
+        window.button("boton_ok").click();
+        // Verificar un resultado esperado (ejemplo: aparece un diálogo)
+        window.dialog().requireVisible();
+    }
+}
+```
+
+### @Before
+
+El método anotado con `@Before` se ejecuta antes de cada prueba.
+
+Aquí se inicializa el entorno de test:
+
+- `FailOnThreadViolationRepaintManager.install()`
+Asegura que las acciones sobre la interfaz se hagan en el Event Dispatch Thread (EDT), que es obligatorio en Swing.
+
+- `GuiActionRunner.execute(...)`
+Crea la instancia del JFrame o JPanel dentro del EDT.
+
+- `FrameFixture`
+Es la clase clave de AssertJ Swing: representa la ventana o componente a testear y permite manipularla como si un usuario la usara.
+
+- `window.show()`
+Hace visible la ventana (en modo de prueba). Puede configurarse para mostrarla en modo headless si no quieres que se abra físicamente.
+
+
+### @After
+
+El método con `@After` se ejecuta después de cada prueba.
+
+Su objetivo es cerrar ventanas, liberar memoria y restaurar el estado.
+
+`window.cleanUp()` cierra la ventana y limpia los listeners y recursos.
+
+
+### @Test
+
+Cada método con `@Test` es una prueba independiente.
+
+Dentro de este método:
+
+1. Se simulan las acciones del usuario:
+
+```java
+window.button("okButton").click();
+window.textBox("inputField").enterText("texto");
+window.menuItem("fileOpen").click();
+```
+
+
+2. Se comprueba el resultado esperado:
+
+```java
+window.label("messageLabel").requireText("Texto esperado");
+window.dialog().requireVisible();
+```
