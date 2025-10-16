@@ -614,7 +614,9 @@ El código Java de una clase de prueba para test con AssertJ Swing tendrá 3 par
 3. **Acciones y verificaciones (@Test)**: simular lo que haría un usuario (clic, escribir) y comprobar que el resultado es el esperado.
 
 
-Clase de prueba mínima creada desde *Test Packages>new Java Class*:
+### Clase de prueba
+
+Clase de prueba mínima creada desde *Test Packages>new Java Class* en Netbeans:
 
 ```java
 import org.assertj.swing.edt.FailOnThreadViolationRepaintManager;
