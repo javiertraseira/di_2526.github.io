@@ -221,15 +221,35 @@ En los desarrollos actuales más del 70% del tiempo se dedica al dieseño del mo
 | Continue (F5)                   | La ejecución del programa continúa hasta el siguiente breakpoint. Si no existe un breakpoint se ejecuta hasta el final.                                                                                                        |
 | Finish Debugger                 | Terminar la depuración del programa.                                                                                                                                                                                           |
 
-### Proyectos
+### Carpetas en Netbeans
 
-Principales carpetas de un proyecto Java creado en Netbeans:
-- Carpeta **src** contiene los archivos fuente codificados para este trabajo en lenguaje Java (extensión .java). Dichos archivos se encuentran distribuidos en carpetas, o paquetes en notación de Java. Además de los archivos fuente, se incluyen imágenes (archivos con extensión .gif) y otros ficheros de texto utilizados.
-- Carpeta **build** es utilizada por NetBeans para almacenar los archivos objeto resultado de la compilación. Estos archivos tienen extensión .class y contienen la traducción de Java a bytecode o lenguaje que entiende la Máquina Virtual de Java.
--Carpeta **dist** es utilizada por NetBeans para almacenar el archivo con extensión .jar, que no es más que un archivo comprimido en formato ZIP que contiene toda la estructura de archivos de la carpeta build. Este archivo es el que se utiliza para su distribución por Internet.
-- Carpeta **dist\javadoc** es utilizada por NetBeans para presentar la documentación de las clases generada como archivos .html a partir de los comentarios incluidos en los .java.
-- Carpeta **nbproject** es interna a NetBeans e incluye opciones de compilación y generación de la documentación del proyecto.
-- Carpeta **test** se corresponde con la generación de JUnit de Java para pruebas de clases.
+Principales carpetas de un proyecto Java creado en Netbeans usando **ANT**:
+- Carpeta `src` contiene los archivos fuente codificados para este trabajo en lenguaje Java (extensión .java). Dichos archivos se encuentran distribuidos en carpetas, o paquetes en notación de Java. Además de los archivos fuente, se incluyen imágenes (archivos con extensión .gif) y otros ficheros de texto utilizados.
+- Carpeta `build` es utilizada por NetBeans para almacenar los archivos objeto resultado de la compilación. Estos archivos tienen extensión .class y contienen la traducción de Java a bytecode o lenguaje que entiende la Máquina Virtual de Java.
+-Carpeta `dist` es utilizada por NetBeans para almacenar el archivo con extensión .jar, que no es más que un archivo comprimido en formato ZIP que contiene toda la estructura de archivos de la carpeta build. Este archivo es el que se utiliza para su distribución por Internet.
+- Carpeta `dist\javadoc` es utilizada por NetBeans para presentar la documentación de las clases generada como archivos .html a partir de los comentarios incluidos en los .java.
+- Carpeta `nbproject` es interna a NetBeans e incluye opciones de compilación y generación de la documentación del proyecto.
+- Carpeta `test` se corresponde con la generación de JUnit de Java para pruebas de clases.
+
+
+
+Principales carpetas de un proyecto Java creado en Netbeans usando **Maven**:
+- Carpeta `src/main/java` archivos fuente en Java (.java), interfaces y demás componentes organizados en paquetes.
+- Carpeta `src/main/resources` incluye los recursos no compilables necesarios para la aplicación:imágenes, ficheros de configuración (.properties, .xml, .json), plantillas, etc.
+- Carpeta `src/test/java` contiene el código de pruebas (tests) del proyecto, normalmente con JUnit u otros frameworks. 
+- Carpeta `target` es la carpeta de salida generada por Maven al compilar el proyecto.Contiene los archivos .class, los informes de pruebas, y el archivo empaquetado final (.jar.
+- Carpeta `src/main/javadoc` aunque no se crea por defecto, puedes generar la documentación Javadoc desde NetBeans o Maven.
+- Fichero `pom.xml` Es el archivo de configuración principal de Maven.Define el nombre del proyecto, sus dependencias, el tipo de empaquetado, los plugins de compilación, y las versiones de Java.
+
+### Carpetas en IntelliJ Idea
+
+Principales carpetas de un proyecto Java creado en IntelliJ IDEA usando Maven:
+- Carpeta `src/main/java` contiene el código fuente principal de la aplicación en Java. Por ejemplo las clases de la lógica del programa, controladores, modelos.
+- Carpeta `src/main/resources` archivos de configuración y recursos que la aplicación necesita en tiempo de ejecución. Por ejemplo imágenes, plantillas, ficheros .xml y .properties
+- Carpeta `src/test/java` contiene las clases de pruebas unitarias (normalmente con JUnit).
+- Carpeta `src/test/resources` archivos de datos de prueba, configuraciones específicas para tests.
+- Fichero `pom.xml` el archivo de configuración central de Maven. Define dependencias, plugins, etc.
+
 
 ## Testing y casos de prueba
 
@@ -237,17 +257,14 @@ Dentro de la metodología agile, el **testing** es una fase crítica en el desar
 
 ![](media/agile_testing.png)
 
-En proyectos desarrollados en Java, especialmente aquellos que incluyen interfaces gráficas, el testing se vuelve aún más esencial debido a la complejidad añadida de la interacción del usuario con la interfaz. Unos de los departamentos más importantes de cualquier empresa de desarrollo es el de Calidad y Testing (QA).
+En proyectos desarrollados en Java, especialmente aquellos que incluyen interfaces gráficas, el testing se vuelve aún más esencial debido a la complejidad añadida de la interacción del usuario con la interfaz. Unos de los departamentos más importantes de cualquier empresa de desarrollo es el de Calidad y Testing (*QA*).
 
 
 Los beneficios del Testing en Proyectos en Java:
 
 - **Detección temprana de errores**: Identificar errores en las primeras etapas del desarrollo permite corregirlos antes de que se conviertan en problemas costosos.
-
 - Mejora de la **calidad del software**: Asegura que el software cumple con los requisitos funcionales y no funcionales.
-
 - Facilita el **mantenimiento**: Un código bien probado es más fácil de mantener y actualizar, ya que las pruebas existentes pueden validar que las nuevas modificaciones no introducen errores.
-
 - Confianza en el **despliegue**: Proporciona una mayor confianza al equipo de desarrollo y a los clientes de que la aplicación es estable y funciona correctamente en diversos escenarios.
 
 ### Casos de prueba
@@ -285,8 +302,8 @@ Markdown es ampliamente utilizado en plataformas como GitHub, foros, blogs, y la
 Las principales características de Markdown son las siguientes:
 
 -   Simplicidad: El texto en Markdown es fácil de leer, incluso en su formato sin procesar.
-    -   Portabilidad: Los archivos de texto en Markdown pueden ser convertidos a otros formatos como HTML, PDF, DOCX, entre otros.
-    -   Enfocado en el contenido: Markdown permite a los autores centrarse en el contenido, ya que la sintaxis es mínima y no intrusiva.
+-   Portabilidad: Los archivos de texto en Markdown pueden ser convertidos a otros formatos como HTML, PDF, DOCX, entre otros.
+-   Enfocado en el contenido: Markdown permite a los autores centrarse en el contenido, ya que la sintaxis es mínima y no intrusiva.
 
 
 ### Sintaxis de Markdown
