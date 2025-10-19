@@ -422,3 +422,97 @@ Larry Tesler establece que para cualquier sistema existe cierta complejidad que 
 Un ejemplo evidente lo encontraríamos en cualquier web o aplicación para comprar billetes, dentro de la cual ya están comprimidas al máximo sus opciones de búsqueda.
 
 ![](media/tesler_sample.png)
+
+
+## Usabilidad en interfaces de escritorio
+
+Cuando trabajamos con **interfaces de escritorio** desarrolladas en *Java Swing* o posteriormente en *JavaFX*, los principios de usabilidad siguen siendo los mismos, pero deben concretarse en aspectos visuales y funcionales específicos.
+
+El objetivo es que el usuario pueda comprender, manejar y disfrutar la aplicación sin necesidad de instrucciones adicionales, logrando que cada elemento cumpla su función de forma clara e intuitiva.
+
+![](media/desktop_interface.png)
+
+### Claridad visual y legibilidad
+
+- Utilizar **fuentes legibles**, preferiblemente Sans Serif (pj. Segoe UI, Roboto, Arial).
+
+- Tamaño mínimo recomendado:
+    - 12 pt para texto general. 14–16 pt para etiquetas, menús o títulos.
+- Cuidar el **contraste** entre texto y fondo. Evita fondos oscuros con texto oscuro o colores muy saturados.
+
+- Usar un **espaciado adecuado** entre botones, etiquetas y campos de texto. En JavaFX puedes usar padding y spacing en los *HBox* y *VBox*; en Swing, márgenes y EmptyBorder.
+
+- Evitar imponer **colores** o estilos llamativos que distraigan:
+    - Usar una paleta neutra y coherente (por ejemplo, tonos grises o azules suaves).
+
+- Ofrecer la opción de *modo oscuro / claro*
+
+### Ayuda contextual y tooltips
+
+Los tooltips (mensajes emergentes) son una excelente herramienta para mejorar la experiencia de usuario, especialmente en botones o campos de texto cuyo propósito no sea evidente.
+
+En Swing, se usa:
+
+```java
+botonGuardar.setToolTipText("Guardar los cambios realizados");
+``` 
+
+![](media/tooltip.png)
+
+
+### Consistencia en la interfaz
+
+- Mantener una estructura visual coherente: menús, botones, colores y tipografías deben seguir una guía de estilo común.
+
+- Las ventanas y cuadros de diálogo deben tener un **tamaño uniforme** y comportamientos predecibles.
+
+- Colocar los *botones de acción principal* (como Guardar, Aceptar, Enviar) en la misma posición en todas las ventanas —por convención, en la parte inferior derecha.
+
+- Evitar usar diseños absolutos con setBounds(). Es preferible usar layouts (BorderLayout, GridBagLayout o VBox/HBox) que se adapten automáticamente al tamaño de ventana.
+
+
+### Navegación y ley de Fitts
+
+- Aplicar la **ley de Fitts**: los elementos más importantes deben ser grandes y accesibles. 
+
+- Botones pequeños o con texto muy corto (p. ej. OK) deben evitarse o reemplazarse por nombres más claros (Aceptar, Guardar cambios).
+
+- Proporciona una barra de menú o de navegación lateral clara.
+
+- Permitir al usuario volver fácilmente *atrás* o al *menú principal*.
+
+- En formularios largos, utilizar pestañas (JTabbedPane / TabPane) o asistentes por pasos (wizard) en lugar de una única ventana con todos los campos.
+
+
+![](media/navigation_tips.png)
+
+### Retroalimentación (feedback) 
+
+- Cuando una acción se ejecuta (por ejemplo, guardar datos o conectarse a una base de datos), hay que informar al usuario del progreso: 
+    - Muestra un diálogo de progreso (JProgressBar o ProgressIndicator).
+    - Desactivar temporalmente botones mientras el proceso está activo.
+- Si ocurre un error, muestra un mensaje claro y sin tecnicismos.
+
+### Control errores y validaciones
+
+- **Validar siempre** los campos antes de procesarlos (por ejemplo, que un campo numérico no esté vacío).
+- Usar indicadores visuales para señalar errores:
+    - Bordes rojos
+    - Iconos de advertencia  
+    - Mensajes junto al campo.
+- Evitar mensajes de error genéricos como `Error` o `Datos incorrectos`.
+
+![](media/error_validations.png)
+
+
+### Ejemplo de buenas prácticas
+
+En un formulario de registro de usuario (Swing o JavaFX):
+
+- Los campos están alineados y etiquetados claramente.
+- Cada campo tendrá un tooltip explicativo.
+- Los errores se muestran con mensajes claros y colores visuales.
+- El botón Guardar está en la esquina inferior derecha.
+- La fuente es legible y los márgenes proporcionados.
+- Si el proceso tarda, se mostrará una barra de progreso.
+- Se puede cancelar la acción o volver al menú principal.
