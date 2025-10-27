@@ -1,4 +1,4 @@
-# UT3.2 - Empaquetado, distribución y despliegue de aplicaciones
+# UT3.2 - Empaquetado y despliegue de aplicaciones
 
 ## Introducción
 Tras implementar una aplicación llega el momento de su distribución, para ello será necesario realizar un proceso de instalación que requiere de un paso previo: el empaquetado . Para realizar un correcto empaquetado se deben agrupar todos los
