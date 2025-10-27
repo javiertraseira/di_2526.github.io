@@ -146,23 +146,23 @@ Por defecto, Maven genera un `.jar` cuando se construye un proyecto con *Clean a
 Para crear un `jar` ejecutable hay que editar el `pom.xml` y usar *maven-jar-plugin*:
 
 ```xml
-<build >
-    <plugins >
+<build>
+    <plugins>
         <plugin>
-        <groupId >org.apache.maven.plugins </groupId >
-        <artifactId >maven -jar-plugin </artifactId >
-        <version >3.3.0</ version >
-        <configuration >
+        <groupId>org.apache.maven.plugins </groupId>
+        <artifactId>maven-jar-plugin </artifactId>
+        <version>3.3.0 </version>
+        <configuration>
             <archive>
-            <manifest >
-            <addClasspath >true</ addClasspath >
-            <mainClass >VistaControlador.GeneraNumeros </mainClass >
-            </manifest >
+            <manifest>
+            <addClasspath>true </addClasspath>
+            <mainClass>VistaControlador.GeneraNumeros </mainClass>
+            </manifest>
             </archive>
-        </configuration >
+        </configuration>
         </plugin>
-    </plugins >
-</build >
+    </plugins>
+</build>
 ```
 
 Si una aplicación Swing usa **librerías externas** (por ejemplo, mysql -connector , json-simple, etc.) el `.jar` generado por defecto no las incluirá.
@@ -171,28 +171,28 @@ Para que el `jar` contenga todas las **dependencias**, se debe usar *maven-assem
 
 ```xml
 <plugin>
-    <groupId >org.apache.maven.plugins </groupId >
-    <artifactId >maven -assembly -plugin </artifactId >
-    <version >3.7.0 </version >
-    <configuration >
+    <groupId>org.apache.maven.plugins </groupId >
+    <artifactId>maven-assembly-plugin </artifactId >
+    <version>3.7.0 </version >
+    <configuration>
         <archive>
-        <manifest >
-            <mainClass >VistaControlador.GeneraNumeros </mainClass >
-        </manifest >
+        <manifest>
+            <mainClass>VistaControlador.GeneraNumeros </mainClass >
+        </manifest>
         </archive>
-        <descriptorRefs >
-            <descriptorRef >jar-with -dependencies </descriptorRef >
-        </descriptorRefs >
-    </configuration >
-    <executions >
-        <execution >
-            <id> make -assembly </id>
-            <phase >package </phase >
-            <goals >
-            <goal >single</ goal >
-            </goals >
-        </execution >
-    </executions >
+        <descriptorRefs>
+            <descriptorRef>jar-with-dependencies </descriptorRef >
+        </descriptorRefs>
+    </configuration>
+    <executions>
+        <execution>
+            <id> make-assembly </id>
+            <phase>package </phase>
+            <goals>
+            <goal> single </goal>
+            </goals>
+        </execution>
+    </executions>
 </plugin>
 ```
 
