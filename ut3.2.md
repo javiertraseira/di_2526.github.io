@@ -167,7 +167,7 @@ Para crear un `jar` ejecutable hay que editar el `pom.xml` y usar *maven-jar-plu
 
 Si una aplicación Swing usa **librerías externas** (por ejemplo, mysql -connector , json-simple, etc.) el `.jar` generado por defecto no las incluirá.
 
-Para que el `jar` contenga todas las **dependencias**, se debe usar *maven-assembly-plugin* 
+Para que el `jar` contenga todas las **dependencias**, se debe usar *maven-assembly-plugin*:
 
 ```xml
 <plugin>
