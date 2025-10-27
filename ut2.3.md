@@ -302,8 +302,8 @@ El *DefaultListModel* es el lugar donde se guardan los elementos que el JList va
 El *JList* se asocia al DefaultListModel. Esto significa que cuando el modelo cambia (por ejemplo, al agregar elementos), el JList cambiará para reflejar esos cambios.
 
 
-    JListlista=new JList();
-    DefaultListModelmodelo = new DefaultListModel();
+    JListlista = new JList();
+    DefaultListModel modelo = new DefaultListModel();
     modelo.addElement("Elemento1");
     modelo.addElement("Elemento2");
     lista.setModel(modelo);
