@@ -1,0 +1,335 @@
+# UT3.3 Guías de estilo. Retícula, color, fuentes e imágenes
+
+## Guías de estilo
+
+Para asegurar la consistencia de las interfaces gráficas de una web o aplicación es fundamental plasmar las pautas de estilo en una guía que pueda seguir el equipo de desarrollo (programadores, analistas, diseñadores gráficos, etc.) durante el proceso de desarrollo del sitio. Estas guías se llaman **guías de estilo** o *look and feel*.
+
+```note
+Las *guías de estilo* recogen los criterios y normas que deben seguir los desarrolladores para que tenga una apariencia uniforme y atractiva para el usuario.
+```
+
+![](media/ccd50528b8b0fb369667e756c9fcf27f.png)
+
+En las guías de estilo se recogen datos como el diseño de la retícula, la gama de colores utilizada, los iconos, la tipografía, el tamaño de las letras, etc.
+
+![](media/f0b49e385c94a922076c10655ed1309e.png)
+
+![](media/5d60affdd17522cf7b4879467c0d7dac.png)
+
+## La retícula
+
+```tip
+La retícula, tal y como ya vimos, se utiliza para establecer una estructura de diseño continua y coherente en soportes que deban alojar todo tipo de contenidos.
+```
+
+Teniendo en cuenta los espacios determinados por la retícula, se generan las áreas principales, en muchas ocasiones diferenciadas por bloques de color o elementos separadores.
+
+![](media/0af15b7817af3f9e2ba9e54682813969.png)
+
+La retícula, tal y como ya vimos, se utiliza para establecer una estructura de diseño continua y coherente en soportes que deban alojar todo tipo de contenidos.
+
+Por ejemplo, en publicaciones que se actualizan frecuentemente, la retícula adquiere la forma de una **rejilla**, que determina las zonas existentes en el soporte, y su subdivisión (generalmente en varias columnas). Durante el proceso de edición de los contenidos se respeta la estructura definida, de manera que exista una continuidad visual a lo largo de toda la publicación.
+
+![](media/f85af079ed5bb379470811accd3762d2.jpeg)
+![](media/d3235d16a288ca53d09834b162a571a8.jpeg)
+![](media/816116da7dd7fc3b79c78933c80a560f.jpeg)
+
+No obstante la retícula, puede basarse en cualquier tipo de escala como pudiera ser la orgánica, Fibonacci o irregulares.
+
+![](media/370d68eb131d49d6576ceb1754c0f734.jpeg)
+
+![](media/c3c8c3b92bb96cbde040e592c13265c9.jpeg)
+
+## Tipografías
+
+Los textos son la base de la mayoría de sitios web e interfaces ya que lo más normal es transmitir la información mediante letras. Al diseñar cualquier interfaz resulta fundamental favorecer la legibilidad del texto, un factor crítico debido a la resolución de los soportes digitales.
+
+![](media/d6b415670cc408ec4ea49f89eb405e09.jpeg)
+
+### Estructura y medidas
+
+La **estructura** de una es precisa. Sus partes fundamentales son las siguientes:
+
+![](media/eb8a2d262bba11d6f4037a23c54bf6a6.png)
+
+Las **medidas** de una letra se miden según la altura y su anchura:
+
+![](media/3d14c7ab984968adf4daecd120f08741.png)![](media/025d2f86244bbd18e4613b3e57af205b.png)
+
+### Variaciones fuentes
+
+Generalmente, cualquier familia tipográfica dispone de tres variaciones sobre el tipo regular:
+
+-   Itálica (también llamada cursiva)
+-   Negrita (bold en inglés)
+-   Negrita itálica
+
+También existen otras variaciones especiales, según la familia de la fuente
+
+Normal **Negrita** *Cursiva*
+
+![](media/d273a7510b4b0d78b6d20a54129f2089.png)
+
+### Familias tipográficas
+
+Existen dos grandes de familias tipográficas, las Serif o Sans Serif. Además de estas dos familias existen también otras especiales:
+
+#### Serif
+
+![](media/1fb878eaebb81f3a9908c17fdd070a19.jpeg)
+
+En esta familia tipográfica las fuentes rematan el final con adornos. Estas fuentes nos aportan sentimientos de autoridad y firmeza, ya que su estilo es bastante clásico.
+
+#### Sans Serif
+
+![](media/cfea458e1e21cf6a7dbdf2ff03261f5b.jpeg)
+
+Como su enunciado nos indica, se trata de las sin serif. Este tipo de fuentes están compuestas por letras de palo seco, sin ningún tipo de adorno en el remate de su estructura. Con estas letras transmitiremos modernidad, seguridad, sobriedad o alegría.
+
+Recomendables en medios electrónicos.
+
+#### Monoespaciada
+
+En los **tipos de letra monoespaciales** cada letra ocupa la misma cantidad de espacio horizontal en la pantalla. Se suelen utilizar para la representación de código informático o de texto escrito mediante una máquina de escribir.
+
+![](media/8f20ecacf1e822f27e55a2029e4467ab.png)
+
+Inicialmente, se utilizaban las fuentes típicas que los usuarios tenían instaladas en sus dispositivos y distintos SO lo que daba lugar a problemas.
+
+Actualmente, gracias a que los navegadores soportan la directiva *@font-face*, es posible utilizar casi cualquier tipo de tipografía sin necesidad de que esté instalada en el dispositivo.
+
+### Composición tipográfica
+
+Los siguientes son los principales conceptos que forman parte de la composición tipográfica:
+
+-   Espaciado
+-   Espacio entre palabras
+-   Longitud de línea
+-   Interlineado (leading)
+-   Alineación
+
+### Legibilidad
+
+Elegir la tipografía adecuada según el contenido que debamos diseñar y sus destinatarios: la fuente óptima no será la misma para un público infantil que para uno adulto; para reproducirse en pantalla o impresa.
+
+Para textos extensos como los que suelen caracterizar a los materiales de educación superior, se aconsejan fuentes de caracteres bien proporcionados, regulares y si utiliza serifas, que éstas tengan remates clásicos y armoniosos.
+
+Hasta hace poco se recomendaba el uso de caracteres con serifa para soportes impresos y se sigue recomendando sin serifa en digitales.
+
+La letra **redonda** o regular mantiene las formas más abiertas y proporcionadas y en la mayoría de los casos es más legible que todas sus variantes: más que las cursivas, negritas, versales, condensadas, expandidas, etc.
+
+Usar **colores contrastados** entre fondo y figura; la mejor legibilidad se produce con tipos negros sobre fondo blanco.
+
+![](media/2113340a57bf15d750cff9185c58fb19.png)
+![](media/9a774fee1eae2cbb400eeb23dc90eb2e.png)
+
+**Recomendaciones generales** respecto a la tipografía utilizada:
+
+-  No usar más de tres tipografías distintas.
+-  Utilizar fuentes legibles.
+-  Elegir un buen contraste entre el fondo y la letra.
+-  Establecer un interlineado de 1,5 puntos por el tamaño de la letra.
+-  No abusar de los subrayados ya que suelen utilizarse para los hipervínculos.
+-  Los espacios en blanco entre párrafos ayudan a descansar la mirada y a mejorar la concentración gracias a la mejor comprensión de la separación entre ellos. Así pues, es necesario añadir un poco más de espaciado entre párrafos y no dejar la misma separación que con el interlineado.
+-  La longitud recomendada para un párrafo está comprendida entre 45 y 75 caracteres. (aunque esto puede depender del tamaño de la pantalla).
+-  Es aconsejable no utilizar textos de menos de 12 px.
+
+## Uso del color
+
+El color es una cualidad de la materia y de la luz, pero además es un factor expresivo ya que tiene la virtualidad de **comunicar y suscitar sentimientos**. Por este motivo, el diseñador estudia las dimensiones y los valores del color para poder utilizarlo como **instrumento de comunicación**.
+
+Nuestra capacidad para recordar colores es muy limitada y, en todo caso, se nos hace más difícil retener **diferencias de grado** que de **clase**.
+
+Tenemos capacidad para reconocer y diferenciar fácilmente un máximo de seis colores (los tres primarios + los tres secundarios que les vinculan).
+
+![](media/132c9044905adbef1852f5b22e92898a.png)
+
+### Armonía del color
+
+A principios del siglo XX, Ostwald desarrolló un conjunto de teorías sobre armonía del color. Básicamente, sus conclusiones son las siguientes:
+
+-  Dos o más colores armonizan si su **saturación** es la misma.
+ ![](media/a8f5798eaa051f6c2693920ee0e88123.png)
+
+-  Existen matices que combinan especialmente bien: son los **colores complementarios** (los enfrentados en el círculo cromático).
+
+![](media/f5859c3de90484fe7f5e4c58ab1cee11.png)
+
+-  Todo círculo horizontal en torno al eje del modelo cromático representa un conjunto de colores armónicos, porque contiene todos los matices de igual **saturación y luminosidad**.
+
+![](media/a0f0b7de7613bfe9d66e4965531c9198.png)
+
+### Paleta de colores
+
+Definir la gama de colores que se utilizará en un producto es fundamental porque puede condicionar la experiencia de los usuarios. Esta gama de colores se puede crear mediante una paleta de colores que nos provea de un grupo de matices y tonalidades que nos ayude a marcar la diferencia entre un diseño alegre, elegante, fiable, sobrio, etc.
+
+Una opción para definir la gama de colores es realizando una **composición monocromática**, que consiste en seleccionar un solo color del círculo cromático y crear sus tonalidades añadiendo blanco o negro.
+
+Otra opción consiste en seleccionar los **colores vecinos (análogos) del círculo cromático**, ya que son armónicos y ofrecen estabilidad al diseño. Los colores vecinos son los que se encuentran en un rango de 90 grados en el círculo cromático.
+
+![](media/bc1c4eff0e9961f51ab385e6e84b83be.png)
+![](media/753d6f48988ba200dd86da25eb5b77a2.png)
+
+![](media/8dc6ede1f66cfcc5a22a333f60ecd771.jpeg)
+
+En la red se pueden encontrar diferentes generadores de paletas de color que nos permiten seleccionar las tonalidades o colores idóneos que queremos utilizar: colores vivos, pastel, apagados, grisáceos, etc.
+
+Algunos de los generadores de paletas de color son los siguientes:
+
+-  **Color Picker**: htmlcolorcodes.com
+-  **Color Wheel de Adob**e: color.adobe.com
+-  **Color Wheel de Canva:** canva.com/colors/color-wheel
+-  **Paletton**: paletton.com
+-  **Chat de IA**: cualquiera puede generar fácilmente paletas.
+
+### Proporciones esquema color
+
+Para poder organizar y determinar la cantidad de color en una aplicación o web, estas proporciones pueden ser de gran ayuda**: 60-30-10**. Esta es una norma que suelen usar los diseñadores de interiores y decoradores para escoger, estructurar y darle proporción a los colores escogidos.
+
+![](media/3d950509fe68b4b98c8a119ace9d848e.jpeg)
+
+## Iconografía
+
+Los **iconos** son otra parte esencial en cualquier sistema de diseño. Representan acciones y evitan el uso excesivo de textos. Elegir correctamente los iconos y que su diseño global sea coherente, es necesario para que los usuarios interpreten fácilmente su significado. Se suelen utilizar packs de iconos con un diseño y apariencia unificada (formas y color).
+
+Los iconos se pueden encontrar en formatos diferentes:
+
+-  Mapa de bits: PNG, GIF y JPG.
+-  Imagen vectorizada: SVG.
+-  Fuentes tipográficas o emojis: las fuentes de texto pueden ofrecer iconos sencillos para la representación de elementos de la interfaz.
+
+![](media/9dc00ef71411f20beababcb419f1d4d8.jpeg)
+![](media/df19f6b4c0e625e590a75b977c64fdb0.png)
+![](media/588ba74bc1175527c779819b929c87eb.png)
+
+
+## Imágenes usadas en interfaces
+
+El uso de imágenes es muy importante en el diseño de cualquier tipo de interfaz, puesto que estas contribuyen favorablemente a la experiencia del usuario, siempre y cuando se adecuen al contenido que se está trabajando.
+
+Además de cumplir ciertos requisitos de calidad y formato, se debe tener en cuenta la autoría de las imágenes o derechos de autor para ciertos trabajos.
+
+Una de las características más importantes que tener en cuenta es el formato de las imágenes, puesto que de esta forma se define la calidad visual frente al peso de las ilustraciones.
+
+![](media/f2d9ecbbf0c624fe93fabd9eaf058e6f.jpeg)
+
+### Imágenes de mapa de bits
+
+```note
+Estas imágenes, también llamadas de **raster**, son aquellas formadas por un conjunto de puntos, llamados **píxeles**, donde cada uno de estos puntos contiene un conjunto de valores que define un color.
+```
+
+Por esta razón, son indicadas para aquellas imágenes en las que es deseable mostrar una gama de colores muy amplia y con variaciones precisas de color y luminosidad.
+
+La calidad de estas imágenes depende de la cantidad de píxeles utilizados en su representación (PPP). Una de las desventajas principales de las imágenes bitmap es que no permiten un cambio de escala significativo, puesto que aparece el llamado **pixelado**.
+
+![](media/44bacf59c527a4e8202252462fb075f8.jpeg)
+
+### Imágenes vectorizadas
+
+```note
+Representan, a través de **fórmulas matemáticas**, entidades geométricas simples (puntos, segmentos, rectángulos, círculos), sus parámetros principales: grosor, posición inicial, final, etc. El procesador es el encargado de traducir esta información matemática a la tarjeta gráfica.
+```
+
+Las imágenes vectoriales mantendrán su forma independientemente de cuán grande o pequeño sea su tamaño. Esto significa que no se mostrarán píxeles cuando amplíe. La calidad de estos diseños seguirá siendo la misma.
+
+No son adecuados para describir imágenes demasiado irregulares (un paisaje de fotografía real), ya que necesitaría millones de fórmulas para ello.
+
+
+![](media/903d2825fdafee86ed713f6b19b2426f.png) 
+![](media/972ffbf86726b595c60295f066c8c519.png) 
+![](media/08c97e391ed1ac5137f31b9967e70acd.jpeg)
+
+### Bitmap vs vector
+
+![](media/30db5216e3a7187e109649b69050afae.png)
+
+
+### Compresión de imágenes
+
+Uno de los factores más importantes a la hora de escoger las imágenes que formarán parte del diseño de una interfaz, es el **tamaño** de archivo de imagen, puesto que de esto dependerá la velocidad de la transferencia.
+
+La **compresión** de una imagen es la reducción de los datos digitales que no resultan necesarios e importantes. Esta compresión permite almacenar mayor número de imágenes al conseguir que los archivos resultantes no ocupen mucho espacio.
+
+!(media/968e5353b17b85e1b502b015ad023dc3.jpeg)
+
+Hay dos clases principales de compresión, la **compresión con pérdida**, conocida también como *Lossy* en inglés o la **compresión sin pérdida** o *Lossless*.
+
+![](media/b6d66da386eb4149ea422beb46b7a90f.jpeg)
+
+Si una imagen es demasiado pesada, es recomendable utilizar formatos con compresión que veremos próximamente, como JPEG o HEIF.
+
+## Formatos de imagen
+
+Como se ha visto en el apartado anterior, existen dos tipos de imágenes digitales, las cuales presentan varias diferencias, entre ellas el formato en el que deben almacenarse para su posterior reproducción. Este formato aparece reflejado en la parte del nombre del fichero conocida como extensión. La elección de un tipo u otro, se puede basar en tres factores importantes:
+- El contenido de la imagen (foto, dibujo, logotipo).
+- La calidad que se desea obtener en función del sitio y finalidad de la publicación (publicación en web, impresión).
+- El tamaño que tendrá el archivo resultante.
+
+Una de las principales decisiones a la hora de incluir gráficos en cualquier tipo de interfaz es elegir el formato correcto para cada tipo de imagen de manera que se consiga una correcta relación entre la calidad visual y su tamaño, es decir, su peso.
+
+### Formatos de mapa de bits
+
+- **JPEG**: Formato con pérdida, ideal para fotografías; buena compresión y tamaño reducido, óptimo para la web, no para gráficos con transparencias.
+- **GIF**: Formato limitado a 256 colores, admite animaciones y transparencia simple; tamaño pequeño, usado en iconos o animaciones web.
+- **PNG**: Compresión sin pérdida, admite transparencias y buena calidad; tamaño mayor que JPEG, excelente para gráficos y interfaces web.
+- **BMP**: Sin compresión, gran tamaño; alta calidad pero poco eficiente, no recomendable para la web.
+- **TIFF**: Sin pérdida o con compresión opcional, alta calidad; muy grande, usado en impresión o archivado, no para web.
+- **HEIF**: Alta compresión con gran calidad (mejor que JPEG), usado en móviles modernos; soporte web aún limitado.
+- **WEBP**: Compresión eficiente con o sin pérdida, admite transparencia y animaciones; tamaño reducido y óptimo para la web moderna.
+
+
+| **Formato** | **Tamaño**    | **Colores** | **Compresión** | **Compatibilidad** | **Ideal Para**       | **Optimo en web** |
+|-------------|---------------|-------------|----------------|--------------------|----------------------|-------------------|
+| **JPEG**    | Pequeño/medio | Muy bueno   | Pérdida        | Alta               | Fotografías          | 🟢🟢              |
+| **GIF**     | Muy pequeño   | Pobre       | Pérdida        | Alta               | Gráficos/animaciones | 🟢🟢              |
+| **PNG**     | Grande        | Muy bueno   | Sin pérdida    | Alta               | Todo                 | 🟢🟢              |
+| **BMP**     | El más grande | Muy bueno   | Sin pérdida    | Alta               | Fotografías          | 🔴🔴              |
+| **TIFF**    | Muy grande    | Muy bueno   | Pérdida        | Alta               | Fotografías          | 🔴🔴              |
+| **HEIF**    | Pequeño       | Excepcional | Pérdida        | Media              | Todo                 | 🟢🟢              |
+| **WEBP**    | Pequeño/medio | Muy bueno   | Ambas          | Baja               | Gráficos/animaciones | 🟢🟢              |
+
+### Formatos vectoriales
+
+- **AI**: Es uno de los formatos vectoriales más usados y la opción por defecto del programa Adobe Illustrator. Permite escalado sin pérdida y guardado de transparencias en los diseños.
+- **EPS**: Formato antiguo de archivos vectoriales. A diferencia del formato AI no permite transparencias.
+- **SVG**: Es un formato basado en XML muy extendido en el diseño web ya que está optimizado como lenguaje de programación y puede ser indexado, por eso suele utilizarse para logotipos, botones y otros elementos web.
+
+
+## Modelo guía de estilo
+
+        Nombre del proyecto:[Nombre de la aplicación]
+        Versión:[v1.0 / Prototipo / etc.]
+        Autor(es):[Nombre del diseñador o equipo]Fecha:[dd/mm/aaaa]
+        Objetivo:Describir los elementos visuales y las reglas de diseño que deben aplicarse en toda la interfaz de usuario de la aplicación Java Swing para asegurar una experiencia coherente y profesional.
+
+        1. Paleta de colores
+
+        2. Retícula
+
+        3. Iconografía
+
+        3. Tipografía
+
+
+
+| **Áreas guía de estilo**                | **Preguntas más importantes**                                                                                                                                             |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Principios de diseño básicos            | ¿Cuáles son los objetivos de la aplicación o página web? ¿Cuáles son los principios de diseño propios de la filosofía de la empresa?                                      |
+| Público objetivo                        | ¿A quién debe ir dirigida la aplicación? ¿Cómo puede delimitar el público objetivo? ¿Cuáles son sus preferencias, deseos e intereses?                                     |
+| Logo y marca denominativa               | ¿Qué apariencia tienen el logo y la marca denominativa? ¿Cuándo, cómo y dónde se deben/tienen que utilizar?                                                               |
+| Diseño de la retícula o ventana y menús | ¿Qué anchura tienen las columnas y qué altura tienen las filas? ¿Cómo se tienen que organizar los elementos en las ventanas? ¿Qué estructura de menú tiene que ofrecerse? |
+| Colores                                 | Colores utilizados en los distintos componentes de la aplicación ¿Qué colores realzan la intención de la aplicación? Indica sus valores RGB o hexadecimales.              |
+| Tipografía (fuente)                     | ¿Qué tipo de letra tiene que utilizarse para qué tipo de textos y elementos? ¿Cuál es el tamaño que tiene que tener la letra y de qué color tiene que ser?                |
+| Iconografía                             | ¿Qué iconografía o paquete iconográfico va a utilizarse? ¿Dónde se tienen que insertar y qué significan?                                                                  |
+| Contenido                               | ¿Qué contenido debe integrarse en la aplicación? ¿Cómo tiene que plasmarse de manera gráfica, textual o multimedia?                                                       |
+
+----
+
+- https://jesusmaceira.com/7-guias-de-estilo-de-marcas-para-inspirar-tu-diseno/
+
+- https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/
+
+- https://m2.material.io/design
+
+- https://learn.microsoft.com/en-us/windows/apps/design/signature-experiences/design-principles
