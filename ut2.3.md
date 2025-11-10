@@ -301,12 +301,13 @@ El *DefaultListModel* es el lugar donde se guardan los elementos que el JList va
 
 El *JList* se asocia al DefaultListModel. Esto significa que cuando el modelo cambia (por ejemplo, al agregar elementos), el JList cambiará para reflejar esos cambios.
 
-
+```java
     JListlista = new JList();
     DefaultListModel modelo = new DefaultListModel();
     modelo.addElement("Elemento1");
     modelo.addElement("Elemento2");
     lista.setModel(modelo);
+```
 
 ### JTable
 
@@ -324,28 +325,53 @@ Aparte de usar otros constructores que hay en *JTable*, una de las formas más r
 JTable admite muchos **constructores**, lo más conocidos son:
 
 |                                  |              |
+|------------------------------------------|----------------------------------------------------------------------------|
+| JTable()                                 | Crea una tabla vacía.                                                      |
+| JTable(int rows, int cols)               | Crea una tabla con el número de filas y columnas indicadas.                |
+| JTable(Object[][] data, Object []Column) | Crea una tabla con los datos y los títulos de las columnas proporcionados. |
+
+Ejemplo rápido:
+
+```java
+Object[][] datos = {
+    {"Ana", 25, "12345678A"},
+    {"Luis", 30, "98765432B"}
+};
+Object[] columnas = {"Nombre", "Edad", "DNI"};
+
+JTable tabla = new JTable(datos, columnas);
+```
+
+Métodos útiles del *JTable*:
+
+|                                  |              |
 |------------------------------------------|-----------------------------------------------------------|
-| JTable()                                 | El primer parámetro indica la ventana padre.              |
-| JTable(int rows, int cols)               | Contiene el texto a mostrar dentro de la ventana (String) |
-| JTable(Object[][] data, Object []Column) | Título de la ventana de diálogo                           |
-
-Y algunos de los métodos de JTable:
-
 | addColumn(TableColumn []column)            | Añade una columna al final de la JTable                                                                                                                                           |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clearSelection()                           | Seleccionar filas y columnas dadas                                                                                                                                                |
-| editCellAt(int row, int col)               | Edita la celda de intersección del número de columna col y el número de fila fila mediante programación, si los índices dados son válidos y la celda correspondiente es editable. |
-| setValueAt(Object value, int row, int col) | Establece el valor de la celda como 'valor' para la fila de posición, columna en JTable.                                                                                          |
+| clearSelection()                           | Deselecciona cualquier celda o fila seleccionada.
+                                                                                                                                                |
+| editCellAt(int row, int col)               | Permite editar una celda de forma programada.
+ |
+| setValueAt(Object value, int row, int col) |  Cambia el valor de una celda específica.
+                                                                                          |
 
-Para llenar los elementos de un Jtable el código puede ser más laborioso.
+Cuando usamos un *DefaultTableModel*, podemos añadir tanto columnas como filas dinámicamente:
 
-    DefaultTableModelmodelo;
-    modelo = new DefaultTableModel();
-    miTabla= new JTable();// creamos la instancia de la tabla
-    miTabla.setModel(model);
-    modelo.addColumn("Nombre");
-    modelo.addColumn("Edad");
-    modelo.addColumn("dni");
+```java
+// 1. Creamos el modelo
+DefaultTableModel modelo = new DefaultTableModel();
+
+// 2. Añadimos las columnas (encabezados)
+modelo.addColumn("Nombre");
+modelo.addColumn("DNI");
+
+// 3. Creamos la tabla y le asignamos el modelo
+JTable tabla = new JTable(modelo);
+
+// 4. Añadimos filas (los datos)
+modelo.addRow(new Object[]{"Ana","12345678A"});
+modelo.addRow(new Object[]{"Luis","98765432B"});
+```
+ 
 
 ### LookAndFeel
 
