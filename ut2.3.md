@@ -344,15 +344,12 @@ JTable tabla = new JTable(datos, columnas);
 
 Métodos útiles del *JTable*:
 
-|                                  |              |
-|------------------------------------------|-----------------------------------------------------------|
-| addColumn(TableColumn []column)            | Añade una columna al final de la JTable                                                                                                                                           |
-| clearSelection()                           | Deselecciona cualquier celda o fila seleccionada.
-                                                                                                                                                |
-| editCellAt(int row, int col)               | Permite editar una celda de forma programada.
- |
-| setValueAt(Object value, int row, int col) |  Cambia el valor de una celda específica.
-                                                                                          |
+| Método                                  | Descripción                                            |
+|-----------------------------------------|--------------------------------------------------------|
+| addColumn(TableColumn[] column)         | Añade una columna al final de la JTable.              |
+| clearSelection()                        | Deselecciona cualquier celda o fila seleccionada.     |
+| editCellAt(int row, int col)            | Permite editar una celda de forma programada.         |
+| setValueAt(Object value, int row, int col) | Cambia el valor de una celda específica.   
 
 Cuando usamos un *DefaultTableModel*, podemos añadir tanto columnas como filas dinámicamente:
 
