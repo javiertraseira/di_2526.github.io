@@ -612,7 +612,7 @@ La validación de formularios HTML puede aplicarse también a través de las pse
 
 Para procesar los datos enviados por el formulario, necesitarás emplear un lenguaje de programación del lado del **servidor**(backend), como JavaScript, PHP, o cualquier otro de tu elección. El código de procesamiento del formulario se colocará en el atributo action del elemento *\<form>*.
 
-## Introcucción a Tailwind
+## Introducción a Tailwind
 
 Tailwind CSS es un **framework CSS utility-first** (basado en utilidades).
 

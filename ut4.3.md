@@ -22,7 +22,7 @@ El diseño de una aplicación, tanto funcional como gráfico, ha de responder a 
 
 ### Diseño conceptual
 
-```notes
+```note
 La fase de diseño conceptual se refiere a la definición de la arquitectura de información de la aplicación, es decir, al esquema de organización y navegación de los contenidos. Determina qué relaciones se establecen entre los diferentes apartados, así como las posibilidades de desplazamiento y entre las diferentes pantallas/páginas.
 ```
 
