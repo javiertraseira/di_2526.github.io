@@ -212,6 +212,8 @@ Los siguientes métodos son útiles para el manejo y manipulación de cadenas:
 | slice(inicio, fin)     | Extrae una parte de la cadena (permite índices negativos). |  "JavaScript".slice(-6)            |  "Script"                      |
 | split(separador)       | Divide la cadena en un array según un separador.           |  "manzana,pera,plátano".split(",") | ["manzana", "pera", "plátano"] |
 
+### Comparación de cadenas
+
 La **comparación de cadenas** en JavaScript puede ser problemática porque el lenguaje admite diferentes formas de evaluar la igualdad, y los resultados pueden variar según los **operadores** (como == igualdad flexible o === igualdad estricta) que se utilicen:
 
 ```javascript
@@ -230,6 +232,22 @@ Además, las **cadenas vacías** o los valores *null* pueden provocar resultados
 console.log("" == null); // false (no son iguales) 
 console.log("" === null); // false (diferente tipo y valor)
 ```
+
+En resumen:
+
+```javascript
+0 == false // true ⚠️
+0 === false // false 
+
+"" == false // true ⚠️ 
+"" === false // false 
+
+null == undefined // true ⚠️
+null === undefined // false
+```
+
+> Por lo tanto, utilizar siempre === en lugar de == para evitar errores lógicos.
+
 
 ## Condicionales y bucles
 
@@ -292,6 +310,8 @@ console.log(value);
 });
 ```
 
+> forEach es un método exclusivo para arrays
+
 **Bucle while**
 
 ```javascript
@@ -323,6 +343,10 @@ Existen los siguientes tipos de funciones, según las definamos:
 | function nombre(p1, p2...) { }       | Crea una función mediante **declaración**. |
 | var nombre = function(p1, p2...) { } | Crea una función mediante **expresión**.   |
 
+### Funciones declaradas
+
+Tiene un nombre y puede usarse antes de declararla.
+
 Definición de una **función** normal mediante **declaración**:
 
 ```javascript
@@ -351,7 +375,7 @@ saludo(); // 'Hola'
 
 ### Funciones flecha (arrow function)
 
-En las versiones más recientes de JavaScript podemos utilizar el **arrow function** que es una forma más concisa de escribir funciones.
+En las versiones más recientes de JavaScript podemos utilizar el **arrow function** que es una forma más concisa y corta de escribir funciones.
 
 Así, por ejemplo:
 
