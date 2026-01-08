@@ -3,7 +3,7 @@
 ## Introducción a JavaScript
 
 ```note
-**Javascript** es un lenguaje de programación de scripts ligero y orientado a objetos, diseñado en un principio para añadir interactividad a las páginas webs y crear aplicaciones web.
+**Javascript** es un lenguaje de programación interpretado, multiparadigma (orientado a objetos, funcional y basado en eventos), diseñado inicialmente para añadir interactividad a las páginas web.
 ```
 
 Javascript es la última capa de funcionalidad en los sitios web interactivos; la capa de contenido la forma el HTML, el diseño el CSS, mientras que la interactividad Javascript.
@@ -60,9 +60,7 @@ Los frameworks o marcos de trabajo podrían definirse como una especie de planti
 El código en JavaScript se puede indicar con la etiqueta \<script\> en el mismo código HTML, pero lo habitual es incluirlo en un **fichero externo** usando el siguiente formato:
 
 ```javascript
-<script src="fichero.js" type="text/JavaScript">
-...
-</script>
+<script src="fichero.js" defer> </script>
 ```
 
 La **ubicación de la etiqueta script** es **muy importante** ya que tiene distinto efecto sobre la interacción en ésta:
@@ -78,23 +76,23 @@ La **ubicación de la etiqueta script** es **muy importante** ya que tiene disti
 ### Tipos de datos
 
 ```note
-En JavaScript todo es un **objeto** y puede ser almacenado en una variable.
+En JavaScript casi todo se trata como **objetos** y puede ser almacenado en una variable.
 ```
 
-En JavaScript, los tipos de datos se dividen en **primitivos** y **objetos**.
+En JavaScript, los tipos de datos se dividen en **primitivos** y **objetos**. Existen por tanto tipos primitivos que no son objetos, aunque JavaScript los envuelve temporalmente cuando se usan métodos.
+
 
 Los **tipos de datos primitivos** son los principales:
 
-| **Tipo de dato** | **Descripción**                                       | **Ejemplo básico**   |
-|------------------|-------------------------------------------------------|----------------------|
-| *Number*         | Valor numérico (enteros, decimales, etc...)           | 42                   |
-| *BigInt*         | Valor numérico grande                                 | 1234567890123456789n |
-| *String*         | Valor de texto (cadenas de texto, carácteres, etc...) | 'MZ'                 |
-| *Boolean*        | Valor booleano (valores verdadero o falso)            | true                 |
-| *undefined*      | Valor sin definir (variable sin inicializar)          | undefined            |
-| *Function*       | Función (función guardada en una variable)            | function() {}        |
-| *Symbol*         | Símbolo (valor único)                                 | Symbol(1)            |
-| *Object*         | Objeto (estructura más compleja)                      | {}                   |
+| **Tipo primitivo de dato** | **Descripción**                                       | **Ejemplo básico**   |
+|----------------------------|-------------------------------------------------------|----------------------|
+| *Number*                   | Valor numérico (enteros, decimales, etc...)           | 42                   |
+| *BigInt*                   | Valor numérico grande                                 | 1234567890123456789n |
+| *String*                   | Valor de texto (cadenas de texto, carácteres, etc...) | 'MZ'                 |
+| *Boolean*                  | Valor booleano (valores verdadero o falso)            | true                 |
+| *undefined*                | Valor sin definir (variable sin inicializar)          | undefined            |
+| *Symbol*                   | Símbolo (valor único)                                 | Symbol(1)            |
+
 
 -   Las variables pueden definirse mediante las palabras clave *var* o *let*:
 
@@ -116,6 +114,8 @@ Los **tipos de datos primitivos** son los principales:
     ``` 
 -   Los **comentarios** en javascript se indican usando // y para multilíneas usando */\* y \*/*
 
+> ⚠️ Actualmente se recomienda usar *let* en vez de *var* para definir variables.
+
 ### Hoisting
 
 El **hoisting** en JavaScript es un concepto confuso de entender al principio y se refiere al hecho de que las declaraciones de variables se **mueven al principio del ámbito** en el que están definidas, sin importar dónde aparezcan en el código.
@@ -123,6 +123,38 @@ El **hoisting** en JavaScript es un concepto confuso de entender al principio y 
 Esto permite que las variables sean utilizadas antes de su declaración, aunque no se recomienda por motivos de claridad y mantenibilidad del código. No obstante, esto sólo aplica a las variables que hayan sido declaradas usando la palabra clave *var*.
 
 ![ ](media/06982ea7d00e5e12c96d216cc7c4503b.jpeg)
+
+Así por ejemplo para este caso JavaScript mueve la declaración de la variable x definida mediante *var* al inicio del ámbito (hoisting), pero NO su asignación.
+
+```javascript
+console.log(x); // undefined 
+var x = 5;
+```
+Internamente, el motor de JavaScript interpretará el código **como si fuera esto**:
+
+```javascript
+var x; // declaración elevada (hoisting) 
+console.log(x); // x existe, pero aún no tiene valor → undefined 
+x = 5; // asignación
+```
+
+En cambio para este caso usando *let* devolverá error:
+
+```javascript
+console.log(y); // ❌ error 
+let y = 5;
+```
+
+Ello es debido a que let también tiene hoisting, pero NO permite acceder a la variable antes de su declaración.
+
+Internamente, JavaScript lo trata así:
+
+```javascript
+// La variable y existe, pero no puede usarse todavía
+console.log(y); // ❌ error 
+let y = 5;
+```
+
 
 ### Operadores
 
@@ -135,8 +167,8 @@ Los principales **operadores** en Javascript se parecen a los que ya conocemos:
 | Operador de asignación           | Vistos anteriormente: asignan un valor a una variable.                         | =             |  let miVariable = 'Bob';          |
 | Igualdad                         | Comprueba si dos valores son iguales entre sí                                  |  ==           |  2 == "2" (true)                  |
 | Igualdad estricta                | Comprueba si dos valores son iguales entre sí y si son el mismo tipo de dato   |  ===          |  2 === "2" (false)                |
-| Desigualdado desigualdad estricta | Funciona de la misma forma que la igualdad o la igualdad estricta, pero negada | != !==        | 2 != "2" (false) 2 !== "2" (true) |
-| Mayor/Menor o igual que          | Para establecer cmparaciones mayor o igual que, menor o igual que              | \< \> \<= \>= |  'Z’ \>= 'A'                      |
+| Desigualdad o desigualdad estricta | Funciona de la misma forma que la igualdad o la igualdad estricta, pero negada | != !==        | 2 != "2" (false) 2 !== "2" (true) |
+| Mayor/Menor o igual que          | Para establecer comparaciones mayor o igual que, menor o igual que              | \< \> \<= \>= |  'Z’ \>= 'A'                      |
 
 Ciertos operadores pueden **simplificarse** como **operadores de asignación**:
 
@@ -177,10 +209,10 @@ Los siguientes métodos son útiles para el manejo y manipulación de cadenas:
 | toLowerCase()          | Convierte la cadena a minúsculas.                          |  "Hola".toLowerCase()              | "hola"                         |
 | trim()                 | Elimina espacios al inicio y al final.                     |  " Hola ".trim()                   | "Hola"                         |
 | substring(inicio, fin) | Extrae una parte de la cadena (sin incluir fin).           |  "JavaScript".substring(0, 4)      | "Java"                         |
-|  slice(inicio, fin)    | Extrae una parte de la cadena (permite índices negativos). |  "JavaScript".slice(-6)            |  "Script"                      |
+| slice(inicio, fin)     | Extrae una parte de la cadena (permite índices negativos). |  "JavaScript".slice(-6)            |  "Script"                      |
 | split(separador)       | Divide la cadena en un array según un separador.           |  "manzana,pera,plátano".split(",") | ["manzana", "pera", "plátano"] |
 
-La **comparación de cadenas** en JavaScript puede ser problemática porque el lenguaje admite diferentes formas de evaluar la igualdad, y los resultados pueden variar según los **operadores** que se utilicen:
+La **comparación de cadenas** en JavaScript puede ser problemática porque el lenguaje admite diferentes formas de evaluar la igualdad, y los resultados pueden variar según los **operadores** (como == igualdad flexible o === igualdad estricta) que se utilicen:
 
 ```javascript
 let cadena = "123"; 
@@ -190,7 +222,9 @@ console.log(cadena === numero); // false (diferentes tipos)
 console.log(cadena == numero); // true (convierte "123" en número antes de comparar)
 ```
 
-Además, las **cadenas vacías** o los valores *null* pueden provocar resultados inesperados.
+La comparación == **convierte los tipos automáticamente** si son distintos, mientras que === no hace conversiones automáticas (es el que actualmente se recomienda usar).
+
+Además, las **cadenas vacías** o los valores *null* pueden provocar resultados inesperados:
 
 ```javascript
 console.log("" == null); // false (no son iguales) 
