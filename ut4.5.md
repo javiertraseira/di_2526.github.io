@@ -18,12 +18,12 @@ Aunque originalmente se ejecutaba en el lado del cliente, la implementación de 
 
 ### Java vs JavaScript
 
-Java y JavaScript no están relacionados, a pesar de compartir el término «Java». Sin embargo, tienen claras diferencias, entre ellas:
+Java y JavaScript no están relacionados, a pesar de compartir el término «Java». Además existen claras **diferencias** entre ambos lenguajes:
 
 -   **Programación orientada a objetos**: Java es un lenguaje de programación orientado a objetos. JavaScript es un lenguaje de programación de scripts orientado a objetos.
 -   **Sintaxis**: La sintaxis de JavaScript no es tan formal o estructurada como la de Java. Por lo tanto, es más sencilla para la mayoría de los usuarios.
 -   **Compilación**: Java es un lenguaje compilado, mientras que JavaScript es un lenguaje interpretado que se interpreta línea por línea en tiempo de ejecución; los lenguajes compilados suelen ser más rápidos, pero los interpretados suelen ser más flexibles.
--   **Entorno**: Las aplicaciones Java se pueden utilizar básicamente en cualquier entorno, ejecutándose en máquinas virtuales o en navegadores; JavaScript en principio es solo para navegadores (aunque existen versiones backend).
+-   **Entorno**: Las aplicaciones Java se pueden utilizar básicamente en cualquier entorno, ejecutándose en máquinas virtuales o en navegadores; JavaScript en principio es solo para navegadores (aunque existen versiones *backend*).
 -   **Uso de memoria**: Java consume más memoria que JavaScript, por lo que este último es preferible para las páginas y aplicaciones web.
 
 ## Características de JavaScript
@@ -118,9 +118,9 @@ Los **tipos de datos primitivos** son los principales:
 
 ### Hoisting
 
-El **hoisting** en JavaScript es un concepto confuso de entender al principio y se refiere al hecho de que las declaraciones de variables se mueven al principio del ámbito en el que están definidas, sin importar dónde aparezcan en el código.
+El **hoisting** en JavaScript es un concepto confuso de entender al principio y se refiere al hecho de que las declaraciones de variables se **mueven al principio del ámbito** en el que están definidas, sin importar dónde aparezcan en el código.
 
-Esto permite que las variables sean utilizadas antes de su declaración, aunque no se recomienda por motivos de claridad y mantenibilidad del código. No obstante, esto sólo aplica a las variables que hayan sido declaradas usando la palabra clave var.
+Esto permite que las variables sean utilizadas antes de su declaración, aunque no se recomienda por motivos de claridad y mantenibilidad del código. No obstante, esto sólo aplica a las variables que hayan sido declaradas usando la palabra clave *var*.
 
 ![ ](media/06982ea7d00e5e12c96d216cc7c4503b.jpeg)
 
@@ -131,11 +131,11 @@ Los principales **operadores** en Javascript se parecen a los que ya conocemos:
 | **Operación**                    | **Descripción**                                                                | **Símbolo**   | **Ejemplo**                       |
 |----------------------------------|--------------------------------------------------------------------------------|---------------|-----------------------------------|
 | Suma/concatenación               | Se usa para sumar dos números, o juntar dos cadenas en una.                    | +             | 6 + 9; "Hola " + "mundo!";        |
-|  Resta, multiplicación, división | Operaciones matemáticas básicas de resta, multiplicación y división            | - \* /        | 9 - 3; 8 \* 2; 9 / 3;             |
+| Resta, multiplicación, división  | Operaciones matemáticas básicas de resta, multiplicación y división            | - \* /        | 9 - 3; 8 \* 2; 9 / 3;             |
 | Operador de asignación           | Vistos anteriormente: asignan un valor a una variable.                         | =             |  let miVariable = 'Bob';          |
-|  Igualdad                        | Comprueba si dos valores son iguales entre sí                                  |  ==           |  2 == "2" (true)                  |
-|  Igualdad estricta               | Comprueba si dos valores son iguales entre sí y si son el mismo tipo de dato   |  ===          |  2 === "2" (false)                |
-| Desigualdad/desigualdad estricta | Funciona de la misma forma que la igualdad o la igualdad estricta, pero negada | != !==        | 2 != "2" (false) 2 !== "2" (true) |
+| Igualdad                         | Comprueba si dos valores son iguales entre sí                                  |  ==           |  2 == "2" (true)                  |
+| Igualdad estricta                | Comprueba si dos valores son iguales entre sí y si son el mismo tipo de dato   |  ===          |  2 === "2" (false)                |
+| Desigualdado desigualdad estricta | Funciona de la misma forma que la igualdad o la igualdad estricta, pero negada | != !==        | 2 != "2" (false) 2 !== "2" (true) |
 | Mayor/Menor o igual que          | Para establecer cmparaciones mayor o igual que, menor o igual que              | \< \> \<= \>= |  'Z’ \>= 'A'                      |
 
 Ciertos operadores pueden **simplificarse** como **operadores de asignación**:
