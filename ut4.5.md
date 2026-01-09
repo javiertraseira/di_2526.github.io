@@ -443,13 +443,14 @@ console.log(Object.entries(persona)); // [["nombre", "Juan"], ["apellido", "Ruiz
 
 ## JavaScript asíncrono
 
-JavaScript es un lenguaje que utiliza un **único hilo de ejecución** para procesar las tareas. Este diseño puede generar problemas cuando se ejecutan tareas que requieren mucho tiempo, como operaciones de red, acceso a bases de datos o cálculos intensivos. Si estas tareas se ejecutaran de manera síncrona (es decir, una después de la otra), el programa se bloquearía hasta que cada tarea termine, causando una mala experiencia para el usuario.
+JavaScript es un lenguaje que por defecto utiliza un **único hilo de ejecución** para procesar las tareas. Este diseño puede generar problemas cuando se ejecutan tareas que requieren mucho tiempo, como operaciones de red, acceso a bases de datos o cálculos intensivos. Si estas tareas se ejecutaran de manera síncrona (es decir, una después de la otra), el programa se bloquearía hasta que cada tarea termine, causando una mala experiencia para el usuario.
 
-La **programación asíncrona** en JavaScript es fundamental para manejar tareas que no se completan de inmediato, como llamadas a APIs, temporizadores o operaciones de lectura/escritura en archivos.
+Por este motivo, JavaScript utiliza un **modelo de programación asíncrona**, que permite ejecutar tareas lentas (como llamadas a APIs, temporizadores o operaciones de lectura/escritura en archivos) sin detener el flujo principal del programa.
+
 
 ![](media/15efac791a6fab8c72fe2f23b7dec8b9.png)
 
-Para resolver este problema, JavaScript utiliza un modelo asincrónico, apoyado por:
+Para resolver este problema, JavaScript utiliza un **modelo asincrónico**, apoyado por:
 
 -   El **Event Loop** (bucle de eventos).
 -   Cola de tareas y cola de microtareas.
@@ -457,37 +458,80 @@ Para resolver este problema, JavaScript utiliza un modelo asincrónico, apoyado 
 
 En el modelo asincrónico:
 
--   El programa no espera a que una tarea termine para pasar a la siguiente.
--   Las operaciones que toman tiempo se delegan (por ejemplo, al navegador o al sistema operativo) y se procesan en segundo plano.
--   Cuando están listas, el resultado de esas tareas vuelve al hilo principal mediante el **Event Loop**, sin bloquear el flujo principal del programa.
+- Se lanza una tarea a procesar aparte (en segundo plano)
+- Se sigue ejecutando el resto.
+- Cuando la tarea termina, avisa. El resultado de esas tareas vuelve al hilo principal mediante el **Event Loop**, sin bloquear el flujo principal del programa.
+
 
 ### Callback
 
-Un **callback** es una función que se pasa como argumento y se ejecuta después de que una operación asincrónica se complete.
+Un **callback** es una función que se pasa como argumento y se ejecuta después de que una operación **asincrónica** se complete.
 
 ```javascript
-function procesarDato(dato, callback) { 
+function procesarDatoAsincrono(dato, callback) { 
     console.log("Procesando:", dato); 
     setTimeout(() => { 
         callback(`Dato procesado: ${dato}`); }, 2000); 
 } 
 
-procesarDato("Ejemplo", (resultado) => { 
+procesarDatoAsincrono("Ejemplo", (resultado) => { 
     console.log(resultado); 
 });
 ```
+1. Se llama a *procesarDatoAsincrono*
+2. Se inicia setTimeout.
+3. El programa no espera.
+4. A los 2 segundos se ejecuta el *callback*
 
-### Promesas y async/await
+Cuando se encadenan muchas operaciones asíncronas usando callbacks, el código se vuelve difícil de leer y mantener:
 
-Las promesas (palabra clave *Promise*) facilitan el manejo de tareas asincrónicas y reducen los problemas del **callback**.
+```javascript
+tarea1(function() {
+     tarea2(function() { 
+        tarea3(function() { 
+            tarea4(function() { 
+                console.log("Fin"); 
+            }); 
+        }); 
+    }); 
+});
+```
+
+Este problema se conoce como **callback hell** o pirámide de la muerte.
+
+
+### Promesas  
+
+Las promesas se introdujeron para resolver los problemas de legibilidad y mantenimiento de los callbacks. Una **Promise** es un objeto que representa un valor que estará disponible ahora, en el futuro o nunca.
+
+**Estados de una promesa**
+- Pending: pendiente
+- fulfilled : resuelta correctamente
+- rejected : rechazada por error
+
 
 ```javascript
 const tareaAsincrona = new Promise((resolve, reject) => { 
     setTimeout(() => resolve("Promesa completada"), 2000);
 });
+
+tareaAsincrona .then(resultado => { console.log(resultado); })
 ```
 
-Mediante *async/await* se simplifica el código asincrónico, haciéndolo más legible:
+Promesas encadenadas:
+
+```javascript
+tarea1() 
+    .then(() => tarea2()) 
+    .then(() => tarea3()) 
+    .then(() => console.log("Todas las tareas completadas")) 
+    .catch(error => console.error(error));
+```
+
+### Async/await
+
+Las palabras clave *async* y *await* son una forma moderna y más clara de trabajar con promesas. `async/await` no sustituye a las promesas, sino que es una forma más cómoda de usarlas.
+
 
 ```javascript
 const tareaConAwait = async () => {
@@ -502,6 +546,12 @@ const tareaConAwait = async () => {
 };
 tareaConAwait();
 ```
+
+¿Qué hace `await`?
+- Hace que JavaScript espere el resultado de la promesa
+- Sin bloquear el hilo principal
+- El código parece síncrono, pero sigue siendo asíncrono
+
 
 ## El árbol DOM
 
