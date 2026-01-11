@@ -736,6 +736,37 @@ Otra forma más tosca y no recomendable para debugear código es utilizando los 
 let datos = [{ nombre: "Ana", edad: 25 }, { nombre: "Luis", edad: 30 }]; console.table(datos);
 ``` 
 
+Convertir un objeto JavaScript a JSON:
+
+```javascript
+// Objeto JavaScript
+const alumno = {
+    nombre: "Ana",
+    edad: 20,
+    curso: "2º DAW"
+};
+
+// Convertimos el objeto a una cadena JSON
+const alumnoJSON = JSON.stringify(alumno);
+
+// Mostramos el resultado por consola
+console.log(alumnoJSON);
+```
+
+Convertir un objeto JSON a JavaScript:
+
+```javascript
+// Cadena JSON
+const textoJSON = '{"nombre":"Luis","edad":22,"curso":"1º DAM"}';
+
+// Convertimos JSON a objeto JavaScript
+const alumnoObjeto = JSON.parse(textoJSON);
+
+// Accedemos a una propiedad
+console.log(alumnoObjeto.nombre); // "Luis"
+```
+
+
 ### Panel de Developer Tools
 
 En la **consola** podemos escribir los comandos y presionar *Enter* para ejecutar. Después de que se ejecuta una sentencia, el resultado se muestra debajo.
