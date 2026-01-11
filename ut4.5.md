@@ -555,13 +555,18 @@ tareaConAwait();
 
 ## El árbol DOM
 
-El **DOM** (*Document of Object Model*) de una web es la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí.
+Una página web no es solo texto HTML estático. Cuando elnavegador carga una página, transforma el código HTML en una estructura interna en forma de árbol, conocida como **DOM** (*Document of Object Model*).
 
-En Javascript, la forma de acceder al DOM es a través de un objeto llamado document, que representa el árbol DOM de la página.
+El DOM representa cada elemento de la página (etiquetas, textos, imágenes, formularios…) como objetos organizadosjerárquicamente, permitiendo que lenguajes de programación accedan, modifiquen y reaccionen a los elementos de la web.
+
+En el desarrollo web, JavaScript utiliza el DOM para crear **webs dinámicas**, ya que permite:
+- Cambiar contenido y estilos en tiempo real.
+- Responder a acciones del usuario.
+- Crear o eliminar elementos sin recargar la página.
 
 ![](media/1b438b9139c4d8684bcc5debfb44a482.jpeg)
 
-
+En Javascript, la forma de acceder al DOM es a través de un objeto llamado *document*, que representa el árbol DOM de la página.
 En su interior pueden existir varios tipos de elementos, pero principalmente serán:
 
 -   **document:** el documento HTML cargado que ya comentamos.
@@ -688,6 +693,23 @@ const boton = document.querySelector('#boton');
 boton.addEventListener('click', function(evento) { 
    console.log('funcionó'); }, false);</script>
 ```
+
+En este otro ejemplo el evento se dispara cuando el usuario cambia el valor de un campo y sale de él:
+
+```javascript
+<input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+<script>
+    // Capturamos el campo de texto
+    const campoNombre = document.querySelector('#nombre');
+
+    // Escuchamos el evento 'change'
+    campoNombre.addEventListener('change', function (evento) {
+        console.log("Nuevo valor:", evento.target.value);
+    });
+</script>
+```
+
 ## JSON
 
 **JSON** (JavaScript Object Notation) es un formato de texto basado en una sintaxis similar a la de los objetos de JavaScript.  
