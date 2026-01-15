@@ -799,3 +799,90 @@ say(phrase);
 ```
 
 > Este comando solo funciona cuando el panel de depuración esté abierto, de otro modo el navegador lo ignorará.
+
+
+## Almacenamiento local en el navegador
+
+En las aplicaciones web modernas, a menudo es necesario **guardar información** en el navegador del usuario para poder reutilizarla más adelante sin necesidad de un servidor o base de datos.
+
+Para este propósito, JavaScript proporciona el localStorage, que permite almacenar datos de forma persistente en el navegador.
+Los datos almacenados en localStorage:
+
+- Permanecen guardados incluso si se cierra el navegador.
+- No tienen fecha de caducidad.
+- Son específicos del navegador y del sitio web.
+- Solo pueden almacenar **cadenas de texto** (*strings*).
+
+Por este motivo, cuando queremos guardar **objetos o arrays**, debemos convertirlos previamente a *JSON*.
+
+
+| Método                               | Descripción                  |
+| ------------------------------------ | ---------------------------- |
+| `localStorage.setItem(clave, valor)` | Guarda un valor              |
+| `localStorage.getItem(clave)`        | Recupera un valor            |
+| `localStorage.removeItem(clave)`     | Elimina un elemento          |
+| `localStorage.clear()`               | Borra todo el almacenamiento |
+
+```javascript
+//Guardar datos simples 
+localStorage.setItem("nombre", "Ana"); 
+
+//Recuperar el dato: 
+let nombre = localStorage.getItem("nombre"); 
+console.log(nombre); // "Ana" 
+
+//Eliminarlo: 
+localStorage.removeItem("nombre");
+```
+
+Como `localStorage` solo almacena texto, es necesario usar JSON.
+
+```javascript
+const usuario = { 
+    nombre: "Carlos", 
+    edad: 25, 
+    curso: "2º DAW" 
+}; 
+
+// Convertimos el objeto a JSON 
+localStorage.setItem("usuario", JSON.stringify(usuario));
+```
+Por ejemplo, para guardar una lista:
+
+```javascript
+const lenguajes = ["Java", "JavaScript", "Python"]; 
+// Guardamos el array 
+localStorage.setItem("lenguajes", JSON.stringify(lenguajes));
+```
+
+> ⚠️ `localStorage` no es seguro para datos sensibles y no sustituye a una base de datos. Es ideal para prácticas, prototipos y aprendizaje. En aplicaciones reales se usa junto con *APIs* y el *backend*.
+
+
+## AJAX
+
+**AJAX** (*Asynchronous JavaScript And XML*) es una técnica que permite a una página web comunicarse con un servidor en segundo plano, sin necesidad de recargar la página completa y sin interrumpir la interacción con el usuario.
+
+Gracias a AJAX, una web puede:
+- Enviar datos al servidor.
+- Recibir información nueva.
+- Actualizar solo una parte de la página.
+
+AJAX no es un lenguaje, sino una técnica que combina varias tecnologías:
+- JavaScript
+- DOM
+- JSON (antes XML)
+- Programación asíncrona
+- HTTP
+
+Aunque hoy en día el concepto de AJAX sigue totalmente vigente, se usa de otra forma y no se dice que la página lo utilice directamente, si no el conjunto de técnicas vistas de sincronización web vistas:
+
+**Antes (AJAX “clásico”):**
+- XMLHttpRequest
+- Callbacks
+- XML como formato de datos
+
+**Ahora (AJAX moderno):**
+- fetch()
+- Promesas
+- async / await
+- JSON como formato estándar
