@@ -48,9 +48,10 @@ Un **protocolo** es un conjunto de reglas que determina qué mensajes se pueden 
 
 ### API no RESTful
 
-Existen otras API no RESTful, como las que nombramos anteriormente, que utilizan convenciones más complejas, por encima de HTTP y que se apoyan en otros lenguajes basados en XML como  **SOAP**.
+Existen otros tipos de APIs no RESTful, como las mencionadas anteriormente, que no siguen estrictamente los principios REST. Estas APIs pueden utilizar otros modelos de comunicación, protocolos adicionales o formatos de datos distintos, como XML o formatos binarios, y están orientadas a resolver otras necesidades como comunicación en tiempo real, mensajería por eventos o mayor seguridad y control de las operaciones.
 
--  Si tuviésemos que hacer una analogía podríamos decir que **SOAP** sería como enviar un sobre en el que sería necesario mayor ancho de banda y trabajo adicional de tratamiento para preparar el sobre antes de enviarlo y luego al abrirlo en destino.
+Analogía entre **SOAP vs REST**:
+- Una API **SOAP** es como enviar un sobre en el que sería necesario mayor ancho de banda y trabajo adicional de tratamiento para preparar el sobre antes de enviarlo y luego al abrirlo en destino.
 -  En el caso de **REST** sería como si mandaríamos directamente una postal sin más.
 
 ![SOAP](media/f6f2f83affb740bc9ca14ab74c322e38.jpeg)![REST](media/89f70ae2cf17f7f08d666a0549697b8f.jpeg)
@@ -86,6 +87,8 @@ Propiedades API REST:
 ![](media/a6b74076d9b5ea8bd00a8837680fe80a.jpeg)
 
 ### Documentación API
+
+La **documentación** con la que debe contar toda API debe ser clara, accesible y explicar cómo interactuar con ella: describir sus parámetros de entrada, códigos de respuesta y sus mecanismos de **autenticación** necesarios para su uso.
 
 ![](media/44f26294ed3c483ad865653c060013ce.png)![](media/50da6cc8a5de0381868fc1df3d414005.png)
 
@@ -190,11 +193,11 @@ Enviará:
 
 ### Testeo de APIs
 
-Para realizar pruebas (testing) de APIs en Postman lo haremos desde el apartado *Test*, en código Javascript. Ya existe una batería de pruebas preestablecida que nos puede ayudar a crear los distintos test que necesitemos.
+Para realizar pruebas (**testing**) de APIs en Postman lo haremos desde el apartado *Test*, en código Javascript. Ya existe una **batería de pruebas** preestablecida que nos puede ayudar a crear los distintos test que necesitemos usando sentencias en JavaScript.
 
 ![](media/testeo_postman.png)
 
-En Postman, *pm.expect()* es parte de *Chai.js*, una biblioteca de aserciones que se usa para escribir pruebas en Postman. Funciona evaluando una expresión y comparándola con un valor esperado.
+En Postman, `pm.expect()` es parte de *Chai.js*, una biblioteca de aserciones que se usa para escribir pruebas en Postman. Funciona evaluando una expresión y comparándola con un valor esperado.
 
 Su sintaxis básica es la siguiente:
 
@@ -264,15 +267,26 @@ Así por ejemplo para referenciar una URL seleccionaremos el entorno (en este ca
 
 ## APIs en Javascript
 
-### fetch: recuperar datos  
+### Recuperación/envío de datos
+
+Para comunicarse con una API, JavaScript utiliza mecanismos que permiten realizar peticiones HTTP de forma **asíncrona**, es decir, sin bloquear la ejecución del resto del código ni la interacción del usuario con la página.
 
 Las APIs interactúan con el código usando uno o más objetos JavaScript, que sirven como contenedores para los datos que usa la API (contenidos en las propiedades del objeto), y la funcionalidad que la API provee (contenida en los métodos del objeto).
 
-La primera forma de obtener dichos datos, y la más sencilla, es utilizando *fetch*, que es una nueva implementación de Javascript para ello. 
-El único parámetro requerido de *fetch()* es una url. El método por defecto en este caso es **GET**, cuando no se indica ningún otro por omisión.
+A lo largo del tiempo han surgido distintas formas para realizar peticiones a las API mediante JavaScript:
+- `fetch`, la forma moderna y nativa de JavaScript.
+- *XMLHttpRequest*, el método clásico basado en AJAX.
+- *Axios*, una librería externa que simplifica el trabajo con peticiones HTTP.
+
+
+### fetch: recuperación de datos  
+
+La forma más habitual y sencilla de recuperar datos de una API en JavaScript es utilizando `fetch`, una API nativa moderna que permite realizar peticiones HTTP de forma asíncrona (⚠️ *fetch* no devuelve directamente los datos, si no una promesa que deberá resolverse antes de trabajar con los datos)
+
+El único parámetro requerido de *fetch()* es la URL del recurso al que vamos acceder. Si no se indica ningún método adicional, fetch utiliza por defecto el método **GET**, que se emplea para solicitar datos al servidor.
 
 ```javascript
-fetch('http://example.com/movies.json') 
+fetch('http://example.com/movies.json'); 
 ```
 
 Así, por ejemplo:
@@ -281,23 +295,35 @@ Así, por ejemplo:
 fetch('https://api.example.com/data')
   .then(response => {
     if (!response.ok) throw new Error('Error en la respuesta');
-    return response.json();
+    return response.json(); //// Convertimos la respuesta a JSON
   })
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
+});
 ```
 
 ### fetch: envío de datos 
 
-El segundo parámetro de *fetch* es opcional, y recibe parámetros extras acerca del tipo de petición que vamos hacer, si queremos enviar datos, bajo qué tipo va a ir o si se va a enviar algún tipo de headers:
+Además de recuperar información, *fetch* permite enviar datos a una API para crear o modificar recursos en el servidor. 
+Este tipo de operaciones se realizan habitualmente mediante los métodos **POST**, **PUT** o **PATCH**, y son comunes en acciones como registros de usuarios, envío de formularios o actualización de datos.
 
+A diferencia de las peticiones GET, el envío de datos requiere indicar un **segundo parámetro** en fetch(), donde se especifican opciones, como el **método** HTTP utilizado, los **encabezados** (headers) y el **cuerpo** de la petición (body):
+
+```javascript
+{ 
+method: 'POST', 
+headers: { ... }, 
+body: ... 
+}
+```
 - El método **POST** se utiliza para **enviar datos** al servidor y crear un nuevo recurso.
-- El método **PUT** se usa para enviar datos y **actualizar** información existente.
+- El método **PUT/PATCH** se usa para enviar datos y **actualizar** información existente.
 
+Así por ejemplo:
 
 ```javascript
 fetch(url, { 
-method: 'POST’,
+method: 'POST',
 headers:{ 
 	'Content-Type': 'application/json’ 
 	} 
@@ -305,13 +331,18 @@ body: JSON.stringify({
 	name: "Taylor", 
 	surname: "Swift" 
 	}), 
+
+.then(response => { 
+  if (!response.ok) throw new Error('Error al enviar los datos');  
+  return response.json(); 
 })
 ```
-> Reparemos más adelante el tratamiento de datos mediante *JSON.stringify*
 
 ###  Solicitudes XMLHttpRequest 
 
-Para recuperar datos de una API en JavaScript de forma clásica se ha utilizado siempre *XMLHttpRequest*, que es un estándar de la W3C y basado en AJAX. AJAX es una tecnología que hace las páginas dinámicas sin necesidad de recargarlas.
+Para recuperar datos de una API en JavaScript de forma clásica se ha utilizado siempre *XMLHttpRequest*, que es un estándar de la W3C y basado en AJAX.
+
+Por ejemplo:
 
 ```javascript
 var xhttp = new XMLHttpRequest(); // Crear un nuevo XMLHttpRequest 
@@ -331,7 +362,9 @@ xhttp.send(null);
 
 ###  Solicitudes mediante Axios 
 
-Tanto *XMLHttpRequest* como *fetch* son nativas de JavaScript, pero *Axios* es una librería externa que tendremos que importar en nuestro proyecto antes de usarla.
+Tanto *XMLHttpRequest* como *fetch* son nativas de JavaScript, pero *Axios* es una **librería** externa que tendremos que importar en nuestro proyecto antes de usarla.
+
+Una vez importada su uso es como sigue:
 
 ```javascript
 axios.get('https://pokeapi.co/api/v2/pokemon').then(function (response) 
@@ -349,7 +382,7 @@ Axios tiene algunas ventajas adicionales como el parsear automáticamente las re
 
 ###  Conversión de los datos
 
-A la hora de tratar con APIs ya hemos visto que se trabaja habitualmente con el formato JSON nativo y con las funciones *stringify* y *parse* (salvo en Axios)
+A la hora de tratar con APIs ya hemos visto que se trabaja habitualmente con el formato JSON nativo y con las funciones *stringify* y *parse* (salvo en Axios) ya vistas en la unidad anterior.
 
 #### JSON.stringify()
 
