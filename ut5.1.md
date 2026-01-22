@@ -170,11 +170,11 @@ Enviará:
 
   POST https://api.example.com/register?email=eve.holt@reqres.in&password=pistol
   
-Los datos quedarán visibles en la URL, lo que no es seguro para datos sensibles como contraseñas o información personal.
+> Los datos quedarán **visibles** en la URL, lo que **no es seguro** para datos sensibles como contraseñas o información personal.
 
 ### Pestaña Body
 
-Si se utiliza la pestaña *Body* los valores se envían como parte del body de la solicitud. 
+Si se utiliza la pestaña *Body* los valores se envían como parte del *body* de la solicitud. 
 
 Por ejemplo, podemos seleccionar que se envíen en formato JSON:
 
@@ -193,11 +193,21 @@ Enviará:
 
 ### Testeo de APIs
 
-Para realizar pruebas (**testing**) de APIs en Postman lo haremos desde el apartado *Test*, en código Javascript. Ya existe una **batería de pruebas** preestablecida que nos puede ayudar a crear los distintos test que necesitemos usando sentencias en JavaScript.
+El testeo de APIs consiste en **verificar automáticament**e que una API responde de forma correcta ante diferentes peticiones. No se trata solo de comprobar que la API funciona, sino de validar que devuelve el **código** HTTP esperado, los **datos** correctos y el **formato** adecuado.
+
+En Postman, las pruebas se escriben en **JavaScript** desde la pestaña *Scripts* y se ejecutan automáticamente cada vez que se envía una petición.
+
+Dentro de ella hay dos bloques:
+- Pre-request Script
+- Post-response Script
+
+Los **tests** se escriben en el bloque *Post-response Script*.
+
+Para realizar pruebas (**testing**) de APIs en Postman lo haremos desde el apartado *Scripts> Post-Res*. Ya existe una **batería de pruebas** preestablecida que nos puede ayudar a crear los distintos test que necesitemos usando sentencias en JavaScript.
 
 ![](media/testeo_postman.png)
 
-En Postman, `pm.expect()` es parte de *Chai.js*, una biblioteca de aserciones que se usa para escribir pruebas en Postman. Funciona evaluando una expresión y comparándola con un valor esperado.
+En Postman, `pm.expect()` es una función de **aserción**, es decir, una comprobación que compara un valor real con un valor esperado. Si la condición se cumple, el test pasa; si no, el test falla.
 
 Su sintaxis básica es la siguiente:
 
@@ -219,23 +229,52 @@ pm.expect("hola").to.be.a("string");  // Pasa porque es un string
 pm.expect(true).to.be.true;  //  Pasa porque es `true`
 ```
 
+Métodos útiles de pm.expect:
+
+| Comprobación | Ejemplo                   |
+| ------------ | ------------------------- |
+| Igualdad     | `to.equal(200)`           |
+| Existencia   | `to.have.property("id")`  |
+| Tipo         | `to.be.a("string")`       |
+| Booleano     | `to.be.true`              |
+| Contenido    | `to.include("ok")`        |
+| Longitud     | `to.have.length.above(0)` |
+
+
 **Tipos de pruebas habituales con Postman:**
+
 - Verificar código HTTP
 - Validar estructura JSON
 - Comprobar existencia de campos
 - Test de autenticación
 - Test de límites (rate limiting)
 
-```javascript
-pm.test("Código 200 OK", function () { 
-pm.response.to.have.status(200); 
-});
+Comprobación del **código de respuesta**:
 
-pm.test("El campo email existe", function () { 
-const jsonData = pm.response.json(); 
-pm.expect(jsonData).to.have.property("email"); 
+```javascript
+pm.test("Código 200 OK", function () 
+{ 
+  pm.expect(pm.response.code).to.equal(200); 
 });
 ```
+
+Comprobación del **formato de la respuesta**:
+
+```javascript
+pm.test("La respuesta es JSON", function () {   
+  pm.expect(pm.response.headers.get("Content-Type")).to.include("application/json"); 
+});
+```
+
+Comprobación de la **estructura del JSON**:
+
+```javascript
+pm.test("El campo email existe", function () {
+ const jsonData = pm.response.json(); 
+ pm.expect(jsonData).to.have.property("email"); 
+});
+```
+
 
 > Para una guía completa de referencia: [https://learning.postman.com/docs/writing-scripts/script-references/test-examples/](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/) 
 
