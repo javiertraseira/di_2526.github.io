@@ -193,7 +193,7 @@ Enviará:
 
 ### Testeo de APIs
 
-El testeo de APIs consiste en **verificar automáticament**e que una API responde de forma correcta ante diferentes peticiones. No se trata solo de comprobar que la API funciona, sino de validar que devuelve el **código** HTTP esperado, los **datos** correctos y el **formato** adecuado.
+El testeo de APIs consiste en **verificar automáticamente** que una API responde de forma correcta ante diferentes peticiones. No se trata solo de comprobar que la API funciona, sino de validar que devuelve el **código** HTTP esperado, los **datos** correctos y el **formato** adecuado.
 
 En Postman, las pruebas se escriben en **JavaScript** desde la pestaña *Scripts* y se ejecutan automáticamente cada vez que se envía una petición.
 
@@ -207,7 +207,7 @@ Para realizar pruebas (**testing**) de APIs en Postman lo haremos desde el apart
 
 ![](media/testeo_postman.png)
 
-En Postman, `pm.expect()` es una función de **aserción**, es decir, una comprobación que compara un valor real con un valor esperado. Si la condición se cumple, el test pasa; si no, el test falla.
+En Postman, `pm.expect()` de la librería *Chai.js* es una función de **aserción**, es decir, una comprobación que compara un valor real con un valor esperado. Si la condición se cumple, el test pasa; si no, el test falla.
 
 Su sintaxis básica es la siguiente:
 
