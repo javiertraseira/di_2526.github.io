@@ -14,11 +14,7 @@ Las API son ampliamente utilizadas en la industria de desarrollo de software. La
 
 Ejemplos de APIs conocidas:
 
-![](media/64e2268262f62356dfd38ac0157d2d3a.png)![](media/43acd7462efc197e5d20a86c0ca8828f.jpeg)![](media/70a010c5ecfab42c3e95254334a366bc.png)![](media/b4445029eed8e65c87cade3554bdf9a1.png)![](media/b5abc54c640a0db69278fbc53903438e.png)![](media/3d49939028957c3ada639cda00701115.png)
-
-![](media/cf70ccb4d030c69e64eaa0d9493560b6.jpeg)![](media/11e522ddc51f678b890383add4aab0fa.png)
-
-![](media/e5349a18d269fabec5b7d5a124a0eea0.png)![](media/36a41b599e070dd054ce80400a5a80dc.png)
+![](media/api_services_sample.png)
 
 ### Tipos de API
 
@@ -29,6 +25,8 @@ Ejemplos de APIs conocidas:
 - **WebRTC** : Permite que los navegadores compartan datos y streaming directamente entre sí sin pasar por un servidor central para el tráfico de datos.
 - **Webhooks**: No es una API de consulta, sino una "API invertida". El servidor avisa al cliente cuando sucede algo (ej. "tienes un nuevo correo").
 - **WebSocket**: A diferencia de REST, que cierra la conexión tras cada petición, la mantiene abierta para que el servidor y el cliente hablen en cualquier momento.
+
+![](media/tipos_api.png)
 
 ![](media/0dfb3dd9ba1996bfe6e704a57b58f22d.jpeg)
 
