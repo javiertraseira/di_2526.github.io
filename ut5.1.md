@@ -58,7 +58,7 @@ Analogía entre **SOAP vs REST**:
 
 Las **API REST** se apoyan como hemos visto en el protocolo **HTTP**.
 
-Hay diferentes tipos de **REQUEST** u <u>operaciones</u> que una API REST puede manejar, y estos son los más utilizados:
+Hay diferentes tipos de **REQUEST** u operaciones que una API REST puede manejar, y estos son los más utilizados:
 
 | **Request** | **Descripción**                                                                                       |
 |-------------|-------------------------------------------------------------------------------------------------------|
