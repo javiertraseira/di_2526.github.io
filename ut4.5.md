@@ -710,6 +710,18 @@ En este otro ejemplo el evento se dispara cuando el usuario cambia el valor de u
 </script>
 ```
 
+## Tratamiento de formularios
+
+Los **formularios HTML** son uno de los elementos más habituales en las aplicaciones web, ya que permiten al usuario **introducir y enviar datos** (registro, inicio de sesión, contacto, búsquedas, etc.).
+
+JavaScript se utiliza para:
+
+- Validar los datos introducidos antes de enviarlos.
+- Mostrar **mensajes de error personalizados**.
+- Evitar envíos incorrectos o incompletos.
+- Mejorar la experiencia de usuario sin recargar la página.
+
+
 ## JSON
 
 **JSON** (JavaScript Object Notation) es un formato de texto basado en una sintaxis similar a la de los objetos de JavaScript.  
