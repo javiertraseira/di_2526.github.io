@@ -10,7 +10,7 @@ Además la legislación es clara en cuanto a la necesidad y obligatoriedad de su
 
 ![](media/8cc0c8d148a67c079e5f2558c2c91a6f.png)
 
-El acceso a una determinada aplicación debe facilitarse para todos los usuarios potenciales, más allá de las <u>limitaciones técnicas</u> de cada usuario (software, hardware, etc.) o de las <u>limitaciones individuales</u> de cada uno (discapacidades, dominio de un determinado idioma..).
+El acceso a una determinada aplicación debe facilitarse para todos los usuarios potenciales, más allá de las limitaciones técnicas de cada usuario (software, hardware, etc.) o de las limitaciones individuales de cada uno (discapacidades, dominio de un determinado idioma..).
 
 De esta forma, cualquier aplicación accesible debe tener en cuenta la gran diversidad de potenciales usuarios que puede llegar a tener.
 
@@ -46,8 +46,7 @@ Existen cuatro objetivos clave que deben tenerse siempre presentes:
 -   Las personas con discapacidad no utilizan la web: Más bien es todo lo contrario, ya que las nuevas tecnologías e Internet ha permitido a un gran numero de personas con discapacidad llevar una vida autónoma e independiente.
 -   Las páginas web con <u>solo texto</u> son accesibles: No es cierto, ya que las páginas web que sólo contienen texto pueden ser difíciles de entender por personas con discapacidad cognitiva o con dificultades con el lenguaje como las personas sordas.
 -   La accesibilidad es cara : Lo es como cualquier adaptación a una nueva tecnología.
--   La accesibilidad es sólo para ciegos: Falso ya que existen usuarios con diferentes tipos
-    de discapacidad que pueden experimentar distintos problemas de acceso.
+-   La accesibilidad es sólo para ciegos: Falso ya que existen usuarios con diferentes tipos de discapacidad que pueden experimentar distintos problemas de acceso.
 -   La accesibilidad es sólo para las personas con discapacidad: En realidad se beneficia todo el mundo, ya que ayuda a cualquier usuario que se encuentre en circunstancias especiales como puede ser entornos con baja iluminación, ambientes ruidosos, acceso a Internet con conexiones y equipos con capacidades limitadas, etc.
 
 ![](media/0a9538bd7f6e4ea15131019f400bda8a.png)
@@ -78,7 +77,7 @@ Hay barreras técnicas que impiden el acceso a personas ciegas mediante disposit
 
 ![](media/736466362e327ae403249743e293f6e8.jpeg)
 
-Para personas con **baja visión** el <u>tamaño de las letras</u> suele ser una barrera importante así como el **diseño** en el que al modificar el tamaño de sus fuentes se estropea su maquetación haciendo difícil la navegación.
+Para personas con **baja visión** el tamaño de las letras suele ser una barrera importante así como el **diseño** en el que al modificar el tamaño de sus fuentes se estropea su maquetación haciendo difícil la navegación.
 
 ![](media/80f754182a918c7f236a6901438058d2.jpeg)
 
@@ -197,7 +196,7 @@ Las personas con dificultades cognitivas puede usar alguna de las siguientes est
 
 ### Discapacidad tecnológica
 
-La **discapacidad tecnológica** <u>no puede considerarse una discapacidad</u> en sentido estricto. La padecen aquellas personas que por diversas razones, no cuentan con la tecnología adecuada. Se refiere por tanto a Sistemas Operativos antiguos, navegadores web alternativos, bajo ancho de banda, hardware antiguo o la ausencia de un plugin o lenguaje de programación habilitado (pj java script) para reproducir contenidos o realizar ciertas acciones en la interfaz. También puede deberse a dispositivos de visualización de pequeño tamaño (como wereables o pantallas reducidas).
+La **discapacidad tecnológica** no puede considerarse una discapacidad en sentido estricto. La padecen aquellas personas que por diversas razones, no cuentan con la tecnología adecuada. Se refiere por tanto a Sistemas Operativos antiguos, navegadores web alternativos, bajo ancho de banda, hardware antiguo o la ausencia de un plugin o lenguaje de programación habilitado (pj java script) para reproducir contenidos o realizar ciertas acciones en la interfaz. También puede deberse a dispositivos de visualización de pequeño tamaño (como wereables o pantallas reducidas).
 
 El **desconocimiento de la tecnología** se puede también englobar en este tipo de discapacidad no oficial. Es el que sufren las personas que no consiguen integrarse en el mundo de las tecnologías modernas. Dentro de este grupo podríamos incluir a personas mayores, personas del medio rural o incluso países en vías de desarrollo…
 
