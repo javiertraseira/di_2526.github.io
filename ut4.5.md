@@ -721,6 +721,37 @@ JavaScript se utiliza para:
 - Evitar envíos incorrectos o incompletos.
 - Mejorar la experiencia de usuario sin recargar la página.
 
+### Eventos submit
+
+El evento más importante en un formulario es **submit**, que se dispara cuando:
+- El usuario pulsa un botón de tipo **submit**
+- O presiona la tecla Enter dentro de un campo del formulario.
+
+Ejemplo de captura del evento:
+
+```javascript
+const formulario = document.querySelector("#formulario");
+formulario.addEventListener("submit", function (e) { 
+// códigos de validación 
+});
+```
+
+### e.preventDefault
+
+Por defecto, cuando un formulario se envía:
+- El navegador recarga la página.
+- O intenta enviar los datos al servidor.
+
+⚠ Esto provoca que:
+- Se **pierdan los mensajes de error**.
+- No se puedan mostrar validaciones correctamente.
+- Se interrumpa la interacción del usuario.
+
+Por tanto, **para evitar este comportamiento**, hemos de poner al comienzo del script la siguiente línea:
+
+```javascript
+e.preventDefault();
+```
 
 ## JSON
 
