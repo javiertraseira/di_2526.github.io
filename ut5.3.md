@@ -1,4 +1,4 @@
-# UT5.3 Estrategias para la acesibilidad web
+# UT5.3 Estrategias para la accesiblidad web
 
 ## Contenido accesible
 

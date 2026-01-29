@@ -1,4 +1,4 @@
-# UT4.2 Repaso osicionamiento y maquetación CSS. Flexbox y Grid.
+# UT4.2 Repaso posicionamiento y maquetación CSS. Flexbox y Grid.
 
 ## Maquetación CSS
 
