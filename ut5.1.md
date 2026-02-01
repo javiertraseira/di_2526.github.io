@@ -555,6 +555,34 @@ fetch(url).then((response) => {
 document.getElementById("fila").innerHTML = tableData;
 ```
 
+## Mockoon
+
+Mockoon es una aplicación de escritorio de código abierto diseñada para crear y gestionar **API simuladas** (mock APIs) de forma local.
+
+Permite a desarrolladores y equipos probar integraciones sin depender de servicios reales, agilizando el desarrollo y las pruebas de software. Su facilidad de uso y configuración visual la han convertido en una herramienta popular en entornos de desarrollo modernos.
+
+![](media/mockoon_logo.jpg)
+
+### Creación de una nueva API
+
+**Crear una API nueva:**
+1. Abre Mockoon.
+2. Pulsa en *New local environment*.
+3. Dale nombre a tu API y elige dónde guardarla (fichero json)
+
+**Crear un endpoint:**
+El endpoint es el nombre con el que sellamará y el método al que responderá:
+1. Hacer click en la columna del medio
+2. Ya hay un método GET creado y se le puede agregar una ruta.
+3. En las pestañas *status&body* se puede modificar el cuerpo del mensaje devuelto.
+4. Se le pueden crear nuevos endpoints a la API con otros métodos (simular un PUT)
+
+**Probar la API:**
+1. Haciendo click en **start local server**.
+2. Llamarla desde `localhost:puerto/endpoint`
+
+![](media/mockoon_interfaz.png)
+
 ## APIs en Java
 
 ### Solicitar peticiones mediante URL 
