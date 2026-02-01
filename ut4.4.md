@@ -580,7 +580,27 @@ La validación de formularios puede hacerse de forma estándar mediante el propi
 - **type**: Especifica si los datos deben ser un número, una dirección de correo electrónico o algún otro tipo de preajuste específico.
 - **pattern**: Especifica una expresión regular que define un patrón que los datos que se introduzcan deben seguir.
 
-La validación de formularios HTML puede aplicarse también a través de las pseudoclases de CSS *:invalid* y *:valid*, aunque para ello necesitaremos código Javascript (lo veremos más adelante). Se aplica a los elementos *\<input>*, *\<select>* y *\<textarea>*. Para los mensajes de feedback se puede combinar como *valid-feedback* o *invalid-feedback*.
+### invalid-feedback
+
+La clase `invalid-feedback` se utiliza para **mostrar mensajes de error** asociados a un campo de formulario cuando dicho campo **no cumple las reglas de validación**.
+
+Siempre debe colocarse inmediatamente después del control de formulario (input, select o textarea) al que hace referencia, dentro del mismo contenedor.
+
+```javascript
+<div class="mb-3">
+     <label for="email" class="form-label">Correo electrónico</label> 
+    <input type="email" class="form-control" id="email" required> 
+<div class="invalid-feedback"> Introduce un correo electrónico válido. </div> 
+</div> 
+```
+> El mensaje *invalid-feedback* debe ir justo debajo del campo que valida.
+
+Bootstrap no muestra automáticamente el mensaje solo por usar la clase, tiene que cumplirse alguna de estas condiciones:
+- *required* sin rellenar
+- *type="email"* con formato incorrecto
+- *minlength*, *pattern*, etc.
+
+Un ejemplo más completo:
 
 ```html
 <form class="row g-3 needs-validation" novalidate> 
@@ -606,6 +626,18 @@ La validación de formularios HTML puede aplicarse también a través de las pse
 ```
 
 ![](media/navbar_bootstrap5.png)
+
+Para validaciones por ejemplo de un **campo edad** podríamos usar el siguiente código:
+
+```javascript
+<div class="mb-3"> 
+	<label for="age" class="form-label">Edad</label> 
+    <input type="number" class="form-control" id="age" name="age" min="18" max="99" required>
+    <div class="invalid-feedback"> 	Por favor, introduce una edad válida entre 18 y 99 años. 	</div> 
+</div> 
+```
+
+> Para delimitar la longitud de un campo también podríamos utilizar el atributo HTML5 *maxlength* para definir la longitud máxima y *minlength* para definir la longitud mínima de los caracteres permitidos en el campo.
 
 
 ### Procesar los datos del formulario
