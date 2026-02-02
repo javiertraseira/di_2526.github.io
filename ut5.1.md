@@ -573,9 +573,10 @@ Permite a desarrolladores y equipos probar integraciones sin depender de servici
 **Crear un endpoint:**
 El endpoint es el nombre con el que sellamará y el método al que responderá:
 1. Hacer click en la columna del medio
-2. Ya hay un método GET creado y se le puede agregar una ruta.
-3. En las pestañas *status&body* se puede modificar el cuerpo del mensaje devuelto.
-4. Se le pueden crear nuevos endpoints a la API con otros métodos (simular un PUT)
+2. Ya hay un método *GET* creado y se le puede agregar una ruta.
+3. Debajo de la ruta agregar la descripción para la documentación.
+4. En las pestañas *status&body* se puede modificar el cuerpo del mensaje devuelto.
+5. Se pueden crear nuevos endpoints a la API con otros métodos (pj simular un PUT)
 
 **Probar la API:**
 1. Haciendo click en **start local server**.
