@@ -601,6 +601,30 @@ Se pueden agregar varias reglas según el valor de dichos parámetros y un opera
 
 > Se debe indicar cuál sería la respuesta por defecto (por ejemplo 401)
 
+### Generación respuestas (plantillas)
+
+La generación de respuestas con **plantillas** y *faker* en Mockoon es una de las partes más potentes para simular backends realistas sin base de datos.
+
+**Faker** es un generador de datos ficticios pero realistas y se usa en el Body de la respuesta, escribiendo una **plantilla** con expresiones tipo:
+
+```javascript
+{{faker.name.firstName}} 
+```
+
+Para que *faker* funcione ha de activarse en la pestaña *Settings* de Mockoon.
+
+Un ejemplo de plantilla con respuestas simuladas, sería con el siguiente código:
+
+```javascript
+{ 
+  "id": "{{faker.string.uuid}}", 
+  "nombre": "{{faker.person.firstName}}",
+  "apellidos": "{{faker.person.lastName}}", 
+  "email": "{{faker.internet.email}}", 
+  "edad": {{faker.number.int min=18 max=65}}, 
+  "fechaAlta": "{{faker.date.past}}" 
+}
+```
 
 ## APIs en Java
 
