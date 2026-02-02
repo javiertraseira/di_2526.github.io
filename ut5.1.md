@@ -563,7 +563,7 @@ Permite a desarrolladores y equipos probar integraciones sin depender de servici
 
 ![](media/mockoon_logo.jpg)
 
-### Creación de una nueva API
+### Creación de una API local
 
 **Crear una API nueva:**
 1. Abre Mockoon.
@@ -584,6 +584,23 @@ El endpoint es el nombre con el que sellamará y el método al que responderá:
 2. Llamarla desde `localhost:puerto/endpoint`
 
 ![](media/mockoon_interfaz.png)
+
+### Reglas (rules)
+
+La pestaña rules permite que para una misma ruta se puedan devuelvan respuestas diferentes (códigos 200 o 403) según:
+- Parámetros (query params)
+- Headers
+- Body de la petición
+- Variables de entorno
+
+Se pueden agregar varias reglas según el valor de dichos parámetros y un operador (equals, regex, includes..). 
+
+![](media/rules1.png)
+
+![](media/rules2.png)
+
+> Se debe indicar cuál sería la respuesta por defecto (por ejemplo 401)
+
 
 ## APIs en Java
 
