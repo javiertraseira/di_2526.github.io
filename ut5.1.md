@@ -587,13 +587,13 @@ El endpoint es el nombre con el que sellamará y el método al que responderá:
 
 ### Reglas (rules)
 
-La pestaña rules permite que para una misma ruta se puedan devuelvan respuestas diferentes (códigos 200 o 403) según:
+La pestaña **rules** permite que para una misma ruta se puedan devuelvan respuestas diferentes (códigos 200 o 403) según:
 - Parámetros (query params)
 - Headers
 - Body de la petición
 - Variables de entorno
 
-Se pueden agregar varias reglas según el valor de dichos parámetros y un operador (equals, regex, includes..). 
+Se pueden agregar varias reglas según el valor de dichos parámetros y un operador (*equals, regex, includes*..). 
 
 ![](media/rules1.png)
 
