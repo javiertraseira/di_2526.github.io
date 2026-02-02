@@ -114,7 +114,6 @@ Al solicitar un servicio de una API REST, esta responderá con **códigos de res
 | **503** | Error del servidor           | Service Unavailable (servidor caído o sobrecargado) |
 
 
-
 ## Postman
 
 ```note
@@ -597,9 +596,13 @@ Se pueden agregar varias reglas según el valor de dichos parámetros y un opera
 
 ![](media/rules1.png)
 
+Para analizar un JSON de entrada usaremos `$.valor`.  
+
+Así para analizar dos campos lo indicaremos así en la pestaña rules:
+
 ![](media/rules2.png)
 
-> Se debe indicar cuál sería la respuesta por defecto (por ejemplo 401)
+> Se debe indicar también cuál sería la respuesta por defecto (por ejemplo 401)
 
 ### Generación respuestas (plantillas)
 
