@@ -717,7 +717,7 @@ Los **formularios HTML** son uno de los elementos más habituales en las aplicac
 JavaScript se utiliza para:
 
 - Validar los datos introducidos antes de enviarlos.
-- Mostrar **mensajes de error personalizados**.
+- Mostrar **mensajes de error o confirmación personalizados**.
 - Evitar envíos incorrectos o incompletos.
 - Mejorar la experiencia de usuario sin recargar la página.
 
@@ -732,7 +732,8 @@ Ejemplo de captura del evento:
 ```javascript
 const formulario = document.querySelector("#formulario");
 formulario.addEventListener("submit", function (e) { 
-// códigos de validación 
+  console.log("Formulario enviado");
+  // códigos de validación 
 });
 ```
 
@@ -751,6 +752,41 @@ Por tanto, **para evitar este comportamiento**, hemos de poner al comienzo del s
 
 ```javascript
 e.preventDefault();
+```
+
+> Si un formulario se controla con JavaScript → preventDefault() siempre.
+
+Una vez capturado el evento, podemos acceder a los **valores de los campos**:
+
+```javascript
+formulario.addEventListener("submit", function (e) {
+     e.preventDefault(); 
+     const email = document.querySelector("#email").value;
+     console.log("Correo introducido:", email); 
+});
+```
+
+### Feedback al usuario
+
+Hasta ahora se conoce `alert()` para dar feedback al usuario, pero no es una buena práctica en interfaces modernas.
+
+En su lugar usaremos:
+- Mensajes HTML
+- Clases Bootstrap
+- Ventanas emergentes (toast)
+
+En la Unidad anterior ya habíamos visto cómo usar la clase toast en formularios:
+
+Para mostrar el toast en Javascript:
+
+```javascript
+const botonAbrir = document.querySelector("#abrirToast");
+const toastElemento = document.querySelector("#toastLogin");
+
+botonAbrir.addEventListener("click", () => {
+    const toast = new bootstrap.Toast(toastElemento); 
+    toast.show(); 
+});
 ```
 
 ## JSON
