@@ -499,6 +499,42 @@ La clase *carousel* en Bootstrap se utiliza para implementar un carrusel o slide
 </div>
 ```
 
+### Ventanas (Toast)
+
+Los *toast* de Bootstrap son **ventanas emergentes no intrusivas** que se utilizan para mostrar mensajes breves al usuario, como confirmaciones, avisos de éxito o errores,
+sin interrumpir el flujo de la aplicación.
+
+A diferencia de las alertas tradicionales, los *toast*:
+- Aparecen superpuestos sobre el contenido
+- Pueden desaparecer automáticamente (o configurarse a manualmente)
+- No interrumpen la navegación del usuario.
+- No ocupan espacio fijo en la página.
+
+![](media/toast_model.png)
+
+Un toast en Bootstrap se compone de:
+- Un contenedor posicionado (position-fixed)
+- Un elemento principal con la clase .toast y un cuerpo (.toast-body)
+- Opcionalmente, un botón de cierre.
+
+Ejemplo básico:
+
+```html
+<!-- Contenedor del toast -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11"> 
+   <div class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true"> 
+    <div class="d-flex"> 
+     <div class="toast-body"> Operación realizada correctamente. 
+     </div> 
+     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Cerrar"></button> 
+    </div> 
+ </div>
+</div>
+```
+
+> Bootstrap **no muestra el toast automáticamente**, es necesario inicializarlo mediante JavaScript (lo veremos posteriormente)
+
+
 ## Formularios
 
 Bootstrap aplica estilos a los elementos de tipo formulario para convertirlos en elementos responsive, mejorando su apariencia y permitiendo crear diferentes alineaciones como en el resto de elementos de Bootstrap ya vistos:
