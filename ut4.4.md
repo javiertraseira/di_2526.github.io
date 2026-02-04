@@ -607,6 +607,40 @@ Los checks y radio buttons predeterminados del navegador se reemplazan con la ay
 
 ![](media/checkradios_bootstrap.png)
 
+### Formulario en ventana toast
+
+Ejemplo de *toast* con formulario usando el id *toastForm*:
+
+```html
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toastForm" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Acceso</strong>
+            <small>Formulario</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+
+        <div class="toast-body">
+            <form id="loginForm">
+                <div class="mb-2">
+                    <label for="email" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="mb-2">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+
+                <button type="submit" class="btn btn-success w-100 mt-2">
+                    Enviar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+```
+
 ### Validaciones
 
 La validación de formularios puede hacerse de forma estándar mediante el propio **HTML5**. Esto se realiza mediante el uso de atributos de validación en los elementos del formulario. Para ello podremos utilizar en los campos las siguientes propiedades:
