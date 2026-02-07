@@ -501,7 +501,13 @@ fetch('https://api.example.com/secure-data', {
 
 ### Modelo de datos en una web
 
-El método *fetch()* devuelve lo que se denomina *promesa*. Después del método fetch() se debe incluir un then() a una **función** anónima para manejar la respuesta:
+El método *fetch()* devuelve una *promesa*. Después del método fetch() se debe incluir un then() a una **función** anónima para manejar la respuesta.
+
+Una promesa puede tener dos estados finales:
+- Resuelta (resolve) → la operación ha terminado correctamente.
+- Rechazada (reject) → ha ocurrido algún error.
+
+Para trabajar con la respuesta de fetch(), se utiliza el método then(), al que se le pasa una **función** (normalmente anónima) que se ejecutará cuando la promesa se resuelva correctamente:
 
 ```javascript
 fetch(url) 
@@ -510,7 +516,9 @@ fetch(url)
 })
 ```
 
-Si la promesa devuelve *resolve*, la función anónima dentro del then será ejecutada. En caso contrario devolverá un *reject* y por tanto habrá que añadir un catch para capturar dicho error:
+Si la promesa es rechazada (por ejemplo, fallo de red o error en la petición), el código dentro de then() no se ejecuta.
+Para capturar ese error, se utiliza *catch()*:
+
 
 ```javascript
 fetch(url) 
@@ -522,7 +530,7 @@ fetch(url)
     })
 ```
 
-Habrá que utilizar el método *json()* visto para convertir los datos de la respuesta a JSON:
+La respuesta devuelta por *fetch()* no es directamente un objeto **JSON**, por lo que hay que usar el método json() visto para convertir los datos:
 
 ```javascript
 fetch(url) 
