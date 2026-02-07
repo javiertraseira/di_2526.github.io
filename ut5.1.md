@@ -450,7 +450,7 @@ console.log(usuario.habilidades[0]); // Resultado: 'JavaScript'
 
 ###  Asincronismo
 
-Para asegurarnos que una operación ha terminado antes de que empiece otra, utilizaremos las **operaciones asíncronas**. Cuando trabajamos con *fetch* podemos crear crear función asíncrona cambiando su definición de la siguiente forma:
+Para asegurarnos de que una operación no comienza hasta que la anterior ha terminado, utilizamos **funciones asíncronas** junto con las palabras clave `async` y `await`. Cuando trabajamos con **fetch**, este devuelve una promesa. Para trabajar de forma segura y ordenada, combinamos `async/await` con un bloque `try-catch`:
 
 ```javascript
 async function fetchData() { 
@@ -470,14 +470,20 @@ Se deben utilizar bloques *try-catch* para el manejo de errores a la hora de tra
 ```javascript
 async function fetchData() {
   try {
+	// Realizamos la petición HTTP a la API
     const response = await fetch('https://api.example.com/data');
-    if (!response.ok) throw new Error(`Error ${response.status}`);
+	// Comprobar si la respuesta HTTP es correcta (códigos 200–299)
+      if (!response.ok) throw new Error(`Error ${response.status}`);
+	// Esperar y convertir la respuesta a formato JSON
     const data = await response.json();
+	// Ya se puede trabajar con los datos convertidos
     console.log(data);
   } catch (error) {
     console.error('Error al recuperar los datos:', error);
   }
 }
+
+// Llamada a la función asíncrona
 fetchData();
 ```
 
