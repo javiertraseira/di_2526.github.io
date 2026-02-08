@@ -326,7 +326,7 @@ La propiedad **jusfify-content** funciona al igual que en Flexbox alineando en h
 
 En Bootstrap, la clase utilitaria de font size permite ajustar el tamaño del texto fácilmente mediante clases predefinidas. Estas clases siguen la escala de sistema escalonado vista anteriormente  y son útiles para personalizar rápidamente el tamaño del texto sin necesidad de escribir CSS adicional.
 
-![](media/fonts-bs.png.png)
+![](media/fonts-bs.png)
 
 ### La clase table
 
