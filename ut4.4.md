@@ -716,7 +716,12 @@ Para validaciones por ejemplo de un **campo edad** podríamos usar el siguiente 
 
 ### Procesar los datos del formulario
 
-Para procesar los datos enviados por el formulario, necesitarás emplear un lenguaje de programación del lado del **servidor**(backend), como JavaScript, PHP, o cualquier otro de tu elección. El código de procesamiento del formulario se colocará en el atributo action del elemento *\<form>*.
+Bootstrap se encarga únicamente del **diseño, la maquetación y la validación visual de los formularios**, pero no procesa los datos enviados.
+
+Para tratar la información introducida por el usuario (guardar datos, validar credenciales, consultar bases de datos, etc.) es necesario utilizar un **servicio del lado del servidor** (backend), desarrollado con lenguajes como *PHP, Python o Node.js*.
+
+En aplicaciones web modernas, es habitual enviar los datos mediante llamadas a **APIs** utilizando tecnologías que veremos posteriormente.
+
 
 ## Introducción a Tailwind
 
