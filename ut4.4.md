@@ -609,9 +609,7 @@ Los checks y radio buttons predeterminados del navegador se reemplazan con la ay
 
 ### Formulario en ventana toast
 
-A continuación se muestra un ejemplo completo de un formulario integrado dentro de una ventana emergente (toast) de Bootstrap.
-
-En este caso, el toast contiene un formulario de acceso con dos campos y está identificado mediante el id *toastForm*:
+A continuación, se muestra un ejemplo completo de un formulario integrado dentro de una ventana emergente (toast) de Bootstrap. En este caso, el toast contiene un formulario de acceso con dos campos y está identificado mediante el id *toastForm*:
 
 ```html
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
