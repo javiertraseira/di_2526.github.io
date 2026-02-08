@@ -299,7 +299,7 @@ Con la clase \d-{tamaño}-{none|block} podemos mostrar u ocultar elementos que i
 |  Ocultar solo para md    |  d-md-none d-lg-block|flex | 
 |  Ocultar solo para lg    |  d-lg-none d-xl-block|flex | 
 |  Ocultar solo para xl    |  d-xl-none d-xxl-block|flex | 
-|  Visible para todos   |  d-block | 
+|  Visible para todos    |  d-block | 
 |  Visible solo para xs   |  d-block d-sm-none | 
 |  Visible solo para sm   |  d-none d-sm-block d-md-none | 
 |  Visible solo para md   |  d-none d-md-block d-lg-none | 
@@ -609,7 +609,9 @@ Los checks y radio buttons predeterminados del navegador se reemplazan con la ay
 
 ### Formulario en ventana toast
 
-Ejemplo de *toast* con formulario usando el id *toastForm*:
+A continuación se muestra un ejemplo completo de un formulario integrado dentro de una ventana emergente (toast) de Bootstrap.
+
+En este caso, el toast contiene un formulario de acceso con dos campos y está identificado mediante el id *toastForm*:
 
 ```html
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
