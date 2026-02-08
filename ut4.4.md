@@ -419,13 +419,13 @@ Las alertas están disponibles para cualquier longitud de texto. Para un estilo 
 ### Navbar
 
 Un **navbar** es una barra de navegación superior responsive con menús, submenús, y otros componentes, como una barra de búsqueda entre otros, y que tiene las siguientes características:
-- La barra de navegación es <u>adaptable</u> y fluida de forma predeterminada, lo que significa que se amplía o reduce en función de la anchura del viewport.
+- La barra de navegación es **adaptable** y fluida de forma predeterminada, lo que significa que se amplía o reduce en función de la anchura del viewport.
 - Las navbars requieren un envoltorio *\.navbar* con las clases *\.navbar-expand{-sm -md -lg -xl}*, que determinan cuándo se colapsa la barra en un sólo botón.
 - Existen diversas clases para darle color a un navbar como *.bg-light* o *.bg-dark*.
 
 ![](media/3242365346345120978978.png)
 
-Podemos crear una barra <u>estándar</u> con:
+Podemos crear una barra estándar con:
 
     \<nav class="navbar .navbar-expand{tamaño}">
 
