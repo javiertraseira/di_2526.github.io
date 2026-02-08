@@ -326,7 +326,7 @@ La propiedad **jusfify-content** funciona al igual que en Flexbox alineando en h
 
 Bootstrap proporciona clases utilitarias para modificar el tamaño del texto sin necesidad de escribir CSS.
 
-Estas clases (*fs-1* a *fs-6*) aplican tamaños de fuente predefinidos organizados en una escala, desde textos más grandes a más pequeños.
+Estas clases (fs-1 a fs-6) aplican tamaños de fuente predefinidos organizados en una escala, desde textos más grandes a más pequeños.
 
 Su uso permite cambiar rápidamente el tamaño del texto manteniendo una apariencia coherente en toda la interfaz.
 
@@ -669,7 +669,7 @@ Siempre debe colocarse inmediatamente después del control de formulario (input,
 ```
 > El mensaje *invalid-feedback* debe ir justo debajo del campo que valida.
 
-Bootstrap no muestra automáticamente el mensaje solo por usar la clase, tiene que cumplirse alguna de estas condiciones:
+Bootstrap **no muestra automáticamente** el mensaje solo por usar la clase, tiene que cumplirse alguna de estas condiciones:
 - *required* sin rellenar
 - *type="email"* con formato incorrecto
 - *minlength*, *pattern*, etc.
