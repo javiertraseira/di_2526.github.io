@@ -718,7 +718,7 @@ Para procesar los datos enviados por el formulario, necesitarás emplear un leng
 
 Tailwind CSS es un **framework CSS utility-first** (basado en utilidades).
 
-En lugar de traer componentes ya diseñados como Bootstrap, ofrece un conjunto de clases pequeñas y atómicas que permiten construir interfaces personalizadas directamente en el HTML.
+En lugar de traer componentes ya diseñados como Bootstrap, ofrece un conjunto de clases pequeñas y **atómicas** que permiten construir interfaces personalizadas directamente en el HTML.
 
 Tailwind proporciona clases de bajo nivel que se pueden combinar para crear prácticamente cualquier diseño. Esta metodología permite a los desarrolladores construir interfaces de manera rápida y con un control detallado sobre el estilo, sin la necesidad de salirse de la lógica del framework.
 
