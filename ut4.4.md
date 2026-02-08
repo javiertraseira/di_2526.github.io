@@ -725,7 +725,7 @@ En aplicaciones web modernas, es habitual enviar los datos mediante llamadas a *
 
 ## Introducción a Tailwind
 
-Tailwind CSS es un **framework CSS utility-first** (basado en utilidades).
+Tailwind CSS es un **framework CSS utility-first**, es decir, basado en utilidades.
 
 En lugar de traer componentes ya diseñados como Bootstrap, ofrece un conjunto de clases pequeñas y **atómicas** que permiten construir interfaces personalizadas directamente en el HTML.
 
