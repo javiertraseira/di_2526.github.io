@@ -406,7 +406,7 @@ La clase card en Bootstrap 5 es un componente flexible y personalizable que se u
 
 Bootstrap no incluye iconos por defecto dentro de su CSS principal, pero proporciona una librería oficial de iconos independiente llamada **Bootstrap Icons**. 
 
-Usando su CDN:
+Agregar usando su CDN:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -414,7 +414,7 @@ Usando su CDN:
 
 Bootstrap Icons es un conjunto de **iconos SVG** diseñados específicamente para Bootstrap y su sistema de clases, manteniendo coherencia visual y facilidad de uso.
 
-Para insertar un icono se usa la etiqueta <i> con la clase `bi` y luego *bi-nombre_icono*:
+Para insertar un icono se usa la etiqueta \<i> con la clase `bi` y luego *bi-nombre_icono*:
 
 ```html
 <i class="bi bi-alarm"></i>
