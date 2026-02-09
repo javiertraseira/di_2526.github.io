@@ -420,6 +420,7 @@ Para insertar un icono se usa la etiqueta <i> con la clase `bi` y el nombre del 
 <i class="bi bi-alarm"></i>
 ```
 
+![](media/bootstrap_icons.png)
 
 ### Alertas
 
