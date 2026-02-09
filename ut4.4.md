@@ -414,7 +414,7 @@ Usando su CDN:
 
 Bootstrap Icons es un conjunto de **iconos SVG** diseñados específicamente para Bootstrap y su sistema de clases, manteniendo coherencia visual y facilidad de uso.
 
-Para insertar un icono se usa la etiqueta <i> con la clase `bi` y el nombre del icono:
+Para insertar un icono se usa la etiqueta <i> con la clase `bi` y luego *bi-nombre_icono*:
 
 ```html
 <i class="bi bi-alarm"></i>
