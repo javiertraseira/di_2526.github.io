@@ -741,6 +741,7 @@ Para tratar la información introducida por el usuario (guardar datos, validar c
 
 En aplicaciones web modernas, es habitual enviar los datos mediante llamadas a **APIs** utilizando tecnologías que veremos posteriormente.
 
+![](media/processing_backend.png)
 
 ## Introducción a Tailwind
 
