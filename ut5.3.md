@@ -307,16 +307,16 @@ Las **tablas** sirven exclusivamente para mostrar información tabular, aunque a
 | Enero    | 10                 | 0                     | 15                 | 5                     | 5                  | 25                    |
 | Febrero  | 11                 | 0                     | 20                 | 2                     | 3                  | 30                    |
 
-    - Caption: visitantes por países.
-    - Summary: visitantes que hemos tenido clasificados por países y meses. De cada país se indica el número de usuarios que hablan español y cuáles no.
-    - España, Si, Enero=10 España, No, Enero=0 México, Si, Enero=15 México, No, Enero=5 USA, Si, Enero=5 USA, No, Enero=25
-    …
+- **Caption**: *visitantes por países.*
+- **aria-describedby**: *visitantes que hemos tenido clasificados por países y meses. De cada país se indica el número de usuarios que hablan español y cuáles no.*
+- *España, Si, Enero=10 España, No, Enero=0 México, Si, Enero=15 México, No, Enero=5 USA, Si, Enero=5 USA, No, Enero=25*
+
 
 En las **WCAG 2** en el **criterio de Conformidad 1.3.1** Información y relaciones visto anteriormente, hay una serie de técnicas que tenemos que tener en cuenta cuando tengamos que insertar en nuestros contenidos una tabla de datos:
 
 -   **H51** Usar tablas para presentar información tabular.
 -   **H39** Usar elementos caption para asociar títulos de tabla con las tablas de datos.
--   **H73** Usar al atributo summary del elemento table para proporcionar un resumen a la tabla de datos.
+-   **H73** Usar al atributo aria-describedby del elemento table para proporcionar un resumen a la tabla de datos.
 -   **H63** Usar el atributo scope para asociar celdas de encabezado y celdas de datos en las tablas de datos.
 -   **H43** Usar atributos id y headers para asociar las celdas de datos con las celdas de encabezado en las tablas de datos.
 
@@ -372,12 +372,12 @@ Si la tabla contiene datos, el elemento **caption** permitirá a los lectores de
 
 ![](media/b64a5aa7805b9b3d85ed3bbc87dbbec4.png)
 
-#### H73 Usar al atributo summary del elemento table para proporcionar un resumen a la tabla de datos.
+#### H73 Usar al atributo aria-describedby del elemento table para proporcionar un resumen a la tabla de datos.
 
-La propiedad **summary** proporciona una breve descripción de cómo se organizan los datos de la tabla. Es útil para tablas con muchos datos y una estructura compleja.
+La propiedad **aria-describedby** proporciona una breve descripción de cómo se organizan los datos de la tabla. Es útil para tablas con muchos datos y una estructura compleja.
 
 ```html
-<table summary="El curso de CSS dura 20 horas de 9:30 a 10:30 y el curso de HTML de 11 a 13:30 tiene una duración de 15 horas">
+<table aria-describedby="El curso de CSS dura 20 horas de 9:30 a 10:30 y el curso de HTML de 11 a 13:30 tiene una duración de 15 horas">
 <caption> Horario curso de formación </caption>
 <tr>
   <td> </td>
