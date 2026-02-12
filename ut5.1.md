@@ -505,7 +505,7 @@ Cuando una aplicación realiza una petición a una API mediante fetch(), esta op
 
 Para mejorar la experiencia de usuario (UX) y aplicar criterios de usabilidad, es recomendable mostrar un indicador visual de carga.
 
-Bootstrap proporciona el componente Spinner, que permite indicar que la aplicación está procesando datos.
+Bootstrap proporciona el componente Spinner, que permite indicar que la aplicación está procesando datos mediante un icono de espera animado.
 
 ```html
 <div id="spinnerCarga" class="text-center d-none"> 
