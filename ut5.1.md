@@ -487,9 +487,9 @@ async function fetchData() {
 fetchData();
 ```
 
-### Autenticación (opcional)
+### Autenticación  
 
-Algunas APIs requieren autenticación para poder ser utilizadas. En dichos casos es necesario incluir un token en los encabezados:
+Algunas APIs requieren autenticación para poder ser utilizadas. En dichos casos es necesario incluir un **token** en los encabezados mediante el valor *Authorization*:
 
 ```javascript
 fetch('https://api.example.com/secure-data', {
@@ -497,6 +497,42 @@ fetch('https://api.example.com/secure-data', {
     'Authorization': 'tu_token'
   }
 });
+```
+
+### Gestión estado de carga (spinner)
+
+Cuando una aplicación realiza una petición a una API mediante fetch(), esta operación es asíncrona, por lo que puede tardar unos instantes en completarse. Durante ese tiempo, el usuario no recibe información visual sobre lo que está ocurriendo.
+
+Para mejorar la experiencia de usuario (UX) y aplicar criterios de usabilidad, es recomendable mostrar un indicador visual de carga.
+
+Bootstrap proporciona el componente Spinner, que permite indicar que la aplicación está procesando datos.
+
+```html
+<div id="spinnerCarga" class="text-center d-none"> 
+ <div class="spinner-border text-primary" role="status"> 
+  <span class="visually-hidden">Cargando...</span> 
+ </div> 
+</div> 
+```
+> La clase *d-none* permitirá ocultarlo inicialmente.
+
+Control del spinner con JavaScript:
+
+```javascript
+async function cargarDatos() { 
+ const spinner = document.getElementById("spinnerCarga"); 
+ spinner.classList.remove("d-none"); // Mostrar
+
+ try {
+  const response = await fetch("https://api.ejemplo.com/datos"); 
+  const data = await response.json(); 
+  console.log(data); 
+ } catch (error) { 
+  console.error("Error:", error); 
+ } finally { 
+  spinner.classList.add("d-none"); // Ocultar 
+ } 
+}
 ```
 
 ### Modelo de datos en una web
