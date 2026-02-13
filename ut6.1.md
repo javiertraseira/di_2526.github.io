@@ -208,3 +208,4 @@ Permite que:
 Jenkins es un servidor de automatización de código abierto utilizado principalmente para implementar procesos de integración continua (CI) y entrega continua (CD) en proyectos de desarrollo de software. Permite automatizar tareas como la compilación del código, la ejecución de pruebas, la generación de informes y la creación de paquetes de despliegue cada vez que se realizan cambios en el repositorio.
 
 
+![](media/jenkins.jpg)
