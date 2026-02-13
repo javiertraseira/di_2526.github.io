@@ -191,3 +191,20 @@ Características de **Selenium**:
 -   Permite la ejecución de pruebas remotas.
 -   Su funcionalidad Server Hub, permite la ejecución remota de pruebas de múltiples pruebas en paralelo.
 -   Funciona tanto en Windows como Linux o Mac.
+
+
+## Entornos de integración
+
+Un entorno de **integración de proyectos** es el conjunto de herramientas y configuraciones que permiten unir, coordinar y comprobar todos los elementos que forman una aplicación.
+
+Permite que:
+- El código de distintos módulos funcione de forma conjunta.
+- Los cambios de varios desarrolladores no generen conflictos.
+- Se detecten errores lo antes posible.
+- La aplicación esté lista para probar y distribuir.
+
+### Jenkins
+
+Jenkins es un servidor de automatización de código abierto utilizado principalmente para implementar procesos de integración continua (CI) y entrega continua (CD) en proyectos de desarrollo de software. Permite automatizar tareas como la compilación del código, la ejecución de pruebas, la generación de informes y la creación de paquetes de despliegue cada vez que se realizan cambios en el repositorio.
+
+
